@@ -92,5 +92,5 @@
 </template>
 
 <script setup>
-import { Award } from 'lucide-vue-next'
+import { Award, Heart, Users } from 'lucide-vue-next'
 </script>
