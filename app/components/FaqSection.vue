@@ -41,8 +41,8 @@
             Que documentação será fornecida?
           </h3>
           <p class="text-sm sm:text-base text-gray-600">
-            Todos os filhotes sairão com carteira de vacinação, vermifugação em dia, microchip,
-            contrato de compra e venda, e orientações completas de cuidados.
+            Todos os filhotes sairão com pedigree, carteira de vacinação, vermifugação em dia, 
+            e orientações completas de cuidados. Nota fiscal disponível mediante solicitação.
           </p>
         </div>
         <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">

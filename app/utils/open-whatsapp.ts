@@ -1,5 +1,5 @@
 export default function openWhatsapp() {
-    const whatsappNumber = '5537999999999'
+    const whatsappNumber = '5547991611628'
     const whatsappMessage = 'Olá! Tenho interesse nos filhotes de Golden Retriever 🐕'
 
      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`

@@ -59,7 +59,7 @@
                 :size="18"
                 class="flex-shrink-0"
               />
-              <span>(00) 00000-0000</span>
+              <span>(47) 99161-1628</span>
             </li>
             <li class="flex items-center gap-2">
               <Mail

@@ -28,7 +28,7 @@
           </p>
           <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
             Vendo o impacto positivo que ele trouxe para nossa vida, decidimos compartilhar essa
-            alegria com outras famílias. Por isso estamos iniciando nosso criadouro - para que mais
+            alegria com outras famílias. Por isso estamos iniciando nosso criadouro para que mais
             pessoas possam experimentar o amor de um Golden como o Lars.
           </p>
         </div>
