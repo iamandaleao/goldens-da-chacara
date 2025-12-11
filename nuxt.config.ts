@@ -32,7 +32,9 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    '/blog': { prerender: true },
+    '/blog/**': { prerender: true } 
   },
 
   compatibilityDate: '2025-01-15',

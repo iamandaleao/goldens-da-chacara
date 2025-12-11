@@ -9,11 +9,13 @@
     </NuxtLink>
 
     <!-- Imagem destaque -->
-    <img 
+    <div class="aspect-video w-full relative">
+      <img 
       :src="post.image" 
       :alt="post.title"
-      class="w-full h-96 object-cover rounded-2xl mb-8 shadow-lg"
+      class="w-full h-full object-cover object-top rounded-2xl mb-8 shadow-lg"
     />
+    </div>
 
     <!-- Título -->
     <h1 class="text-5xl font-bold text-gray-900 mb-4">
