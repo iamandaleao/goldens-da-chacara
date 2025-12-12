@@ -11,8 +11,9 @@ export default defineContentConfig({
           title: z.string(),
           description: z.string(),
           image: z.string(),
-        }),
-      }),
-    ),
-  },
+          tip: z.string()
+        })
+      })
+    )
+  }
 })

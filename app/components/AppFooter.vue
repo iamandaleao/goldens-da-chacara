@@ -95,5 +95,5 @@
 </template>
 
 <script setup>
-  import{Mail, Instagram, Facebook} from 'lucide-vue-next'
+import { Mail, Instagram, Facebook } from 'lucide-vue-next'
 </script>

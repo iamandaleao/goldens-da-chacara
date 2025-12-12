@@ -6,12 +6,6 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
 
-  content: {
-    experimental: {
-      nativeSqlite: true,
-    },
-  },
-
   devtools: {
     enabled: true
   },
@@ -37,6 +31,12 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  content: {
+    experimental: {
+      nativeSqlite: true
+    }
+  },
 
   routeRules: {
     '/': { prerender: true },

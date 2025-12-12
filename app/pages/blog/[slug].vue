@@ -1,7 +1,10 @@
 <template>
-  <article v-if="post" class="pt-24 pb-16 max-w-4xl mx-auto px-4">
+  <article
+    v-if="post"
+    class="pt-10 pb-16 max-w-4xl mx-auto px-4"
+  >
     <!-- Botão voltar -->
-    <NuxtLink 
+    <NuxtLink
       to="/blog"
       class="inline-flex items-center text-amber-600 hover:text-amber-700 mb-6 font-medium"
     >
@@ -9,12 +12,12 @@
     </NuxtLink>
 
     <!-- Imagem destaque -->
-    <div class="aspect-video w-full relative">
-      <img 
-        :src="post.image" 
+    <div class="aspect-video w-full relative mb-8">
+      <img
+        :src="post.image"
         :alt="post.title"
         class="w-full h-full object-cover object-top rounded-2xl mb-8 shadow-lg"
-      />
+      >
     </div>
 
     <!-- Título -->
@@ -40,7 +43,7 @@
 
     <!-- Botão voltar no final -->
     <div class="mt-12 pt-8 border-t">
-      <NuxtLink 
+      <NuxtLink
         to="/blog"
         class="inline-block px-6 py-3 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition"
       >
@@ -50,19 +53,37 @@
   </article>
 
   <!-- Se não encontrar o post -->
-  <div v-else class="pt-24 pb-16 max-w-4xl mx-auto px-4 text-center">
-    <h1 class="text-4xl font-bold text-gray-900 mb-4">Post não encontrado</h1>
-    <NuxtLink to="/blog" class="text-amber-600 hover:underline">
+  <div
+    v-else
+    class="pt-24 pb-16 max-w-4xl mx-auto px-4 text-center"
+  >
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">
+      Post não encontrado
+    </h1>
+    <NuxtLink
+      to="/blog"
+      class="text-amber-600 hover:underline"
+    >
       ← Voltar para o blog
     </NuxtLink>
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 const route = useRoute()
 
-// Busca o post no diretório content/blog/
-const { data: post } = await useAsyncData(`blog-${route.params.slug}`, () => 
-  queryContent('blog').where({ _path: `/blog/${route.params.slug}` }).findOne()
-)
+const { data: post } = await useAsyncData(route.path, () => {
+  return queryCollection('blog').path(route.path).first()
+}, {
+  watch: [route]
+})
+
+if (!post.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+}
+
+useSeoMeta({
+  ...post.value.seo,
+  ogType: 'article'
+})
 </script>

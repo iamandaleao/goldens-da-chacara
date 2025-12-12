@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-24 pb-16 max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+  <section class="pt-10 pb-16 max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
     <div class="text-center mb-12">
       <h1 class="text-5xl font-bold text-amber-700 mb-3">
         🐕 Blog dos Goldens da Chácara
@@ -15,18 +15,22 @@
         :key="post.stem"
         class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-amber-100"
       >
-        <img 
-          :src="post.image" 
-          :alt="post.title"
-          class="w-full h-64 md:h-72 lg:h-80 object-cover object-center bg-gray-100"
-        />
-        
+        <NuxtLink
+          :to="post.stem"
+        >
+          <img
+            :src="post.image"
+            :alt="post.title"
+            class="w-full h-64 md:h-72 lg:h-80 object-cover object-center bg-gray-100"
+          >
+        </NuxtLink>
+
         <div class="p-6">
           <h2 class="text-2xl font-bold text-gray-900 mb-3 hover:text-amber-600 transition">
             {{ post.title }}
           </h2>
-          
-          <p class="text-gray-600 mb-4 leading-relaxed">
+
+          <p class="text-gray-600 mb-4 line-clamp-2 leading-relaxed">
             {{ post.description }}
           </p>
 
@@ -43,37 +47,28 @@
 </template>
 
 <script setup lang="ts">
+const route = useRoute()
+const page = ref(Number.parseInt(route.query.page as string) || 1)
+const postsPerPage = 6
+const { data: paginatedData } = await useAsyncData('blog', async () => {
+  const [posts, count] = await Promise.all([
+    queryCollection('blog')
+      .skip((page.value - 1) * postsPerPage)
+      .limit(postsPerPage)
+      .all(),
+    queryCollection('blog')
+      .count()
+  ])
 
-  const route = useRoute()
-  const router = useRouter()
-  const page = ref(Number.parseInt(route.query.page as string) || 1)
-  const postsPerPage = 6
-  const { data: paginatedData } = await useAsyncData('blog', async () => {
-    const [posts, count] = await Promise.all([
-      queryCollection('blog')
-        .skip((page.value - 1) * postsPerPage)
-        .limit(postsPerPage)
-        .all(),
-      queryCollection('blog')
-        .count(),
-    ])
-  
-    return { posts, count, totalPages: Math.ceil(count / postsPerPage) }
-  }, {
-    watch: [page],
-  })
-  
-  const posts = computed(() => paginatedData.value?.posts || [])
-  const totalPages = computed(() => paginatedData.value?.totalPages || 0)
-  console.log(posts.value)
-  
-  async function goToPage(newPage: number) {
-    page.value = newPage
-    await router.push({ query: { page: newPage === 1 ? undefined : newPage } })
-  }
-  
-  useSeoMeta({
-    title: 'Blog',
-    description: 'Eu cuido dos detalhes, você aproveita a jornada.',
-  })
-</script>  
+  return { posts, count, totalPages: Math.ceil(count / postsPerPage) }
+}, {
+  watch: [page]
+})
+
+const posts = computed(() => paginatedData.value?.posts || [])
+
+useSeoMeta({
+  title: 'Blog',
+  description: 'Eu cuido dos detalhes, você aproveita a jornada.'
+})
+</script>
