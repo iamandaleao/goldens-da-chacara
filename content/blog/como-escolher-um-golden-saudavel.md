@@ -1,6 +1,6 @@
 ---
 title: "Como escolher um Golden saudável"
-excerpt: "Um guia completo para entender linhagem, saúde e comportamento ao escolher seu futuro companheiro de quatro patas."
+description: "Um guia completo para entender linhagem, saúde e comportamento ao escolher seu futuro companheiro de quatro patas."
 image: "https://placedog.net/800/600?id=1"
 tip: "Nunca compre um filhote sem conhecer o ambiente onde ele nasceu e sem ver pelo menos a mãe. Isso garante que você está lidando com um criador responsável."
 ---

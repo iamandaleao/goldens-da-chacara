@@ -25,7 +25,7 @@
     <!-- Conteúdo do post -->
     <div class="prose prose-lg max-w-none">
       <p class="text-xl text-gray-700 leading-relaxed mb-6">
-        {{ post.excerpt }}
+        {{ post.description }}
       </p>
 
       <!-- Conteúdo markdown renderizado -->

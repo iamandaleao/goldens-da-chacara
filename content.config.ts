@@ -10,12 +10,7 @@ export default defineContentConfig({
         schema: z.object({
           title: z.string(),
           description: z.string(),
-          region: z.string().optional(),
-          cover: z.string(),
-          thumbnail: z.string(),
-          date: z.date(),
-          published: z.boolean(),
-          tags: z.array(z.string()).optional(),
+          image: z.string(),
         }),
       }),
     ),

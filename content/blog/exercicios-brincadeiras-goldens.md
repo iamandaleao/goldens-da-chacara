@@ -1,6 +1,6 @@
 ---
 title: "Exercícios e brincadeiras para Goldens"
-excerpt: "Atividades divertidas e exercícios importantes para manter seu Golden ativo, feliz e com muita energia."
+description: "Atividades divertidas e exercícios importantes para manter seu Golden ativo, feliz e com muita energia."
 image: "https://placedog.net/800/600?id=4"
 tip: "Evite exercícios muito intensos em filhotes até 1 ano de idade, pois suas articulações ainda estão em formação. Prefira caminhadas moderadas e brincadeiras leves para não prejudicar o desenvolvimento ósseo."
 ---

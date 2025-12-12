@@ -11,8 +11,8 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
       <article
-        v-for="post in formattedPosts"
-        :key="post.slug"
+        v-for="post in posts"
+        :key="post.stem"
         class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-amber-100"
       >
         <img 
@@ -27,11 +27,11 @@
           </h2>
           
           <p class="text-gray-600 mb-4 leading-relaxed">
-            {{ post.excerpt }}
+            {{ post.description }}
           </p>
 
           <NuxtLink
-            :to="`/blog/${post.slug}`"
+            :to="post.stem"
             class="inline-block px-6 py-2.5 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition"
           >
             Ler artigo completo →
@@ -42,19 +42,38 @@
   </section>
 </template>
 
-<script setup>
-// Busca todos os posts da pasta content/blog/
-const { data: posts } = await useAsyncData('blog-posts', () => 
-  queryContent('blog').find()
-)
+<script setup lang="ts">
 
-// Transforma os posts para ter a propriedade slug
-const formattedPosts = computed(() => {
-  if (!posts.value) return []
+  const route = useRoute()
+  const router = useRouter()
+  const page = ref(Number.parseInt(route.query.page as string) || 1)
+  const postsPerPage = 6
+  const { data: paginatedData } = await useAsyncData('blog', async () => {
+    const [posts, count] = await Promise.all([
+      queryCollection('blog')
+        .skip((page.value - 1) * postsPerPage)
+        .limit(postsPerPage)
+        .all(),
+      queryCollection('blog')
+        .count(),
+    ])
   
-  return posts.value.map(post => ({
-    ...post,
-    slug: post._path.replace('/blog/', '')
-  }))
-})
-</script>
+    return { posts, count, totalPages: Math.ceil(count / postsPerPage) }
+  }, {
+    watch: [page],
+  })
+  
+  const posts = computed(() => paginatedData.value?.posts || [])
+  const totalPages = computed(() => paginatedData.value?.totalPages || 0)
+  console.log(posts.value)
+  
+  async function goToPage(newPage: number) {
+    page.value = newPage
+    await router.push({ query: { page: newPage === 1 ? undefined : newPage } })
+  }
+  
+  useSeoMeta({
+    title: 'Blog',
+    description: 'Eu cuido dos detalhes, você aproveita a jornada.',
+  })
+</script>  
