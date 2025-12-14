@@ -1,3 +1,25 @@
+<template>
+  <div class="min-h-screen bg-white">
+    <FloatingButton />
+
+    <AppNav />
+
+    <HeroSection />
+
+    <HistorySection />
+
+    <AboutGoldenSection />
+
+    <OurValuesSection />
+
+    <FaqSection />
+
+    <ContactSection />
+
+    <AppFooter />
+  </div>
+</template>
+
 <script setup>
 useHead({
   title: 'Goldens da Chácara | Golden Retriever em Formiga – MG',
