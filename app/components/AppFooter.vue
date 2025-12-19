@@ -7,9 +7,18 @@
           <h3 class="text-xl sm:text-2xl font-bold text-amber-400 mb-3 sm:mb-4">
             Goldens da Chácara
           </h3>
-          <p class="text-sm sm:text-base text-gray-400">
-            Criação responsável de Golden Retrievers em Formiga, Minas Gerais.
+          <p class="text-sm sm:text-base text-gray-400 mb-2">
+            Criação profissional de Golden Retrievers e hospedagem para seu pet.
           </p>
+          <a 
+            href="https://maps.app.goo.gl/qXpEg7uH2PgknXTz5"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm sm:text-base text-gray-400 hover:text-amber-400 transition inline-flex items-start gap-2"
+          >
+            <MapPin :size="18" class="flex-shrink-0 mt-0.5" />
+            <address class="not-italic">Ao lado do condomínio Ideal e laticínio Ideal, Formiga, Minas Gerais</address>
+          </a>
         </div>
         <div>
           <h4 class="font-bold mb-3 sm:mb-4 text-base sm:text-lg">
@@ -48,13 +57,6 @@
           </h4>
           <ul class="space-y-3 text-sm sm:text-base text-gray-400">
             <li class="flex items-center gap-2">
-              <MapPin
-                :size="18"
-                class="flex-shrink-0"
-              />
-              <span>Formiga, Minas Gerais</span>
-            </li>
-            <li class="flex items-center gap-2">
               <Phone
                 :size="18"
                 class="flex-shrink-0"
@@ -72,6 +74,8 @@
           <div class="flex gap-4 mt-4">
             <a
               href="https://instagram.com/goldensdachacara"
+              target="_blank"
+              rel="noopener noreferrer"
               class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition"
               aria-label="Instagram"
             >
@@ -95,5 +99,5 @@
 </template>
 
 <script setup>
-import { Mail, Instagram, Facebook } from 'lucide-vue-next'
+import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-vue-next'
 </script>
