@@ -10,13 +10,16 @@
           <p class="text-sm sm:text-base text-gray-400 mb-2">
             Criação profissional de Golden Retrievers e hospedagem para seu pet.
           </p>
-          <a 
+          <a
             href="https://maps.app.goo.gl/qXpEg7uH2PgknXTz5"
             target="_blank"
             rel="noopener noreferrer"
             class="text-sm sm:text-base text-gray-400 hover:text-amber-400 transition inline-flex items-start gap-2"
           >
-            <MapPin :size="18" class="flex-shrink-0 mt-0.5" />
+            <MapPin
+              :size="18"
+              class="flex-shrink-0 mt-0.5"
+            />
             <address class="not-italic">Ao lado do condomínio Ideal e laticínio Ideal, Formiga, Minas Gerais</address>
           </a>
         </div>

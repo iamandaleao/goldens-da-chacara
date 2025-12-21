@@ -3,7 +3,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <div class="flex items-center">
-          <NuxtLink href="/#home" class="text-xl sm:text-2xl font-bold text-amber-600">
+          <NuxtLink
+            href="/#home"
+            class="text-xl sm:text-2xl font-bold text-amber-600"
+          >
             Goldens da Chácara
           </NuxtLink>
         </div>
