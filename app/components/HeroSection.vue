@@ -10,13 +10,12 @@
         </div>
 
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-4">
-          Criação de Golden Retrievers<br>
-          <span class="text-amber-600">de Excelência</span>
+          Criação de
+          <span class="text-amber-600">Golden Retrievers</span> <br> e Hotel para Cães
         </h1>
 
         <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-          Estamos preparando um projeto especial de criação responsável em Formiga, Minas Gerais.
-          Fale conosco pelo WhatsApp para saber mais e manifestar seu interesse!
+          Somos especializados na criação responsável de Golden Retrievers e também oferecemos hotel e creche para cães, com foco em bem-estar, segurança e atenção individual.
         </p>
 
         <!-- Botões -->
