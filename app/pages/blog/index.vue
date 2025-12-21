@@ -29,7 +29,7 @@
           </NuxtLink>
 
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-3 hover:text-amber-600 transition">
+            <h2 class="text-2xl font-bold text-gray-900 mb-3 hover:text-amber-600 transition line-clamp-1">
               {{ post.title }}
             </h2>
 
@@ -53,7 +53,7 @@
 <script setup lang="ts">
 const route = useRoute()
 const page = ref(Number.parseInt(route.query.page as string) || 1)
-const postsPerPage = 6
+const postsPerPage = 8
 const { data: paginatedData } = await useAsyncData('blog', async () => {
   const [posts, count] = await Promise.all([
     queryCollection('blog')
