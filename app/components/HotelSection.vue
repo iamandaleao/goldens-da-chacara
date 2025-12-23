@@ -1,6 +1,6 @@
 <template>
   <section
-    id="hotelpet"
+    id="hotel-pet"
     class="py-20 px-5 bg-[#fef9f3]"
   >
     <div class="max-w-5xl mx-auto text-center">

@@ -47,6 +47,7 @@
         </article>
       </div>
     </section>
+    <AppFooter />
   </div>
 </template>
 
