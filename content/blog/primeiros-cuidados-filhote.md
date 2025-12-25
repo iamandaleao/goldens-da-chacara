@@ -1,7 +1,7 @@
 ---
 title: "Primeiros cuidados com um filhote"
 description: "Dicas práticas e essenciais para garantir que seu filhote cresça feliz, saudável e bem adaptado à nova casa."
-image: "https://placedog.net/800/600?id=2"
+image: "https://placedog.net/800/600?id=1"
 tip: "Evite passeios em locais públicos antes de completar todas as vacinas. Isso protege seu filhote de doenças contagiosas."
 ---
 
