@@ -5,7 +5,7 @@
   >
     <div class="max-w-5xl mx-auto text-center">
       <div class="inline-block bg-white text-orange-500 py-2 px-5 rounded-full text-sm font-semibold mb-5 shadow-sm">
-        🐕 Hotel de Pet
+        🐕 Hotel e Creche
       </div>
 
       <h2 class="text-[32px] md:text-[42px] font-extrabold text-[#1a1a1a] mb-5 leading-tight">

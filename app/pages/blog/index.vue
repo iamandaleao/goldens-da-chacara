@@ -5,7 +5,7 @@
     <section class="pt-22 pb-16 max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h1 class="text-5xl font-bold text-amber-700 mb-3">
-          🐕 Blog dos Goldens da Chácara
+          🦮 Blog Goldens da Chácara
         </h1>
         <p class="text-gray-600 text-lg">
           Dicas, histórias e cuidados com nossos amigos de quatro patas

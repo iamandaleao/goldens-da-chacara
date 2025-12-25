@@ -72,7 +72,7 @@ const hotelCaninoItems: AccordionItem[] = [
       <!-- Seção: Golden Retriever -->
       <div class="mb-8 sm:mb-10">
         <h3 class="text-xl sm:text-2xl font-bold text-amber-700 mb-4 sm:mb-6 flex items-center gap-2">
-          🐕 Sobre os Golden Retrievers
+          🦮 Sobre os Golden Retrievers
         </h3>
         <UAccordion
           :items="goldenRetrieverItems"

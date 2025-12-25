@@ -21,7 +21,7 @@
         >
         <div class="max-w-3xl mx-auto text-center order-1 lg:order-2">
           <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">
-            🐕
+            🦮
           </div>
           <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
             Tudo Começou com o Lars
