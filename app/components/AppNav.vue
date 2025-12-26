@@ -2,17 +2,22 @@
   <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <div class="flex items-center">
-          <NuxtLink
-            href="/#home"
-            class="text-xl sm:text-2xl font-bold text-amber-600"
+        <NuxtLink
+          href="/#home"
+          class="text-xl flex items-center gap-2 sm:text-2xl font-bold text-amber-600"
+        >
+          <img
+            src="/apple-touch-icon.png"
+            alt="logo-golden-creche-hotel-pet"
+            class="size-8"
           >
+          <span>
             Goldens da Chácara
-          </NuxtLink>
-        </div>
+          </span>
+        </NuxtLink>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-6 lg:space-x-8">
+        <div class="hidden lg:flex space-x-6 lg:space-x-8">
           <NuxtLink
             href="/#home"
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
@@ -47,7 +52,7 @@
 
         <!-- Mobile menu button -->
         <button
-          class="md:hidden p-2"
+          class="lg:hidden p-2"
           aria-label="Menu"
           @click="mobileMenuOpen = !mobileMenuOpen"
         >
@@ -66,7 +71,7 @@
     <!-- Mobile Menu -->
     <div
       v-if="mobileMenuOpen"
-      class="md:hidden bg-white border-t"
+      class="lg:hidden bg-white border-t"
     >
       <div class="px-4 pt-2 pb-3 space-y-1">
         <NuxtLink
