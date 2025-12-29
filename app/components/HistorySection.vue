@@ -44,15 +44,15 @@
           <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
             Uma Jornada com Propósito
           </h3>
-          <p class="text-sm sm:text-base text-gray-600 mb-4">
+          <p class="text-base sm:text-lg text-gray-700 mb-4 leading-relaxed">
             Inspirados pelo Lars, estamos criando um criadouro com um compromisso inabalável: criar Golden Retrievers
             saudáveis, equilibrados e felizes, que se tornem membros amados de suas famílias.
           </p>
-          <p class="text-sm sm:text-base text-gray-600 mb-4">
+          <p class="text-base sm:text-lg text-gray-700 mb-4 leading-relaxed">
             Atualmente estamos na fase de seleção criteriosa de nossos matrizes, priorizando linhagens com
             excelente temperamento (como o do Lars!), saúde comprovada e conformação ao padrão da raça.
           </p>
-          <p class="text-sm sm:text-base text-gray-600">
+          <p class="text-base sm:text-lg text-gray-700 mb-4 leading-relaxed">
             Nossa chácara em Formiga, MG, oferece o ambiente perfeito para que os filhotes cresçam em
             contato com a natureza, recebendo socialização adequada e todos os cuidados necessários.
           </p>
@@ -68,7 +68,7 @@
                 <p class="font-semibold text-gray-900 text-sm sm:text-base">
                   Fase Atual
                 </p>
-                <p class="text-gray-600 text-xs sm:text-sm">
+                <p class="text-gray-600 text-sm">
                   Seleção e aquisição de matrizes de qualidade
                 </p>
               </div>
