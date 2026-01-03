@@ -54,7 +54,7 @@
 <script setup lang="ts">
 const route = useRoute()
 const page = ref(Number.parseInt(route.query.page as string) || 1)
-const postsPerPage = 8
+const postsPerPage = 24
 const { data: paginatedData } = await useAsyncData('blog', async () => {
   const [posts, count] = await Promise.all([
     queryCollection('blog')
