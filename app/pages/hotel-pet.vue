@@ -160,7 +160,7 @@ const hotelCaninoItems: AccordionItem[] = [
   {
     label: 'Qual o valor da diária?',
     slot: 'diaria',
-    content: 'A diária é de R$ 50,00 por cachorro, incluindo alimentação, cuidados e acomodação confortável. Entre em contato para conhecer nossos pacotes especiais!'
+    content: 'A diária é de R$ 40,00 por cachorro, incluindo alimentação, cuidados e acomodação confortável. Entre em contato para conhecer nossos pacotes especiais!'
   },
   {
     label: 'Tem desconto para hospedagens longas?',

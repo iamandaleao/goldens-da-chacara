@@ -51,7 +51,7 @@
         </h3>
         <div class="bg-white p-10 md:p-8 md:px-5 rounded-2xl shadow-md max-w-2xl mx-auto">
           <p class="text-[56px] md:text-[42px] font-extrabold text-orange-500 mb-3">
-            R$ 50<span class="text-xl text-gray-600 font-normal">/dia</span>
+            R$ 40<span class="text-xl text-gray-600 font-normal">/dia</span>
           </p>
           <p class="text-gray-600 text-base mb-8">
             Buscamos e entregamos seu pet ❤️ Acompanhamento e carinho 24h
