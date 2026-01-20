@@ -23,18 +23,6 @@
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
           >Home</NuxtLink>
           <NuxtLink
-            href="/#sobre"
-            class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Nossa História</NuxtLink>
-          <NuxtLink
-            href="/#raca"
-            class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >A Raça</NuxtLink>
-          <NuxtLink
-            href="/#valores"
-            class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Valores</NuxtLink>
-          <NuxtLink
             href="/hotel-pet"
             class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
           >Hotel Pet</NuxtLink>
@@ -79,21 +67,6 @@
           class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
           @click="mobileMenuOpen = false"
         >Home</NuxtLink>
-        <NuxtLink
-          href="/#sobre"
-          class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
-          @click="mobileMenuOpen = false"
-        >Nossa História</NuxtLink>
-        <NuxtLink
-          href="/#raca"
-          class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
-          @click="mobileMenuOpen = false"
-        >A Raça</NuxtLink>
-        <NuxtLink
-          href="/#valores"
-          class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
-          @click="mobileMenuOpen = false"
-        >Valores</NuxtLink>
         <NuxtLink
           href="/hotel-pet"
           class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"

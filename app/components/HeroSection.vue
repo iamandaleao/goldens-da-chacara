@@ -9,7 +9,7 @@
           🐕 Filhotes disponíveis em breve!
         </div>
 
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 sm:mb-4 px-4">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 sm:mb-4 px-4">
           Criação de <span class="text-amber-600">Golden Retrievers</span>
         </h1>
 

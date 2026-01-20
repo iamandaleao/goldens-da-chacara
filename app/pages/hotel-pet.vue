@@ -15,7 +15,7 @@
             🐕 Hotel e Creche para Cães
           </div>
 
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 sm:mb-4 px-4">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 sm:mb-4 px-4">
             Hotel para <span class="text-orange-500">Cães</span><br>
             e <span class="text-orange-600">Creche Pet</span> em Formiga/MG
           </h1>
