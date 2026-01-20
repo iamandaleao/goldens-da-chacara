@@ -20,7 +20,10 @@
           <div
             class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4"
           >
-            <Shield class="text-amber-600" :size="28" />
+            <Shield
+              class="text-amber-600"
+              :size="28"
+            />
           </div>
 
           <h3
@@ -42,7 +45,10 @@
           <div
             class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4"
           >
-            <Heart class="text-amber-600" :size="28" />
+            <Heart
+              class="text-amber-600"
+              :size="28"
+            />
           </div>
 
           <h3
@@ -63,7 +69,10 @@
           <div
             class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4"
           >
-            <Users class="text-amber-600" :size="28" />
+            <Users
+              class="text-amber-600"
+              :size="28"
+            />
           </div>
 
           <h3
@@ -84,7 +93,10 @@
           <div
             class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4"
           >
-            <Award class="text-amber-600" :size="28" />
+            <Award
+              class="text-amber-600"
+              :size="28"
+            />
           </div>
 
           <h3

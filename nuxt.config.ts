@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/content', 'nuxt-gtag'],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/content', 'nuxt-gtag', '@nuxtjs/seo'],
 
   devtools: {
     enabled: true
@@ -27,6 +27,11 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  site: {
+    url: 'https://goldensdachacara.com.br',
+    name: 'Goldens da Chácara'
+  },
 
   content: {
     experimental: {
