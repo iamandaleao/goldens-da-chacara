@@ -10,12 +10,11 @@
         </div>
 
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 sm:mb-4 px-4">
-          Criação de <span class="text-amber-600">Golden Retrievers</span><br>
-          e <span class="text-blue-500">Hotel para Cães</span>
+          Criação de <span class="text-amber-600">Golden Retrievers</span>
         </h1>
 
         <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-          Somos especializados na criação responsável de Golden Retrievers e também oferecemos hotel e creche para cães, com foco em bem-estar, segurança e atenção individual.
+          Somos especializados na criação responsável de Golden Retrievers, com foco em bem-estar, saúde e atenção individual.
         </p>
 
         <!-- Botões -->

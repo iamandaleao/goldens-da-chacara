@@ -43,7 +43,7 @@
           <ul class="space-y-2 text-sm sm:text-base text-gray-400">
             <li>
               <a
-                href="#hotel-pet"
+                href="/hotel-pet"
                 class="hover:text-amber-400 transition"
               >
                 Hotel Pet
