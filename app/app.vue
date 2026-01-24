@@ -25,8 +25,8 @@ useSeoMeta({
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
+  ogImage: 'https://goldensdachacara.com.br/golden-retriever-canil.png',
+  twitterImage: 'https://goldensdachacara.com.br/golden-retriever-canil.png',
   twitterCard: 'summary_large_image'
 })
 </script>
