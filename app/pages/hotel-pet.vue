@@ -133,10 +133,10 @@ useHead({
     { property: 'og:title', content: 'Hotel Pet | Goldens da Chácara - Hospedagem para Cães' },
     { property: 'og:description', content: 'Hospedagem 24h para cães em Formiga (MG). Chácara com 4.000m², cuidado e carinho para seu pet.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://goldensdachacara.com/hotel-pet' }
+    { property: 'og:url', content: 'https://goldensdachacara.com.br/hotel-pet' }
   ],
   link: [
-    { rel: 'canonical', href: 'https://goldensdachacara.com/hotel-pet' }
+    { rel: 'canonical', href: 'https://goldensdachacara.com.br/hotel-pet' }
   ]
 })
 

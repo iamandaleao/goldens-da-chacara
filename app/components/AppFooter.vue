@@ -104,7 +104,7 @@
 
           <div class="flex gap-4 mt-4">
             <a
-              href="https://instagram.com/goldensdachacara"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition"

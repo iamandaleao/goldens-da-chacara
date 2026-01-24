@@ -36,10 +36,10 @@ useHead({
     { property: 'og:description', content: 'Filhotes Golden Retriever saudáveis e criados com responsabilidade em Formiga (MG).' },
     { property: 'og:type', content: 'website' },
     { property: 'og:image', content: 'https://placedog.net/1200/630?random' },
-    { property: 'og:url', content: 'https://goldensdachacara.com' }
+    { property: 'og:url', content: 'https://goldensdachacara.com.br' }
   ],
   link: [
-    { rel: 'canonical', href: 'https://goldensdachacara.com' }
+    { rel: 'canonical', href: 'https://goldensdachacara.com.br' }
   ]
 })
 </script>
