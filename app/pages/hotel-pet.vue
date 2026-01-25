@@ -120,7 +120,7 @@ import { ChevronDown, MessageCircle } from 'lucide-vue-next'
 import type { AccordionItem } from '@nuxt/ui'
 
 useHead({
-  title: 'Hotel Pet | Goldens da Chácara - Hospedagem para Cães em Formiga, MG',
+  title: 'Hotel Pet',
   meta: [
     {
       name: 'description',
@@ -179,4 +179,3 @@ function openWhatsapp() {
   window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank')
 }
 </script>
-

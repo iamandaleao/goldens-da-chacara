@@ -23,7 +23,6 @@ const goldenRetrieverItems: AccordionItem[] = [
     content: 'Sim! Estaremos sempre disponíveis para orientar sobre alimentação, saúde, comportamento e quaisquer dúvidas que surgirem ao longo da vida do seu Golden.'
   }
 ]
-
 </script>
 
 <template>

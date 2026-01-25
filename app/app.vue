@@ -14,10 +14,13 @@ useHead({
   htmlAttrs: {
     lang: 'pt-BR',
     style: 'scroll-behavior: smooth'
+  },
+  bodyAttrs: {
+    class: 'antialiased'
   }
 })
 
-const title = 'Goldens da Chácara'
+const title = 'Canil Golden Retriever'
 const description = 'Venda de Golden Retrievers em Formiga, MG'
 
 useSeoMeta({

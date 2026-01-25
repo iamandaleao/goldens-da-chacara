@@ -22,7 +22,6 @@
 
 <script setup>
 useHead({
-  title: 'Goldens da Chácara | Golden Retriever em Formiga – MG',
   meta: [
     {
       name: 'description',
