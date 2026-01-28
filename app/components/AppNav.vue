@@ -1,97 +1,198 @@
 <template>
-  <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
+  <nav
+    class="glass-nav"
+    :class="{ scrolled: isScrolled }"
+  >
+    <div class="nav-container">
+      <div class="logo-section">
         <NuxtLink
-          href="/#home"
-          class="text-xl flex items-center gap-2 sm:text-2xl font-bold text-amber-600"
+          to="/"
+          class="logo-section"
+          aria-label="Ir para a página inicial"
+          @click="closeMobileMenu"
         >
           <img
-            src="/apple-touch-icon.png"
-            alt="logo-golden-creche-hotel-pet"
-            class="size-8"
+            src="/golden-retriever-canil.png"
+            alt="Logo Goldens da Chácara"
+            class="logo-image"
           >
-          <span>
-            Goldens da Chácara
-          </span>
+          <div class="logo-text">
+            <span class="logo-name">Goldens da Chácara</span>
+          </div>
         </NuxtLink>
-
-        <!-- Desktop Menu -->
-        <div class="hidden lg:flex space-x-6 lg:space-x-8">
-          <NuxtLink
-            href="/#home"
-            class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Home</NuxtLink>
-          <NuxtLink
-            href="/hotel-pet"
-            class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Hotel Pet</NuxtLink>
-          <NuxtLink
-            href="/#contato"
-            class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Contato</NuxtLink>
-
-          <!-- Blog -->
-          <NuxtLink
-            href="/blog"
-            class="text-gray-700 hover:text-amber-600 transition text-sm lg:text-base"
-          >Blog</NuxtLink>
-        </div>
-
-        <!-- Mobile menu button -->
-        <button
-          class="lg:hidden p-2"
-          aria-label="Menu"
-          @click="mobileMenuOpen = !mobileMenuOpen"
-        >
-          <X
-            v-if="mobileMenuOpen"
-            :size="24"
-          />
-          <Menu
-            v-else
-            :size="24"
-          />
-        </button>
       </div>
+
+      <ul class="nav-links">
+        <li>
+          <NuxtLink
+            to="/"
+            :class="{ active: isActive('/') }"
+          >Home</NuxtLink>
+        </li>
+
+        <li class="dropdown">
+          <NuxtLink
+            to="/hotel-pet"
+            :class="{ active: isActive('/hotel-pet') }"
+          >
+            Serviços
+          </NuxtLink>
+          <ul class="dropdown-menu">
+            <li>
+              <NuxtLink to="/hotel-pet#hotel-pet">
+                Hotel Pet
+              </NuxtLink>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <NuxtLink
+            to="/filhotes"
+            :class="{ active: isActive('/filhotes') }"
+          >Filhotes</NuxtLink>
+        </li>
+        <li>
+          <a
+            href="https://wa.me/5547991611628"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Contato</a>
+        </li>
+        <li>
+          <NuxtLink
+            to="/blog"
+            :class="{ active: isActive('/blog') }"
+          >Blog</NuxtLink>
+        </li>
+      </ul>
+
+      <button
+        id="mobileMenu"
+        class="mobile-menu"
+        :class="{ active: mobileMenuOpen }"
+        type="button"
+        aria-label="Abrir menu"
+        :aria-expanded="mobileMenuOpen"
+        @click="toggleMobileMenu"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
     </div>
 
-    <!-- Mobile Menu -->
     <div
-      v-if="mobileMenuOpen"
-      class="lg:hidden bg-white border-t"
+      id="mobileNav"
+      class="mobile-nav"
+      :class="{ active: mobileMenuOpen }"
     >
-      <div class="px-4 pt-2 pb-3 space-y-1">
-        <NuxtLink
-          href="/#home"
-          class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
-          @click="mobileMenuOpen = false"
-        >Home</NuxtLink>
-        <NuxtLink
-          href="/hotel-pet"
-          class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
-          @click="mobileMenuOpen = false"
-        >Hotel Pet</NuxtLink>
-        <NuxtLink
-          href="/#contato"
-          class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
-          @click="mobileMenuOpen = false"
-        >Contato</NuxtLink>
-
-        <!-- Blog -->
-        <NuxtLink
-          href="/blog"
-          class="block px-3 py-2 text-gray-700 hover:bg-amber-50 rounded"
-          @click="mobileMenuOpen = false"
-        >Blog</NuxtLink>
+      <div class="mobile-logo-section">
+        <img
+          src="/golden-retriever-canil.png"
+          alt="Logo Goldens da Chácara"
+          class="mobile-logo-image"
+        >
+        <span class="mobile-logo-name">Goldens da Chácara</span>
       </div>
+
+      <ul>
+        <li>
+          <NuxtLink
+            to="/"
+            :class="{ active: isActive('/') }"
+            @click="closeMobileMenu"
+          >Home</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="/hotel-pet"
+            :class="{ active: isActive('/hotel-pet') }"
+            @click="closeMobileMenu"
+          >Serviços</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            to="/filhotes"
+            :class="{ active: isActive('/filhotes') }"
+            @click="closeMobileMenu"
+          >Filhotes</NuxtLink>
+        </li>
+        <li>
+          <a
+            href="https://wa.me/5547991611628"
+            target="_blank"
+            rel="noopener noreferrer"
+            @click="closeMobileMenu"
+          >Contato</a>
+        </li>
+        <li>
+          <NuxtLink
+            to="/blog"
+            :class="{ active: isActive('/blog') }"
+            @click="closeMobileMenu"
+          >Blog</NuxtLink>
+        </li>
+      </ul>
     </div>
   </nav>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-import { Menu, X } from 'lucide-vue-next'
+<script setup lang="ts">
+import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
 const mobileMenuOpen = ref(false)
+const isScrolled = ref(false)
+const route = useRoute()
+
+function updateBodyScrollLock(isLocked: boolean) {
+  document.body.style.overflow = isLocked ? 'hidden' : ''
+}
+
+function toggleMobileMenu() {
+  mobileMenuOpen.value = !mobileMenuOpen.value
+  updateBodyScrollLock(mobileMenuOpen.value)
+}
+
+function closeMobileMenu() {
+  mobileMenuOpen.value = false
+  updateBodyScrollLock(false)
+}
+
+function isActive(path: string) {
+  if (path === '/') return route.path === '/'
+  return route.path.startsWith(path)
+}
+
+function onScroll() {
+  isScrolled.value = window.scrollY > 100
+}
+
+function onDocumentClick(e: MouseEvent) {
+  if (!mobileMenuOpen.value) return
+
+  const mobileNav = document.getElementById('mobileNav')
+  const mobileMenu = document.getElementById('mobileMenu')
+  const target = e.target as Node | null
+
+  if (!mobileNav || !mobileMenu || !target) return
+  if (!mobileNav.contains(target) && !mobileMenu.contains(target)) closeMobileMenu()
+}
+
+watch(
+  () => route.fullPath,
+  () => closeMobileMenu()
+)
+
+onMounted(() => {
+  onScroll()
+  window.addEventListener('scroll', onScroll, { passive: true })
+  document.addEventListener('click', onDocumentClick)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', onScroll)
+  document.removeEventListener('click', onDocumentClick)
+})
 </script>
