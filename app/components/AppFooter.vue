@@ -70,7 +70,6 @@
           <ul>
             <li><NuxtLink to="/">Home</NuxtLink></li>
             <li><NuxtLink to="/filhotes">Filhotes</NuxtLink></li>
-            <li><NuxtLink to="/hotel-pet">Serviços</NuxtLink></li>
             <li><NuxtLink to="/blog">Blog</NuxtLink></li>
           </ul>
         </div>
