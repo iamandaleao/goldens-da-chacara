@@ -31,7 +31,9 @@
 
             <div class="blog-card-content">
               <h2>
-                {{ post.title }}
+                <NuxtLink :to="post.stem">
+                  {{ post.title }}
+                </NuxtLink>
               </h2>
 
               <p>
