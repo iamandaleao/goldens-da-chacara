@@ -79,7 +79,7 @@ const { data: post } = await useAsyncData(route.path, () => {
 })
 
 if (!post.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+  throw createError({ statusCode: 404, statusMessage: 'Página não encontrada', fatal: true })
 }
 
 useSeoMeta({
