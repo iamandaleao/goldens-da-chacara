@@ -52,7 +52,7 @@
           <div class="about-image">
             <div
               class="image-placeholder"
-              style="background-image: url('https://source.unsplash.com/featured/?golden-retriever,puppy'); background-size: cover; background-position: center; border-radius: 12px;"
+              style="background-image: url('https://placedog.net/800/600?id=3'); background-size: cover; background-position: center; border-radius: 12px;"
             />
           </div>
         </div>
