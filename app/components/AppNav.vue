@@ -32,14 +32,14 @@
 
         <li class="dropdown">
           <NuxtLink
-            to="/hotel-pet"
+            to="#"
             :class="{ active: isActive('/hotel-pet') }"
           >
             Serviços
           </NuxtLink>
           <ul class="dropdown-menu">
             <li>
-              <NuxtLink to="/hotel-pet#hotel-pet">
+              <NuxtLink to="#">
                 Hotel Pet
               </NuxtLink>
             </li>
@@ -106,7 +106,7 @@
         </li>
         <li>
           <NuxtLink
-            to="/hotel-pet"
+            to="#"
             :class="{ active: isActive('/hotel-pet') }"
             @click="closeMobileMenu"
           >Serviços</NuxtLink>
