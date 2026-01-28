@@ -1,71 +1,73 @@
 <template>
   <article
     v-if="post"
-    class="pt-10 pb-16 max-w-4xl mx-auto px-4"
+    class="blog-post"
   >
-    <!-- Botão voltar -->
-    <NuxtLink
-      to="/blog"
-      class="inline-flex items-center text-amber-600 hover:text-amber-700 mb-6 font-medium"
-    >
-      ← Voltar para o blog
-    </NuxtLink>
+    <div class="blog-post-container">
+      <!-- Botão voltar -->
+      <NuxtLink
+        to="/blog"
+        class="blog-back-button"
+      >
+        ← Voltar para o blog
+      </NuxtLink>
 
-    <!-- Imagem destaque -->
-    <div class="aspect-video w-full relative mb-8">
+      <!-- Imagem destaque -->
       <img
         :src="post.image"
         :alt="post.title"
-        class="w-full h-full object-cover object-top rounded-2xl mb-8 shadow-lg"
+        class="blog-post-image"
       >
-    </div>
 
-    <!-- Título -->
-    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-      {{ post.title }}
-    </h1>
+      <!-- Título -->
+      <h1>
+        {{ post.title }}
+      </h1>
 
-    <!-- Conteúdo do post -->
-    <div class="prose prose-lg max-w-none">
-      <p class="text-xl text-gray-700 leading-relaxed mb-6">
-        {{ post.description }}
-      </p>
-
-      <!-- Conteúdo markdown renderizado -->
-      <ContentRenderer :value="post" />
-
-      <div class="bg-amber-50 border-l-4 border-amber-600 p-6 my-8 rounded-r-lg">
-        <p class="text-gray-800 font-medium">
-          💡 <strong>Dica importante:</strong> {{ post.tip }}
+      <!-- Conteúdo do post -->
+      <div class="blog-post-content">
+        <p style="font-size: 1.25rem; color: #555; line-height: 1.8; margin-bottom: 24px;">
+          {{ post.description }}
         </p>
-      </div>
-    </div>
 
-    <!-- Botão voltar no final -->
-    <div class="mt-12 pt-8 border-t">
-      <NuxtLink
-        to="/blog"
-        class="inline-block px-6 py-3 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition"
-      >
-        ← Ver mais artigos
-      </NuxtLink>
+        <!-- Conteúdo markdown renderizado -->
+        <ContentRenderer :value="post" />
+
+        <div class="blog-tip-box">
+          <p>
+            💡 <strong>Dica importante:</strong> {{ post.tip }}
+          </p>
+        </div>
+      </div>
+
+      <!-- Botão voltar no final -->
+      <div class="blog-post-footer">
+        <NuxtLink
+          to="/blog"
+          class="blog-button"
+        >
+          ← Ver mais artigos
+        </NuxtLink>
+      </div>
     </div>
   </article>
 
   <!-- Se não encontrar o post -->
   <div
     v-else
-    class="pt-24 pb-16 max-w-4xl mx-auto px-4 text-center"
+    style="padding: 120px 0 80px;"
   >
-    <h1 class="text-4xl font-bold text-gray-900 mb-4">
-      Post não encontrado
-    </h1>
-    <NuxtLink
-      to="/blog"
-      class="text-amber-600 hover:underline"
-    >
-      ← Voltar para o blog
-    </NuxtLink>
+    <div class="blog-post-container" style="text-align: center;">
+      <h1 style="font-size: 2.5rem; color: var(--dark-color); margin-bottom: 16px; font-weight: 800;">
+        Post não encontrado
+      </h1>
+      <NuxtLink
+        to="/blog"
+        class="blog-back-button"
+      >
+        ← Voltar para o blog
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
