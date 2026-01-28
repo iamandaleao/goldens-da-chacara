@@ -43,6 +43,11 @@
                 Hotel
               </NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="#">
+                Daycare
+              </NuxtLink>
+            </li>
           </ul>
         </li>
 
