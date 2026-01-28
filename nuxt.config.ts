@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/style.css'],
 
   site: {
     url: 'https://goldensdachacara.com.br',
@@ -24,6 +24,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/': { prerender: true },
+    '/filhotes': { prerender: true },
     '/hotel-pet': { prerender: true },
     '/blog': { prerender: true },
     '/blog/**': { prerender: true }
