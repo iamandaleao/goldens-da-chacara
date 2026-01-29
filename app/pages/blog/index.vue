@@ -6,7 +6,7 @@
       <div class="blog-container">
         <div class="blog-header">
           <h1>
-            🦮 Blog Goldens da Chácara
+            Blog Goldens da Chácara
           </h1>
           <p>
             Dicas, histórias e cuidados com nossos amigos de quatro patas

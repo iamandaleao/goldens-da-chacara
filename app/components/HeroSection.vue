@@ -5,8 +5,9 @@
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center">
-        <div class="inline-block mb-4 px-3 sm:px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-xs sm:text-sm font-semibold animate-pulse">
-          🐕 Filhotes disponíveis em breve!
+        <div class="inline-flex items-center gap-2 mb-4 px-3 sm:px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-xs sm:text-sm font-semibold animate-pulse">
+          <Heart :size="16" />
+          Filhotes disponíveis em breve!
         </div>
 
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 sm:mb-4 px-4">
@@ -55,5 +56,5 @@
 </template>
 
 <script setup>
-import { ChevronDown, MessageCircle } from 'lucide-vue-next'
+import { ChevronDown, MessageCircle, Heart } from 'lucide-vue-next'
 </script>

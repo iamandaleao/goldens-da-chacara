@@ -97,15 +97,22 @@
         <div class="footer-col">
           <h3>Contato</h3>
           <ul>
-            <li>📧 <a href="mailto:goldensdachacara@gmail.com">goldensdachacara@gmail.com</a></li>
-            <li>
-              📱 <a
+            <li class="footer-contact-item">
+              <Mail :size="18" />
+              <a href="mailto:goldensdachacara@gmail.com">goldensdachacara@gmail.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <Phone :size="18" />
+              <a
                 href="https://wa.me/5547991611628"
                 target="_blank"
                 rel="noopener noreferrer"
               >(47) 99161-1628</a>
             </li>
-            <li>📍 Formiga, MG</li>
+            <li class="footer-contact-item">
+              <MapPin :size="18" />
+              <span>Formiga, MG</span>
+            </li>
           </ul>
         </div>
 
@@ -127,5 +134,7 @@
 </template>
 
 <script setup>
+import { Mail, Phone, MapPin } from 'lucide-vue-next'
+
 const currentYear = new Date().getFullYear()
 </script>

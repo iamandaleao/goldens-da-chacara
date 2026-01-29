@@ -4,8 +4,9 @@
     class="py-20 px-5 bg-[#fef9f3]"
   >
     <div class="max-w-5xl mx-auto text-center">
-      <div class="inline-block bg-white text-orange-500 py-2 px-5 rounded-full text-sm font-semibold mb-5 shadow-sm">
-        🐕 Hotel e Creche
+      <div class="inline-flex items-center gap-2 bg-white text-orange-500 py-2 px-5 rounded-full text-sm font-semibold mb-5 shadow-sm">
+        <Heart :size="18" />
+        Hotel e Creche
       </div>
 
       <h2 class="text-[32px] md:text-[42px] font-extrabold text-[#1a1a1a] mb-5 leading-tight">
@@ -21,26 +22,33 @@
           Nossos Serviços
         </h3>
         <ul class="list-none p-0 max-w-2xl mx-auto text-left">
-          <li class="text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
-            🏠 Hospedagem com acompanhamento 24h
+          <li class="flex items-center gap-3 text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
+            <Home :size="20" class="text-orange-500 flex-shrink-0" />
+            <span>Hospedagem com acompanhamento 24h</span>
           </li>
-          <li class="text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
-            🎾 Passeios e atividades diárias
+          <li class="flex items-center gap-3 text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
+            <Activity :size="20" class="text-orange-500 flex-shrink-0" />
+            <span>Passeios e atividades diárias</span>
           </li>
-          <li class="text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
-            🛁 Cuidados e higienização
+          <li class="flex items-center gap-3 text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
+            <Droplet :size="20" class="text-orange-500 flex-shrink-0" />
+            <span>Cuidados e higienização</span>
           </li>
-          <li class="text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
-            📸 Fotos e vídeos a qualquer momento
+          <li class="flex items-center gap-3 text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
+            <Camera :size="20" class="text-orange-500 flex-shrink-0" />
+            <span>Fotos e vídeos a qualquer momento</span>
           </li>
-          <li class="text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
-            ⚕️ Assistência veterinária de emergência
+          <li class="flex items-center gap-3 text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
+            <Stethoscope :size="20" class="text-orange-500 flex-shrink-0" />
+            <span>Assistência veterinária de emergência</span>
           </li>
-          <li class="text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
-            🚗 Busca e entrega (valor adicional)
+          <li class="flex items-center gap-3 text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
+            <Car :size="20" class="text-orange-500 flex-shrink-0" />
+            <span>Busca e entrega (valor adicional)</span>
           </li>
-          <li class="text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
-            🛁 Banho disponível (traga o shampoo do seu pet)
+          <li class="flex items-center gap-3 text-lg text-gray-700 py-3 border-b border-gray-200 last:border-b-0">
+            <Droplet :size="20" class="text-orange-500 flex-shrink-0" />
+            <span>Banho disponível (traga o shampoo do seu pet)</span>
           </li>
         </ul>
       </div>
@@ -53,13 +61,16 @@
           <p class="text-[56px] md:text-[42px] font-extrabold text-orange-500 mb-3">
             R$ 40<span class="text-xl text-gray-600 font-normal">/dia</span>
           </p>
-          <p class="text-gray-600 text-base mb-8">
-            Buscamos e entregamos seu pet ❤️ Acompanhamento e carinho 24h
+          <p class="flex items-center justify-center gap-2 text-gray-600 text-base mb-8">
+            <span>Buscamos e entregamos seu pet</span>
+            <Heart :size="16" class="text-orange-500" />
+            <span>Acompanhamento e carinho 24h</span>
           </p>
 
           <div class="bg-orange-50 p-6 rounded-xl border-2 border-dashed border-orange-500">
-            <p class="text-lg font-semibold text-[#1a1a1a] mb-4">
-              💰 Descontos para estadias longas:
+            <p class="flex items-center gap-2 text-lg font-semibold text-[#1a1a1a] mb-4">
+              <DollarSign :size="20" class="text-orange-500" />
+              Descontos para estadias longas:
             </p>
             <ul class="list-none p-0 text-left">
               <li class="py-2 text-gray-600 text-base relative pl-6 before:content-['✓'] before:absolute before:left-0 before:text-orange-500 before:font-bold">
@@ -91,15 +102,12 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'HotelSection',
-  methods: {
-    handleReserva() {
-      const phoneNumber = '47991611628'
-      const message = 'Olá! Gostaria de fazer uma reserva no Hotel de Pet.'
-      window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank')
-    }
-  }
+<script setup>
+import { Heart, Home, Activity, Droplet, Camera, Stethoscope, Car, DollarSign } from 'lucide-vue-next'
+
+function handleReserva() {
+  const phoneNumber = '47991611628'
+  const message = 'Olá! Gostaria de fazer uma reserva no Hotel de Pet.'
+  window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank')
 }
 </script>

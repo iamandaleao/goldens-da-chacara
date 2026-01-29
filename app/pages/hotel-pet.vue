@@ -11,8 +11,9 @@
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <div class="inline-block mb-4 px-3 sm:px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-xs sm:text-sm font-semibold animate-pulse">
-            🐕 Hotel e Creche para Cães
+          <div class="inline-flex items-center gap-2 mb-4 px-3 sm:px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-xs sm:text-sm font-semibold animate-pulse">
+            <Heart :size="16" />
+            Hotel e Creche para Cães
           </div>
 
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 sm:mb-4 px-4">
@@ -67,7 +68,8 @@
         <!-- Seção: Hotel Canino -->
         <div>
           <h3 class="text-xl sm:text-2xl font-bold text-orange-700 mb-4 sm:mb-6 flex items-center gap-2">
-            🏨 Sobre o Hotel Canino
+            <Home :size="24" />
+            Sobre o Hotel Canino
           </h3>
           <UAccordion
             :items="hotelCaninoItems"
@@ -116,7 +118,7 @@
 </template>
 
 <script setup lang="ts">
-import { ChevronDown, MessageCircle } from 'lucide-vue-next'
+import { ChevronDown, MessageCircle, Heart, Home } from 'lucide-vue-next'
 import type { AccordionItem } from '@nuxt/ui'
 
 useHead({

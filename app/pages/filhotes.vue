@@ -27,41 +27,55 @@
         </div>
 
         <div class="puppies-info">
-          <h3>O que está incluso:</h3>
+          <h3>
+            O que está incluso:
+          </h3>
 
           <div class="info-grid">
             <div class="info-card">
-              <span class="info-icon">📜</span>
-              <h4>Pedigree CBKC</h4>
+              <div class="info-icon-wrapper">
+                <FileText :size="32" />
+              </div>
+              <h4>Pedigree</h4>
               <p>Registro oficial da raça</p>
             </div>
 
             <div class="info-card">
-              <span class="info-icon">💉</span>
+              <div class="info-icon-wrapper">
+                <Syringe :size="32" />
+              </div>
               <h4>Vacinas</h4>
-              <p>Carteira de vacinação completa</p>
+              <p>Carteira de vacinação conforme a idade</p>
             </div>
 
             <div class="info-card">
-              <span class="info-icon">🏥</span>
+              <div class="info-icon-wrapper">
+                <HeartPulse :size="32" />
+              </div>
               <h4>Vermifugação</h4>
-              <p>Protocolo veterinário completo</p>
+              <p>Protocolo veterinário</p>
             </div>
 
             <div class="info-card">
-              <span class="info-icon">✅</span>
+              <div class="info-icon-wrapper">
+                <CheckCircle :size="32" />
+              </div>
               <h4>Garantia de Saúde</h4>
               <p>Contrato com garantias</p>
             </div>
 
             <div class="info-card">
-              <span class="info-icon">🎁</span>
+              <div class="info-icon-wrapper">
+                <Gift :size="32" />
+              </div>
               <h4>Kit Filhote</h4>
-              <p>Ração, brinquedos e guia</p>
+              <p>Ração, brinquedos </p>
             </div>
 
             <div class="info-card">
-              <span class="info-icon">📱</span>
+              <div class="info-icon-wrapper">
+                <Phone :size="32" />
+              </div>
               <h4>Suporte</h4>
               <p>Acompanhamento pós-venda</p>
             </div>
@@ -92,6 +106,8 @@
 </template>
 
 <script setup>
+import { FileText, Syringe, HeartPulse, CheckCircle, Gift, Phone } from 'lucide-vue-next'
+
 useHead({
   title: 'Filhotes Golden Retriever - Goldens da Chácara',
   meta: [
