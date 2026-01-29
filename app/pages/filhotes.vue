@@ -7,8 +7,12 @@
       class="hero"
       style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/golden-retriever-dourado-filhotes-cachorro.jpg');"
     >
-      <div class="page-hero-content">
-        <h1>Nossos Filhotes</h1>
+      <div class="hero-overlay" />
+
+      <div class="hero-content">
+        <h1 class="whitespace-nowrap">
+          Nossos Filhotes
+        </h1>
         <p>Conheça nossos adoráveis filhotes Golden Retriever</p>
       </div>
     </section>
