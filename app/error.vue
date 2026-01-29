@@ -1,130 +1,165 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 flex items-center justify-center p-4 overflow-hidden relative">
-    <!-- Paw prints background decoration -->
-    <div class="absolute inset-0 opacity-5">
-      <div
-        v-for="i in 20"
-        :key="i"
-        class="absolute text-amber-900"
-        :style="{
-          top: `${Math.random() * 100}%`,
-          left: `${Math.random() * 100}%`,
-          transform: `rotate(${Math.random() * 360}deg)`,
-          fontSize: `${Math.random() * 40 + 30}px`
-        }"
-      >
-        🐾
-      </div>
-    </div>
+  <section class="error-page">
+    <div class="error-content">
+      <h1>Oops… essa página saiu para passear 🐶</h1>
 
-    <div class="max-w-2xl w-full text-center relative z-10">
-      <!-- Minimalist illustration -->
-      <div class="mb-8 relative">
-        <svg
-          class="w-32 h-32 mx-auto text-amber-600 opacity-80"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      </div>
+      <p>
+        A página que você tentou acessar não existe ou foi movida.
+        Mas nossos Goldens continuam aqui, cheios de carinho esperando por você.
+      </p>
 
-      <!-- Error message -->
-      <div class="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 border-4 border-amber-200">
-        <h1 class="text-7xl md:text-8xl font-bold text-amber-800 mb-4">
-          404
-        </h1>
-
-        <h2 class="text-2xl md:text-3xl font-semibold text-amber-900 mb-4">
-          Ops! Página não encontrada
-        </h2>
-
-        <p class="text-lg text-amber-700 mb-8 leading-relaxed">
-          Parece que este filhote se perdeu no caminho...
-          <br class="hidden md:block">
-          A página que você procura não existe ou foi movida.
-        </p>
-
-        <!-- Decorative divider -->
-        <div class="flex items-center justify-center gap-3 mb-8">
-          <div class="h-0.5 w-16 bg-gradient-to-r from-transparent to-amber-400" />
-          <span class="text-3xl">🦴</span>
-          <div class="h-0.5 w-16 bg-gradient-to-l from-transparent to-amber-400" />
-        </div>
-
-        <!-- Home button -->
-        <NuxtLink
-          to="/"
-          class="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-lg group"
-        >
-          <svg
-            class="w-6 h-6 group-hover:-translate-x-1 transition-transform"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-            />
-          </svg>
-          Voltar para Home
-          <span class="text-2xl group-hover:scale-110 transition-transform inline-block" />
+      <div class="error-actions">
+        <NuxtLink to="/" class="btn primary">
+          Voltar para o início
         </NuxtLink>
 
-        <!-- Additional help text -->
-        <p class="text-sm text-amber-600 mt-6">
-          Nossos Golden Retrievers estão te esperando na página inicial!
-        </p>
-      </div>
+        <NuxtLink to="/filhotes" class="btn secondary">
+          Ver filhotes disponíveis
+        </NuxtLink>
 
-      <!-- Footer note -->
-      <p class="text-amber-800 mt-8 text-sm opacity-75">
-        Goldens da Chácara - Criando momentos de amor e alegria 🐾
-      </p>
+        <a
+          href="https://wa.me/5547991611628"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn whatsapp"
+        >
+          Falar no WhatsApp
+        </a>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
-<script setup lang="ts">
-// Configuração SEO para a página 404
-useHead({
-  title: 'Goldens da Chácara'
-})
-</script>
+<style scoped>
+.error-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #ffe9c5, #d4af37);
+  overflow: hidden;
+}
 
-  <style scoped>
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
+.error-page::before,
+.error-page::after {
+  content: '🐾';
+  position: absolute;
+  font-size: 100px;
+  opacity: 0.40;
+}
+
+.error-page::before {
+  top: 10%;
+  left: 5%;
+  transform: rotate(-20deg);
+}
+
+.error-page::after {
+  bottom: 10%;
+  right: 5%;
+  transform: rotate(25deg);
+}
+
+.error-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 28px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2),
+              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.error-content h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #5a3e1b;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+}
+
+.error-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #3f2a15;
+  margin-bottom: 2rem;
+}
+
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.btn {
+  min-width: 220px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #d4af379f, #c19a2ee7);
+  color: #1f1a0f;
+}
+
+.btn.secondary {
+  background: linear-gradient(135deg, #b37b2cc4, #8b5a2b);
+  color: #fff7e5;
+}
+
+.btn.whatsapp {
+  background: linear-gradient(135deg, #25d365a4, #1ebe5edc);
+  color: #ffffff;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  filter: brightness(1.05);
+}
+
+@media (max-width: 640px) {
+  .error-page {
+    padding: 1.5rem;
   }
 
-  .animate-bounce {
-    animation: bounce 2s ease-in-out infinite;
+  .error-content {
+    padding: 2rem 1.5rem;
+    border-radius: 22px;
   }
 
-  @keyframes pulse {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
+  .error-actions {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .animate-pulse {
-    animation: pulse 2s ease-in-out infinite;
+  .btn {
+    width: 100%;
+    max-width: 320px;
   }
-  </style>
+
+  .error-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .error-content p {
+    font-size: 1rem;
+  }
+}
+</style>
