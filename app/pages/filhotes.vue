@@ -4,10 +4,8 @@
     <AppNav />
 
     <section
-      class="page-hero"
-      :style="{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('/images/golden-retriever-dourado-filhotes-cachorro.jpg')`
-      }"
+      class="hero"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/golden-retriever-dourado-filhotes-cachorro.jpg');"
     >
       <div class="page-hero-content">
         <h1>Nossos Filhotes</h1>

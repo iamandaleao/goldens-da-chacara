@@ -574,34 +574,9 @@ body {
 }
 
 /* ==================== PAGE HERO ==================== */
-.page-hero {
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: var(--white);
-    text-align: center;
-    margin-top: 70px;
-}
 
 .page-hero-content {
     z-index: 2;
-}
-
-.page-hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
-    font-weight: 800;
-}
-
-.page-hero p {
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* ==================== ABOUT SECTION ==================== */
