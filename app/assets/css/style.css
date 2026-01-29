@@ -57,6 +57,7 @@ body {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 30px;
+    
 }
 
 /* Logo Section */
@@ -217,6 +218,7 @@ body {
     gap: 5px;
     cursor: pointer;
     z-index: 1001;
+    margin-left: auto;
 }
 
 .mobile-menu span {
