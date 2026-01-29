@@ -9,11 +9,17 @@
       </p>
 
       <div class="error-actions">
-        <NuxtLink to="/" class="btn primary">
+        <NuxtLink
+          to="/"
+          class="btn primary"
+        >
           Voltar para o início
         </NuxtLink>
 
-        <NuxtLink to="/filhotes" class="btn secondary">
+        <NuxtLink
+          to="/filhotes"
+          class="btn secondary"
+        >
           Ver filhotes disponíveis
         </NuxtLink>
 

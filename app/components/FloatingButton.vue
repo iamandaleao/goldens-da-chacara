@@ -76,4 +76,3 @@ import { MessageCircle } from 'lucide-vue-next'
   }
 }
 </style>
-
