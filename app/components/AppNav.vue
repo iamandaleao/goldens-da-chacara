@@ -107,7 +107,7 @@
       <!-- Mobile Menu Button -->
       <button
         id="mobileMenu"
-        class="hidden lg:hidden flex-col gap-1.5 cursor-pointer z-[1001] ml-auto"
+        class="lg:hidden flex-col gap-1.5 cursor-pointer z-[1001] ml-auto"
         :class="mobileMenuOpen ? 'flex' : 'lg:hidden flex'"
         type="button"
         aria-label="Abrir menu"
