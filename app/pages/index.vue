@@ -6,7 +6,7 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="relative h-screen flex items-center justify-center text-white text-center bg-cover bg-center bg-fixed"
+      class="relative h-screen flex items-center justify-center text-white text-center bg-cover bg-[position:50%_30%] bg-no-repeat"
       style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1633722715463-d30f4f325e24?q=80&w=2000');"
     >
       <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />

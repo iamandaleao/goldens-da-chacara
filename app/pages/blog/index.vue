@@ -3,7 +3,7 @@
     <FloatingButton />
     <AppNav />
 
-    <section class="py-24 bg-white min-h-screen">
+    <section class="py-28 bg-white min-h-screen">
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="mb-16">
           <h1 class="text-5xl text-[#D4AF37] mb-4 font-extrabold text-center">
