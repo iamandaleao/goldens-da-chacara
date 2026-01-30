@@ -11,7 +11,7 @@
 
       <div class="relative z-10 px-5 max-w-[1100px] mx-auto">
         <h1
-          class="text-5xl md:text-6xl lg:text-7xl mb-4 font-extrabold tracking-wide leading-tight whitespace-nowrap"
+          class="text-4xl md:text-6xl lg:text-7xl mb-4 font-extrabold tracking-wide leading-tight"
           style="text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);"
         >
           Nossos Filhotes
