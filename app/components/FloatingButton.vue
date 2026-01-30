@@ -1,7 +1,8 @@
 <template>
   <!-- WhatsApp Floating Button -->
   <button
-    class="floating-whatsapp-button"
+    class="fixed bottom-6 right-6 z-50 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[#25d366] to-[#1ebe5d] text-white border-0 rounded-full cursor-pointer transition-all duration-[250ms] ease-in-out hover:scale-110 hover:brightness-105 active:scale-105 animate-whatsapp-pulse"
+    style="box-shadow: 0 10px 20px rgba(37, 211, 102, 0.35), 0 4px 8px rgba(0, 0, 0, 0.15);"
     aria-label="Contato via WhatsApp"
     @click="openWhatsapp"
   >
@@ -11,53 +12,13 @@
 
 <script setup>
 import { MessageCircle } from 'lucide-vue-next'
+
+const openWhatsapp = () => {
+  window.open('https://wa.me/5547991611628', '_blank')
+}
 </script>
 
 <style scoped>
-.floating-whatsapp-button {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  z-index: 50;
-
-  width: 56px;
-  height: 56px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: linear-gradient(135deg, #25d366, #1ebe5d);
-  color: #ffffff;
-
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-
-  box-shadow:
-    0 10px 20px rgba(37, 211, 102, 0.35),
-    0 4px 8px rgba(0, 0, 0, 0.15);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    filter 0.25s ease;
-
-  animation: whatsapp-pulse 2.5s ease-in-out infinite;
-}
-
-.floating-whatsapp-button:hover {
-  transform: scale(1.12);
-  box-shadow:
-    0 14px 28px rgba(37, 211, 102, 0.45),
-    0 6px 12px rgba(0, 0, 0, 0.2);
-  filter: brightness(1.05);
-}
-
-.floating-whatsapp-button:active {
-  transform: scale(1.05);
-}
-
 @keyframes whatsapp-pulse {
   0% {
     box-shadow:
@@ -74,5 +35,15 @@ import { MessageCircle } from 'lucide-vue-next'
       0 0 0 0 rgba(37, 211, 102, 0),
       0 10px 20px rgba(37, 211, 102, 0.35);
   }
+}
+
+.animate-whatsapp-pulse {
+  animation: whatsapp-pulse 2.5s ease-in-out infinite;
+}
+
+button:hover {
+  box-shadow:
+    0 14px 28px rgba(37, 211, 102, 0.45),
+    0 6px 12px rgba(0, 0, 0, 0.2) !important;
 }
 </style>

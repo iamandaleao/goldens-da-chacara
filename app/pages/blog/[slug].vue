@@ -1,44 +1,44 @@
 <template>
-  <div style="min-height: 100vh; background: var(--white);">
+  <div class="min-h-screen bg-white">
     <AppNav />
     <article
       v-if="post"
-      class="blog-post"
+      class="py-20"
     >
-      <div class="blog-post-container">
+      <div class="max-w-[900px] mx-auto mt-12 px-5">
         <!-- Imagem destaque -->
         <img
           :src="post.image"
           :alt="post.title"
-          class="blog-post-image"
+          class="w-full h-[400px] object-cover object-center rounded-3xl mb-8 shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
         >
 
         <!-- Título -->
-        <h1>
+        <h1 class="text-4xl md:text-5xl text-[#2C2416] mb-4 font-extrabold">
           {{ post.title }}
         </h1>
 
         <!-- Conteúdo do post -->
-        <div class="blog-post-content">
-          <p style="font-size: 1.25rem; color: #555; line-height: 1.8; margin-bottom: 24px;">
+        <div class="text-lg leading-relaxed text-gray-700">
+          <p class="text-xl text-gray-600 leading-relaxed mb-6">
             {{ post.description }}
           </p>
 
           <!-- Conteúdo markdown renderizado -->
           <ContentRenderer :value="post" />
 
-          <div class="blog-tip-box">
-            <p>
+          <div class="bg-[#D4AF37]/10 border-l-4 border-[#D4AF37] py-6 px-8 my-8 rounded-r-lg">
+            <p class="text-[#333] font-medium m-0">
               💡 <strong>Dica importante:</strong> {{ post.tip }}
             </p>
           </div>
         </div>
 
         <!-- Botão voltar no final -->
-        <div class="blog-post-footer">
+        <div class="mt-12 pt-8 border-t border-gray-300">
           <NuxtLink
             to="/blog"
-            class="blog-button"
+            class="inline-block px-8 py-3.5 bg-[#D4AF37] text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
           >
             ← Ver mais artigos
           </NuxtLink>
@@ -49,18 +49,15 @@
     <!-- Se não encontrar o post -->
     <div
       v-else
-      style="padding: 120px 0 80px;"
+      class="py-20"
     >
-      <div
-        class="blog-post-container"
-        style="text-align: center;"
-      >
-        <h1 style="font-size: 2.5rem; color: var(--dark-color); margin-bottom: 16px; font-weight: 800;">
+      <div class="max-w-[900px] mx-auto mt-12 px-5 text-center">
+        <h1 class="text-4xl text-[#2C2416] mb-4 font-extrabold">
           Post não encontrado
         </h1>
         <NuxtLink
           to="/blog"
-          class="blog-back-button"
+          class="inline-flex items-center px-4 py-2 text-[#D4AF37] no-underline font-medium rounded-lg mb-6 transition-all duration-300 hover:bg-[#D4AF37]/10 hover:text-[#C9A02C]"
         >
           ← Voltar para o blog
         </NuxtLink>

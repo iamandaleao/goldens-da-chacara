@@ -1,22 +1,28 @@
 <template>
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h3>Goldens da Chácara</h3>
-          <p>Criação especializada de Golden Retriever com amor e responsabilidade.</p>
+  <footer class="bg-[#1a1a1a] text-white pt-16 pb-5">
+    <div class="max-w-[1200px] mx-auto px-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+        <!-- Coluna 1 -->
+        <div>
+          <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
+            Goldens da Chácara
+          </h3>
+          <p class="text-[#ccc] mb-6 leading-relaxed">
+            Criação especializada de Golden Retriever com amor e responsabilidade.
+          </p>
 
-          <div class="social-links">
+          <div class="flex gap-4">
             <a
               href="https://www.instagram.com/goldensdachacara"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
               title="Instagram"
+              class="w-10 h-10 bg-[#D4AF37]/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-[#D4AF37] hover:-translate-y-1 hover:scale-110"
             >
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -32,10 +38,11 @@
               rel="noopener noreferrer"
               aria-label="Facebook"
               title="Facebook"
+              class="w-10 h-10 bg-[#D4AF37]/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-[#D4AF37] hover:-translate-y-1 hover:scale-110"
             >
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -51,10 +58,11 @@
               rel="noopener noreferrer"
               aria-label="TikTok"
               title="TikTok"
+              class="w-10 h-10 bg-[#D4AF37]/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-[#D4AF37] hover:-translate-y-1 hover:scale-110"
             >
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -70,10 +78,11 @@
               rel="noopener noreferrer"
               aria-label="YouTube"
               title="YouTube"
+              class="w-10 h-10 bg-[#D4AF37]/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-[#D4AF37] hover:-translate-y-1 hover:scale-110"
             >
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -85,49 +94,106 @@
           </div>
         </div>
 
-        <div class="footer-col">
-          <h3>Links Rápidos</h3>
-          <ul>
-            <li><NuxtLink to="/">Home</NuxtLink></li>
-            <li><NuxtLink to="/filhotes">Filhotes</NuxtLink></li>
-            <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+        <!-- Coluna 2 -->
+        <div>
+          <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
+            Links Rápidos
+          </h3>
+          <ul class="list-none">
+            <li class="mb-3">
+              <NuxtLink
+                to="/"
+                class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
+              >
+                Home
+              </NuxtLink>
+            </li>
+            <li class="mb-3">
+              <NuxtLink
+                to="/filhotes"
+                class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
+              >
+                Filhotes
+              </NuxtLink>
+            </li>
+            <li class="mb-3">
+              <NuxtLink
+                to="/blog"
+                class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
+              >
+                Blog
+              </NuxtLink>
+            </li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h3>Contato</h3>
-          <ul>
-            <li class="footer-contact-item">
-              <Mail :size="18" />
-              <a href="mailto:goldensdachacara@gmail.com">goldensdachacara@gmail.com</a>
+        <!-- Coluna 3 -->
+        <div>
+          <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
+            Contato
+          </h3>
+          <ul class="list-none">
+            <li class="flex items-center gap-2.5 mb-3">
+              <Mail
+                :size="18"
+                class="text-[#D4AF37] shrink-0 transition-all duration-300"
+              />
+              <a
+                href="mailto:goldensdachacara@gmail.com"
+                class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
+              >
+                goldensdachacara@gmail.com
+              </a>
             </li>
-            <li class="footer-contact-item">
-              <Phone :size="18" />
+            <li class="flex items-center gap-2.5 mb-3 group">
+              <Phone
+                :size="18"
+                class="text-[#D4AF37] shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-white"
+              />
               <a
                 href="https://wa.me/5547991611628"
                 target="_blank"
                 rel="noopener noreferrer"
-              >(47) 99161-1628</a>
+                class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
+              >
+                (47) 99161-1628
+              </a>
             </li>
-            <li class="footer-contact-item">
-              <MapPin :size="18" />
-              <span>Formiga, MG</span>
+            <li class="flex items-center gap-2.5 mb-3 group">
+              <MapPin
+                :size="18"
+                class="text-[#D4AF37] shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-white"
+              />
+              <span class="text-[#ccc] transition-all duration-300 group-hover:text-[#D4AF37] group-hover:pl-1">
+                Formiga, MG
+              </span>
             </li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h3>Horário de Atendimento</h3>
-          <ul>
-            <li>Segunda a sábado: 9h às 21h</li>
-            <li>Domingos e feriados: 13h às 20h</li>
+        <!-- Coluna 4 -->
+        <div>
+          <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
+            Horário de Atendimento
+          </h3>
+          <ul class="list-none">
+            <li class="text-[#ccc] mb-3 leading-relaxed">
+              Segunda a sábado: 9h às 21h
+            </li>
+            <li class="text-[#ccc] mb-3 leading-relaxed">
+              Domingos e feriados: 13h às 20h
+            </li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; {{ currentYear }} Goldens da Chácara. Todos os direitos reservados.</p>
-        <p>Criação especializada de Golden Retriever | Filhotes Golden Retriever Formiga/MG</p>
+      <div class="text-center pt-8 border-t border-[#333]">
+        <p class="text-[#999] text-[0.95rem] mb-2">
+          &copy; {{ currentYear }} Goldens da Chácara. Todos os direitos reservados.
+        </p>
+        <p class="text-[#999] text-[0.95rem] mb-2">
+          Criação especializada de Golden Retriever | Filhotes Golden Retriever Formiga/MG
+        </p>
       </div>
     </div>
   </footer>
