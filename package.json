@@ -12,11 +12,12 @@
   },
   "dependencies": {
     "@nuxt/content": "^3.9.0",
+    "@nuxt/scripts": "0.13.2",
     "@nuxt/ui": "^4.2.1",
     "@nuxtjs/seo": "3.0.3",
+    "@unhead/vue": "^2.0.19",
     "lucide-vue-next": "^0.556.0",
-    "nuxt": "^4.2.1",
-    "nuxt-gtag": "4.1.0"
+    "nuxt": "^4.2.1"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.10.0",

@@ -2,7 +2,17 @@ import { defineOrganization } from 'nuxt-schema-org/schema'
 import { defineNuxtConfig } from 'nuxt/config'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/content', 'nuxt-gtag', '@nuxtjs/seo'],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/content', '@nuxtjs/seo', '@nuxt/scripts'],
+
+  $production: {
+    scripts: {
+      registry: {
+        googleAnalytics: {
+          id: 'G-W4RRNKNZTS'
+        }
+      }
+    }
+  },
 
   devtools: {
     enabled: true
@@ -39,10 +49,6 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
-  },
-
-  gtag: {
-    id: 'G-W4RRNKNZTS'
   },
 
   schemaOrg: {
