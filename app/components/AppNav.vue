@@ -19,7 +19,7 @@
           >
           <div class="flex flex-col">
             <span
-              class="text-2xl font-bold text-white leading-tight tracking-wide"
+              class="text-lg font-bold text-white leading-tight tracking-wide"
               style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"
             >
               Goldens da Chácara

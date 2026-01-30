@@ -28,7 +28,7 @@
     <section class="py-7 lg:py-12 bg-white">
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="text-center max-w-[800px] mx-auto mb-16">
-          <h2 class="text-3xl md:text-5xl text-[#2C2416] mb-6 font-extrabold">
+          <h2 class="text-4xl md:text-5xl text-[#2C2416] mb-6 font-extrabold">
             Em Breve: Nova Ninhada
           </h2>
           <p class="text-lg text-gray-600 leading-relaxed">
@@ -39,7 +39,7 @@
         </div>
 
         <div class="my-20">
-          <h3 class="text-4xl text-[#2C2416] mb-4 font-extrabold text-center relative inline-block w-full">
+          <h3 class="text-3xl text-[#2C2416] mb-4 font-extrabold text-center relative inline-block w-full">
             O que está incluso:
             <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] rounded-sm" />
           </h3>
@@ -190,7 +190,7 @@
 
           <a
             href="https://wa.me/5547991611628"
-            class="inline-block px-12 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-lg transition-all duration-400 shadow-xl uppercase tracking-wide hover:-translate-y-2 hover:shadow-2xl hover:bg-[#C9A02C]"
+            class="inline-block px-6 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-xl uppercase tracking-wide hover:-translate-y-2 hover:shadow-2xl hover:bg-[#C9A02C]"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -6,14 +6,14 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="relative h-screen flex items-center justify-center text-white text-center bg-cover bg-[position:50%_30%] bg-no-repeat"
+      class="relative h-[70vh] lg:h-screen flex items-center justify-center text-white text-center bg-cover bg-[position:50%_30%] bg-no-repeat"
       style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1633722715463-d30f4f325e24?q=80&w=2000');"
     >
       <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
 
       <div class="relative z-10 px-5 max-w-[1100px] mx-auto">
         <h1
-          class="text-5xl md:text-6xl lg:text-7xl mb-4 font-extrabold tracking-wide leading-tight animate-fadeIn"
+          class="text-4xl md:text-6xl lg:text-7xl mb-4 font-extrabold tracking-wide leading-tight animate-fadeIn"
           style="text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);"
         >
           Criando Goldens com excelência e carinho
@@ -26,7 +26,7 @@
         </p>
         <NuxtLink
           to="/filhotes"
-          class="inline-block px-12 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-lg transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide animate-fadeInDelay2 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#C9A02C]"
+          class="inline-block px-6 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide animate-fadeInDelay2 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#C9A02C]"
         >
           Conheça Nossos Filhotes
         </NuxtLink>
@@ -38,11 +38,11 @@
     </section>
 
     <!-- Sobre Section -->
-    <section class="py-24 bg-[#F5F5DC]">
+    <section class="py-14 bg-[#F5F5DC]">
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 class="text-4xl md:text-5xl text-[#2C2416] mb-6 font-extrabold">
+            <h2 class="text-4xl md:text-5xl text-[#2C2416] mb-6 font-extrabold text-center lg:text-left">
               Bem-vindo ao Goldens da Chácara
             </h2>
 
@@ -81,13 +81,13 @@
         <div class="flex gap-6 justify-center flex-wrap">
           <NuxtLink
             to="/filhotes"
-            class="inline-block px-12 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-lg transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#C9A02C]"
+            class="inline-block px-6 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#C9A02C]"
           >
             Ver Filhotes
           </NuxtLink>
           <a
             href="https://wa.me/5547991611628"
-            class="inline-block px-12 py-5 bg-transparent text-white no-underline rounded-full font-bold text-lg transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide border-3 border-[#D4AF37] hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#D4AF37]"
+            class="inline-block px-6 py-5 bg-transparent text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide border-3 border-[#D4AF37] hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#D4AF37]"
             target="_blank"
             rel="noopener noreferrer"
           >
