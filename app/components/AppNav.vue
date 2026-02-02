@@ -161,14 +161,52 @@
           </NuxtLink>
         </li>
         <li class="border-b border-white/10">
-          <NuxtLink
-            to="#"
-            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10"
+          <button
+            type="button"
+            class="w-full text-left text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10 flex items-center justify-between"
             :class="{ 'bg-[#D4AF37] pl-10': isActive('/hotel') }"
-            @click="closeMobileMenu"
+            :aria-expanded="mobileServicesOpen"
+            aria-controls="mobileServicesSubmenu"
+            @click="toggleMobileServices"
           >
-            Serviços
-          </NuxtLink>
+            <span>Serviços</span>
+            <svg
+              viewBox="0 0 20 20"
+              class="w-4 h-4 text-white/90 transition-transform duration-300"
+              :class="{ 'rotate-180': mobileServicesOpen }"
+              aria-hidden="true"
+            >
+              <path
+                fill="currentColor"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.25a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08z"
+              />
+            </svg>
+          </button>
+          <ul
+            id="mobileServicesSubmenu"
+            v-show="mobileServicesOpen"
+            class="pb-2"
+          >
+            <li>
+              <NuxtLink
+                to="/hotel"
+                class="block text-white/90 no-underline px-8 py-3 pl-12 text-sm transition-all duration-300 hover:bg-[#D4AF37] hover:text-white"
+                :class="{ 'bg-[#D4AF37] text-white': isActive('/hotel') }"
+                @click="closeMobileMenu"
+              >
+                Hotel
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink
+                to="#"
+                class="block text-white/90 no-underline px-8 py-3 pl-12 text-sm transition-all duration-300 hover:bg-[#D4AF37] hover:text-white"
+                @click="closeMobileMenu"
+              >
+                Daycare
+              </NuxtLink>
+            </li>
+          </ul>
         </li>
         <li class="border-b border-white/10">
           <NuxtLink
@@ -211,6 +249,7 @@ import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 const mobileMenuOpen = ref(false)
+const mobileServicesOpen = ref(false)
 const isScrolled = ref(false)
 const route = useRoute()
 
@@ -220,11 +259,19 @@ function updateBodyScrollLock(isLocked: boolean) {
 
 function toggleMobileMenu() {
   mobileMenuOpen.value = !mobileMenuOpen.value
+  if (!mobileMenuOpen.value) {
+    mobileServicesOpen.value = false
+  }
   updateBodyScrollLock(mobileMenuOpen.value)
+}
+
+function toggleMobileServices() {
+  mobileServicesOpen.value = !mobileServicesOpen.value
 }
 
 function closeMobileMenu() {
   mobileMenuOpen.value = false
+  mobileServicesOpen.value = false
   updateBodyScrollLock(false)
 }
 
