@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
     '/filhotes': { prerender: true },
-    '/hotel-pet': { prerender: true },
+    '/hotel': { prerender: true },
     '/blog': { prerender: true },
     '/blog/**': { prerender: true }
   },
