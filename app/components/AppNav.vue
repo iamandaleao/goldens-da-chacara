@@ -52,7 +52,7 @@
           <ul class="absolute top-full left-0 bg-[#2C2416]/98 backdrop-blur-[20px] rounded-lg list-none p-2 min-w-[180px] opacity-0 invisible -translate-y-2.5 transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.3)] border border-[#D4AF37]/20 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
             <li>
               <NuxtLink
-                to="#"
+                to="/hotel"
                 class="text-white block px-6 py-3 no-underline after:hidden hover:bg-[#D4AF37] hover:text-white"
               >
                 Hotel
