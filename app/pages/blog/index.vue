@@ -29,11 +29,18 @@
             </NuxtLink>
 
             <div class="p-8 md:p-10">
-              <h2 class="text-3xl text-[#2C2416] mb-4 font-bold transition-colors duration-300 overflow-hidden text-ellipsis whitespace-nowrap hover:text-[#D4AF37]">
+              <h2 class="text-3xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 overflow-hidden text-ellipsis whitespace-nowrap hover:text-[#D4AF37]">
                 <NuxtLink :to="post.stem">
                   {{ post.title }}
                 </NuxtLink>
               </h2>
+
+              <time
+                :datatime="post.date"
+                class="text-sm text-gray-500 block mb-4"
+              >
+                {{ new Date(post.date).toLocaleDateString() }}
+              </time>
 
               <p class="text-gray-600 mb-6 leading-relaxed line-clamp-2">
                 {{ post.description }}
