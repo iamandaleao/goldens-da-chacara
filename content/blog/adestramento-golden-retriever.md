@@ -3,6 +3,10 @@ title: "Adestramento de Golden Retriever: guia completo"
 description: "Aprenda as melhores técnicas para treinar seu Golden e aproveitar toda a inteligência e docilidade da raça."
 image: "https://placedog.net/800/600?id=113"
 tip: "Golden Retrievers são extremamente motivados por comida e elogios. Use petiscos saudáveis durante o treino e sempre recompense comportamentos positivos imediatamente para fixar o aprendizado."
+date: 2026-01-02 23:59
+seo:
+  title: "Adestramento de Golden Retriever: guia completo"
+  description: "Aprenda as melhores técnicas para treinar seu Golden e aproveitar toda a inteligência e docilidade da raça."
 ---
 
 ## Comece cedo e seja consistente

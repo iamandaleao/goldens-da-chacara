@@ -3,6 +3,11 @@ title: "Como escolher o melhor hotel para seu cachorro"
 description: "Vai viajar e precisa deixar seu pet? Saiba o que avaliar para escolher um hotel canino seguro e confortável."
 image: "https://placedog.net/800/600?id=35"
 tip: "Agende uma visita ao hotel antes de fazer a reserva. Observe a limpeza do local, como os funcionários interagem com os animais e peça para ver as instalações onde seu pet ficará hospedado. Um bom hotel sempre permite visitas."
+"date: 2026-01-16 23:59"
+seo:
+  title: "Como escolher o melhor hotel para seu cachorro"
+  description: "Vai viajar e precisa deixar seu pet? Saiba o que avaliar para escolher um hotel canino seguro e confortável."
+
 ---
 
 ## Infraestrutura e segurança em primeiro lugar

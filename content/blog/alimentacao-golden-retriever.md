@@ -3,6 +3,11 @@ title: "Alimentação ideal para Golden Retriever"
 description: "Descubra qual a melhor alimentação para cada fase da vida do seu Golden e mantenha ele sempre saudável."
 image: "https://placedog.net/800/600?id=3"
 tip: "Mantenha sempre água fresca disponível e evite alimentar seu Golden antes ou logo após exercícios intensos para prevenir a torção gástrica, um problema grave em cães de grande porte."
+date: "2026-01-04 23:59"
+seo:
+  title: "Alimentação ideal para Golden Retriever"
+  description: "Descubra qual a melhor alimentação para cada fase da vida do seu Golden e mantenha ele sempre saudável."
+
 ---
 
 ## Ração de qualidade é essencial
