@@ -18,9 +18,17 @@
           {{ post.title }}
         </h1>
 
+        <!-- Data de atualização -->
+        <time
+          :datatime="post.date"
+          class="text-sm text-gray-500 block mb-6"
+        >
+          Atualizado em: {{ new Date(post.date).toLocaleDateString() }}
+        </time>
+
         <!-- Conteúdo do post -->
         <div class="text-lg leading-relaxed text-gray-700">
-          <p class="text-xl text-gray-600 leading-relaxed mb-6">
+          <p class="text-xl text-gray-600 leading-relaxed">
             {{ post.description }}
           </p>
 
