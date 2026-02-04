@@ -3,7 +3,7 @@ title: "Microchip em cães: por que nossos filhotes Golden saem microchipados"
 description: "Entenda o que é o microchip canino, para que ele serve, seus benefícios e como manter os dados atualizados após levar seu Golden para casa."
 image: "https://placedog.net/800/600?id=208"
 tip: "O microchip só cumpre sua função se os dados estiverem atualizados. Sempre que mudar telefone ou endereço, atualize o cadastro na base de dados."
-"date: 2026-01-18 23:59"
+date: "2026-01-18 23:59"
 seo:
   title: "Microchip em cães: por que nossos filhotes Golden saem microchipados"
   description: "Entenda o que é o microchip canino, para que ele serve, seus benefícios e como manter os dados atualizados após levar seu Golden para casa."
