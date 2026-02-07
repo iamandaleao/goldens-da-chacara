@@ -33,6 +33,9 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    '/**': {
+      redirect: 'https://goldensdachacara.com.br'
+    },
     '/': { prerender: true },
     '/filhotes': { prerender: true },
     '/hotel': { prerender: true },
@@ -57,7 +60,7 @@ export default defineNuxtConfig({
       alternateName: 'Goldens da Chácara',
       description: 'Canil especializado na criação responsável de Golden Retriever, com foco em genética, saúde e bem-estar.',
       url: 'https://goldensdachacara.com.br',
-      logo: 'https://goldensdachacara.com.br/assets/images/golden-retriever-canil.png',
+      logo: 'https://goldensdachacara.com.br/golden-retriever-canil.png',
 
       address: {
         '@type': 'PostalAddress',
