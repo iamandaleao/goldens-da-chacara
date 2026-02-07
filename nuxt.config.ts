@@ -33,9 +33,6 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/**': {
-      redirect: 'https://goldensdachacara.com.br'
-    },
     '/': { prerender: true },
     '/filhotes': { prerender: true },
     '/hotel': { prerender: true },
