@@ -69,10 +69,13 @@ const postsPerPage = 24
 const { data: paginatedData } = await useAsyncData('blog', async () => {
   const [posts, count] = await Promise.all([
     queryCollection('blog')
+      .where('date', '<', useToday())
+      .order('date', 'DESC')
       .skip((page.value - 1) * postsPerPage)
       .limit(postsPerPage)
       .all(),
     queryCollection('blog')
+      .where('date', '<', useToday())
       .count()
   ])
 
