@@ -32,10 +32,10 @@
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="text-center max-w-[850px] mx-auto mb-20">
           <h2 class="text-4xl md:text-5xl text-[#2C2416] mb-6 font-extrabold">
-            Mais espaço, mais cuidado, mais tranquilidade
+            Mais espaço, cuidado e tranquilidade
           </h2>
           <p class="text-lg text-gray-600 leading-relaxed">
-            Na <strong>Goldens da Chácara</strong>, acreditamos que hospedagem canina vai muito além
+            Acreditamos que hospedagem canina vai muito além
             de um local para dormir. Aqui, seu cão não fica preso em baias nem isolado.
             Ele vive uma rotina equilibrada em ambiente rural, com espaço, estímulos,
             socialização supervisionada e acompanhamento constante.

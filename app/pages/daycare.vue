@@ -35,7 +35,7 @@
             Um dia inteiro de diversão e socialização
           </h2>
           <p class="text-lg text-gray-600 leading-relaxed">
-            No <strong>Daycare da Goldens da Chácara</strong>, seu cão passa o dia em um ambiente
+            Aqui seu cão passa o dia em um ambiente
             estimulante e seguro, longe do tédio e da solidão. Oferecemos uma rotina planejada
             com brincadeiras, socialização supervisionada, descanso programado e muita atenção.
             <br><br>
