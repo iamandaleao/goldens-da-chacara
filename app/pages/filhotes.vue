@@ -25,22 +25,20 @@
       </div>
     </section>
 
-    <section class="py-7 lg:py-12 bg-white">
+    <section class="py-9 lg:py-12 bg-white">
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="text-center max-w-[800px] mx-auto mb-16">
-          <h2 class="text-4xl md:text-5xl text-[#2C2416] mb-6 font-extrabold">
-            Em Breve: Nova Ninhada
+          <h2 class="text-4xl md:text-5xl text-[#2C2416] mb-5 font-extrabold leading-tight">
+            O Amor que nos Move
           </h2>
           <p class="text-lg text-gray-600 leading-relaxed">
-            Estamos preparando uma nova ninhada de filhotes Golden Retriever com pedigree CBKC.
-            Todos os nossos filhotes nascem em ambiente familiar, recebem os melhores cuidados
-            veterinários e são entregues vacinados, vermifugados e com garantia de saúde.
+            Aqui cada filhote nasce em ambiente familiar e recebe todos os cuidados necessários para iniciar sua nova vida com saúde, equilíbrio e carinho. Nossa paixão por Golden Retrievers vai além da criação - cada filhote é tratado como parte da família, recebendo amor, atenção e preparação para levar alegria ao seu novo lar.
           </p>
         </div>
 
-        <div class="my-20">
+        <div class="my-10">
           <h3 class="text-3xl text-[#2C2416] mb-4 font-extrabold text-center relative inline-block w-full">
-            O que está incluso:
+            Nossa entrega:
             <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] rounded-sm" />
           </h3>
 
@@ -148,10 +146,10 @@
               </div>
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
-                Kit Filhote
+                Manual do Filhote
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
-                Ração, brinquedos
+                Cuidados, adaptação e rotina
               </p>
             </div>
 
@@ -181,14 +179,14 @@
 
         <div class="bg-gradient-to-br from-[#D4AF37] to-[#8B7355] p-16 rounded-3xl text-center text-white shadow-2xl mt-16">
           <h3 class="text-4xl mb-4 font-extrabold">
-            Faça sua Reserva
+            Garanta Seu Filhote Agora
           </h3>
           <p class="text-xl mb-8">
-            Garanta seu filhote Golden Retriever agora!
-            Entre em contato para mais informações sobre disponibilidade e valores.
+            Entre em contato e receba informações completas sobre disponibilidade,
+            valores e reservas.
           </p>
-
           <a
+
             href="https://wa.me/5547991611628"
             class="inline-block px-6 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-xl uppercase tracking-wide hover:-translate-y-2 hover:shadow-2xl hover:bg-[#C9A02C]"
             target="_blank"
