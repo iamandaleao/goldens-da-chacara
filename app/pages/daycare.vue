@@ -179,7 +179,7 @@
           class="bg-gradient-to-br from-[#2C2416] to-[#1f1a12] p-16 rounded-3xl text-center text-white shadow-2xl mt-20"
         >
           <h3 class="text-4xl mb-4 font-extrabold">
-            Diárias a partir de R$ 60,00
+            Diárias a partir de R$ 40,00
           </h3>
 
           <p class="text-xl mb-10 text-gray-200">

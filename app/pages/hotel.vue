@@ -183,7 +183,7 @@
             Diárias a partir de R$ 50,00
           </h3>
 
-          <p class="text-xl mb-10 text-gray-200">
+          <p class="text-sm mb-10 text-gray-300 opacity-80">
             O valor pode variar conforme necessidades específicas.
           </p>
 
