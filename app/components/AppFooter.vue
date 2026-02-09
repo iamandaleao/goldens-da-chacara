@@ -164,10 +164,6 @@
               Domingos e feriados: 13h às 20h
             </li>
           </ul>
-          <!-- Título dos Selos -->
-          <h4 class="text-lg mb-4 text-[#D4AF37] font-semibold">
-            Afiliações Oficiais
-          </h4>
           <!-- Selos -->
           <div class="flex gap-4 flex-wrap items-center">
             <a
@@ -177,7 +173,7 @@
               class="transition-opacity duration-300 hover:opacity-100"
             >
               <img
-                src="/selos/cbkc.jpg"
+                src="/selos/cbkc-logo.png"
                 title="CBKC"
                 alt="CBKC"
                 class="h-12 opacity-80"
@@ -191,10 +187,10 @@
               class="transition-opacity duration-300 hover:opacity-100"
             >
               <img
-                src="/selos/alkc.png"
+                src="/selos/alkc-logo.avif"
                 title="ALKC"
                 alt="ALKC"
-                class="size-14 opacity-80"
+                class="h-12 opacity-80"
               >
             </a>
           </div>
