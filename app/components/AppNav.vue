@@ -60,7 +60,7 @@
             </li>
             <li>
               <NuxtLink
-                to="#"
+                to="/daycare"
                 class="text-white block px-6 py-3 no-underline after:hidden hover:bg-[#D4AF37] hover:text-white"
               >
                 Daycare
@@ -199,7 +199,7 @@
             </li>
             <li>
               <NuxtLink
-                to="#"
+                to="/daycare"
                 class="block text-white/90 no-underline px-8 py-3 pl-12 text-sm transition-all duration-300 hover:bg-[#D4AF37] hover:text-white"
                 @click="closeMobileMenu"
               >
