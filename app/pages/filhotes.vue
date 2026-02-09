@@ -37,7 +37,7 @@
         </div>
 
         <div class="my-10">
-          <h3 class="text-3xl text-[#2C2416] mb-4 font-extrabold text-center relative inline-block w-full">
+          <h3 class="text-3xl md:text-4xl text-[#2C2416] mb-4 font-extrabold text-center relative inline-block w-full">
             Nossa entrega:
             <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] rounded-sm" />
           </h3>
