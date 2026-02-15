@@ -205,7 +205,7 @@
 import { FileText, Syringe, HeartPulse, CheckCircle, Gift, Phone } from 'lucide-vue-next'
 
 useHead({
-  title: 'Filhotes Golden Retriever - Goldens da Chácara',
+  title: 'Filhotes Golden Retriever',
   meta: [
     {
       name: 'description',

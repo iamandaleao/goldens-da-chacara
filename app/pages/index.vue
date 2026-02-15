@@ -103,7 +103,7 @@
 
 <script setup>
 useHead({
-  title: 'Goldens da Chácara - Criação Especializada de Golden Retriever',
+  title: 'Criação Especializada de Golden Retriever',
   meta: [
     {
       name: 'description',

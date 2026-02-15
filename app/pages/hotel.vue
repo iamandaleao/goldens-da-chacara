@@ -214,7 +214,7 @@ import {
 } from 'lucide-vue-next'
 
 useHead({
-  title: 'Hotel & Resort Canino - Goldens da Chácara',
+  title: 'Hotel & Resort Canino',
   meta: [
     {
       name: 'description',

@@ -3,7 +3,7 @@ title: "Como limpar a boca do seu cachorro: cuidados essenciais"
 description: "Aprenda como higienizar corretamente a boca do seu cão, prevenir mau hálito e manter dentes e gengivas saudáveis."
 image: "https://placedog.net/800/600?id=214"
 tip: "Criar o hábito da limpeza bucal desde filhote facilita muito o processo. Comece com o dedo ou uma dedeira e evolua para a escova aos poucos, sempre associando a algo positivo."
-date: 2026-02-14 23:59
+date: 2026-02-13 23:59
 seo:
   title: "Como limpar a boca do seu cachorro: guia prático"
   description: "Veja como limpar a boca do seu cachorro corretamente, evitar mau hálito e prevenir problemas dentários."

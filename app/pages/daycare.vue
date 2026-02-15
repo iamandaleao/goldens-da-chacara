@@ -213,7 +213,7 @@ import {
 } from 'lucide-vue-next'
 
 useHead({
-  title: 'Daycare Canino - Goldens da Chácara',
+  title: 'Daycare Canino',
   meta: [
     {
       name: 'description',
