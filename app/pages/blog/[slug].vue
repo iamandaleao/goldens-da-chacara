@@ -33,7 +33,13 @@
           </p>
 
           <!-- Conteúdo markdown renderizado -->
-          <ContentRenderer :value="post" />
+          <ContentRenderer
+            class="prose prose-lg mt-6
+         prose-headings:font-bold
+         prose-a:no-underline
+         prose-headings:no-underline"
+            :value="post"
+          />
 
           <div class="bg-[#D4AF37]/10 border-l-4 border-[#D4AF37] py-6 px-8 my-8 rounded-r-lg">
             <p class="text-[#333] font-medium m-0">

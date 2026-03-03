@@ -1,8 +1,10 @@
 import { defineOrganization } from 'nuxt-schema-org/schema'
 import { defineNuxtConfig } from 'nuxt/config'
+import tailwindcss from '@tailwindcss/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/content', '@nuxtjs/seo', '@nuxt/scripts'],
+  modules: ['@nuxt/eslint', '@nuxt/content', '@nuxtjs/seo', '@nuxt/scripts'],
 
   $production: {
     scripts: {
@@ -41,6 +43,11 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-01-15',
+  vite: {
+    plugins: [
+      tailwindcss()
+    ]
+  },
 
   eslint: {
     config: {
