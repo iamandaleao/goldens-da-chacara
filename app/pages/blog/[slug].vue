@@ -35,6 +35,7 @@
           <!-- Conteúdo markdown renderizado -->
           <ContentRenderer
             class="prose prose-lg mt-6
+         prose-headings:my-4
          prose-headings:font-bold
          prose-a:no-underline
          prose-headings:no-underline"
