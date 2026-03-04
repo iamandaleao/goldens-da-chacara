@@ -33,14 +33,19 @@
           </p>
 
           <!-- Conteúdo markdown renderizado -->
-          <ContentRenderer
-            class="prose prose-lg mt-6
+          <div
+            ref="contentRef"
+            class="blog-content"
+          >
+            <ContentRenderer
+              class="prose prose-lg mt-6
          prose-headings:my-4
          prose-headings:font-bold
          prose-a:no-underline
          prose-headings:no-underline"
-            :value="post"
-          />
+              :value="post"
+            />
+          </div>
 
           <div class="bg-[#D4AF37]/10 border-l-4 border-[#D4AF37] py-6 px-8 my-8 rounded-r-lg">
             <p class="text-[#333] font-medium m-0">
@@ -98,5 +103,48 @@ if (!post.value) {
 useSeoMeta({
   ...post.value.seo,
   ogType: 'article'
+})
+
+const contentRef = ref<HTMLElement | null>(null)
+
+function wrapTablesInScrollContainer() {
+  nextTick(() => {
+    const el = contentRef.value
+    if (!el) return
+    el.querySelectorAll('.prose table').forEach((table) => {
+      if (table.parentElement?.classList.contains('table-scroll-wrap')) return
+      const wrapper = document.createElement('div')
+      wrapper.className = 'table-scroll-wrap'
+      table.parentNode?.insertBefore(wrapper, table)
+      wrapper.appendChild(table)
+    })
+  })
+}
+
+function markDetailsAnswerBlocks() {
+  nextTick(() => {
+    const el = contentRef.value
+    if (!el) return
+    el.querySelectorAll('details').forEach((details) => {
+      const summary = details.querySelector(':scope > summary')
+      if (!summary) return
+      if (details.querySelector(':scope > .details-answer')) return
+      const wrapper = document.createElement('div')
+      wrapper.className = 'details-answer'
+      while (summary.nextSibling) {
+        wrapper.appendChild(summary.nextSibling)
+      }
+      details.appendChild(wrapper)
+    })
+  })
+}
+
+onMounted(() => {
+  wrapTablesInScrollContainer()
+  markDetailsAnswerBlocks()
+})
+watch(() => post.value, () => {
+  wrapTablesInScrollContainer()
+  markDetailsAnswerBlocks()
 })
 </script>

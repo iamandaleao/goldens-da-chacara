@@ -63,7 +63,37 @@ details[open] summary::after {
     transform: rotate(-135deg);
 }
 
-details>*:not(summary) {
-    padding: 1rem;
+/* Conteúdo da resposta (área que abre ao clicar) — padding no início */
+.details-answer {
+    padding: 1rem 1rem 1rem 2rem;
+    padding-inline-start: 2rem;
     border-top: none;
+    box-sizing: border-box;
+}
+
+details summary~*,
+details>*:not(summary),
+.prose details summary~*,
+.prose details>*:not(summary) {
+    padding: 1rem 1rem 1rem 2rem;
+    padding-inline-start: 2rem;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+/* --- Tabelas em posts: scroll estável com barra de rolagem --- */
+.table-scroll-wrap {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin: 1rem 0;
+    /* Reserva espaço para a barra de rolagem para não “dançar” o layout */
+    scrollbar-gutter: stable;
+}
+
+.table-scroll-wrap table {
+    width: max-content;
+    min-width: 100%;
+    margin: 0;
 }
