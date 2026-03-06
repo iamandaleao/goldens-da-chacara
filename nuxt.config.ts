@@ -35,7 +35,6 @@ export default defineNuxtConfig({
     renderer: {
       anchorLinks: false
     }
-
   },
 
   routeRules: {
@@ -47,6 +46,7 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-01-15',
+
   vite: {
     plugins: [
       tailwindcss()
@@ -81,6 +81,7 @@ export default defineNuxtConfig({
 
       email: 'goldensdachacara@gmail.com',
       telephone: '+5547991611628',
+
       contactPoint: {
         '@type': 'ContactPoint',
         'telephone': '+5547991611628',
@@ -88,6 +89,7 @@ export default defineNuxtConfig({
       },
 
       foundingDate: '2025-12-01',
+
       numberOfEmployees: {
         '@type': 'QuantitativeValue',
         'minValue': 1,
@@ -98,9 +100,35 @@ export default defineNuxtConfig({
         'https://www.instagram.com/goldensdachacara',
         'https://www.facebook.com/goldensdachacara',
         'https://www.youtube.com/@goldensdachacara',
-        'https://www.tiktok.com/@goldensdachacara',
         'https://api.whatsapp.com/send?phone=5547991611628'
       ]
     })
+  },
+
+  sitemap: {
+    zeroRuntime: true,
+
+    urls: [
+      {
+        loc: '/',
+        lastmod: '2026-03-06'
+      },
+      {
+        loc: '/blog',
+        lastmod: '2026-03-06'
+      },
+      {
+        loc: '/daycare',
+        lastmod: '2026-03-06'
+      },
+      {
+        loc: '/filhotes',
+        lastmod: '2026-03-06'
+      },
+      {
+        loc: '/hotel',
+        lastmod: '2026-03-06'
+      }
+    ]
   }
 })

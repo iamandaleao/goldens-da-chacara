@@ -85,9 +85,8 @@ const { data: paginatedData } = await useAsyncData('blog', async () => {
 })
 
 const posts = computed(() => paginatedData.value?.posts || [])
-
 useSeoMeta({
   title: 'Blog',
-  description: 'Eu cuido dos detalhes, você aproveita a jornada.'
+  description: 'Criação responsável de Golden Retriever, com foco em saúde, genética e temperamento.'
 })
 </script>
