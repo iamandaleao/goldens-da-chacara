@@ -4,6 +4,8 @@ description: "Descubra as situações em que a hospedagem profissional é a melh
 image: "https://placedog.net/800/600?id=9"
 tip: "Planeje a hospedagem com antecedência sempre que possível. Uma visita prévia ao local ajuda seu cão a se familiarizar com o ambiente e reduz a ansiedade na hora da estadia."
 date: "2026-01-24 23:59"
+sitemap:
+  lastmod: 2026-01-24
 ---
 
 ## Viagens a trabalho ou férias prolongadas

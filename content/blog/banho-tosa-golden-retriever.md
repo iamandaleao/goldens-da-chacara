@@ -4,6 +4,8 @@ description: "Mantenha a pelagem do seu Golden sempre bonita e saudável com as 
 image: "https://placedog.net/800/600?id=45"
 tip: "Escove seu Golden diariamente durante as épocas de troca de pelo (primavera e outono) para evitar que a casa fique cheia de pelos e prevenir nós na pelagem. Uma boa escovação também distribui os óleos naturais, deixando o pelo mais brilhante."
 date: "2026-01-06 23:59"
+sitemap:
+  lastmod: 2026-01-06
 ---
 
 ## Frequência ideal de banhos

@@ -4,6 +4,8 @@ description: "Aprenda sobre os principais cuidados preventivos e problemas de sa
 image: "https://placedog.net/800/600?id=100"
 tip: "Consultas veterinárias semestrais são essenciais para detecção precoce de problemas. Golden Retrievers têm predisposição a certas condições, mas com acompanhamento adequado, podem viver mais de 12 anos com qualidade."
 date: "2026-01-26 23:59"
+sitemap:
+  lastmod: 2026-01-26
 ---
 
 ## Displasia coxofemoral e de cotovelo

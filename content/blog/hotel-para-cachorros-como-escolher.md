@@ -4,6 +4,8 @@ description: "Vai viajar e precisa deixar seu pet? Saiba o que avaliar para esco
 image: "https://placedog.net/800/600?id=35"
 tip: "Agende uma visita ao hotel antes de fazer a reserva. Observe a limpeza do local, como os funcionários interagem com os animais e peça para ver as instalações onde seu pet ficará hospedado. Um bom hotel sempre permite visitas."
 date: "2026-01-16 23:59"
+sitemap:
+  lastmod: 2026-01-16
 ---
 
 ## Infraestrutura e segurança em primeiro lugar

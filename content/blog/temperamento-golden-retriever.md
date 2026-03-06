@@ -4,6 +4,8 @@ description: "Conheça as características que fazem do Golden Retriever uma das
 image: "https://placedog.net/800/600?id=17"
 tip: "Golden Retrievers são cães sociáveis que precisam de companhia constante. Não são adequados para quem fica muito tempo fora de casa, pois podem desenvolver ansiedade de separação."
 date: "2026-01-28 23:59"
+sitemap:
+  lastmod: 2026-01-28
 ---
 
 ## Personalidade dócil e amigável

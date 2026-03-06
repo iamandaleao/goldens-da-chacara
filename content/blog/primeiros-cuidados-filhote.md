@@ -4,6 +4,8 @@ description: "Dicas práticas e essenciais para garantir que seu filhote cresça
 image: "https://placedog.net/800/600?id=1"
 tip: "Evite passeios em locais públicos antes de completar todas as vacinas. Isso protege seu filhote de doenças contagiosas."
 date: "2026-01-20 23:59"
+sitemap:
+  lastmod: 2026-01-20
 ---
 
 ## Preparando a casa

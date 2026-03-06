@@ -4,6 +4,8 @@ description: "Atividades divertidas e exercícios importantes para manter seu Go
 image: "https://placedog.net/800/600?id=27"
 tip: "Evite exercícios muito intensos em filhotes até 1 ano de idade, pois suas articulações ainda estão em formação. Prefira caminhadas moderadas e brincadeiras leves para não prejudicar o desenvolvimento ósseo."
 date: "2026-01-14 23:59"
+sitemap:
+  lastmod: 2026-01-14
 ---
 
 ## Necessidades de exercício diário
