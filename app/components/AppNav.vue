@@ -49,7 +49,7 @@
           >
             Serviços
           </NuxtLink>
-          <ul class="absolute top-full left-0 bg-[#2C2416]/98 backdrop-blur-[20px] rounded-lg list-none p-2 min-w-[180px] opacity-0 invisible -translate-y-2.5 transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.3)] border border-[#D4AF37]/20 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+          <ul class="absolute left-1/2 top-full mt-5 -translate-x-1/2 bg-[#2C2416]/98 backdrop-blur-[20px] rounded-xl list-none p-2 min-w-[200px] opacity-0 invisible transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.35)] border border-[#D4AF37]/20 group-hover:opacity-100 group-hover:visible">
             <li>
               <NuxtLink
                 to="/hotel"
