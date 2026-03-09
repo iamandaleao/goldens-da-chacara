@@ -42,7 +42,9 @@ export default defineNuxtConfig({
     '/filhotes': { prerender: true },
     '/hotel': { prerender: true },
     '/blog': { prerender: true },
-    '/blog/**': { prerender: true }
+    '/blog/**': { prerender: true },
+    '/hotel-pet': { redirect: { to: '/hotel', statusCode: 301 } },
+
   },
 
   compatibilityDate: '2025-01-15',
