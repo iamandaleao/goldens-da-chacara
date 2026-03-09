@@ -43,7 +43,7 @@ export default defineNuxtConfig({
     '/hotel': { prerender: true },
     '/blog': { prerender: true },
     '/blog/**': { prerender: true },
-    '/hotel-pet': { redirect: { to: '/hotel', statusCode: 301 } },
+    '/hotel-pet': { redirect: { to: '/hotel', statusCode: 301 } }
 
   },
 
@@ -108,7 +108,6 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    zeroRuntime: true,
 
     urls: [
       {
