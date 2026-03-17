@@ -20,7 +20,7 @@
 
         <!-- Data de atualização -->
         <time
-          :datatime="post.date"
+          :datetime="post.date"
           class="text-sm text-gray-500 block mb-6"
         >
           Atualizado em: {{ new Date(post.date).toLocaleDateString() }}
@@ -101,8 +101,18 @@ if (!post.value) {
 }
 
 useSeoMeta({
-  ...post.value.seo,
-  ogType: 'article'
+  title: () => post.value?.title,
+  description: () => post.value?.description,
+
+  ogTitle: () => post.value?.title,
+  ogDescription: () => post.value?.description,
+  ogImage: () => post.value?.image,
+  ogType: 'article',
+
+  twitterTitle: () => post.value?.title,
+  twitterDescription: () => post.value?.description,
+  twitterImage: () => post.value?.image,
+  twitterCard: 'summary_large_image'
 })
 
 const contentRef = ref<HTMLElement | null>(null)

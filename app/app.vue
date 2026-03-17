@@ -18,17 +18,23 @@ useHead({
   }
 })
 
-const title = 'Canil Golden Retriever'
-const description = 'Venda de Golden Retrievers em Formiga, MG'
+// SEO base (padrão do site)
+const siteName = 'Goldens da Chácara'
+const defaultDescription = 'Criação responsável de Golden Retriever e conteúdos sobre cuidados, saúde e rotina.'
 
 useSeoMeta({
-  title,
-  description,
-  ogTitle: title,
-  ogDescription: description,
+  titleTemplate: (title) => {
+    return title ? `${title} | ${siteName}` : siteName
+  },
+  description: defaultDescription,
+  ogSiteName: siteName,
+  ogTitle: siteName,
+  ogDescription: defaultDescription,
   ogImage: 'https://goldensdachacara.com.br/golden-retriever-canil.png',
-  twitterImage: 'https://goldensdachacara.com.br/golden-retriever-canil.png',
-  twitterCard: 'summary_large_image'
+  twitterCard: 'summary_large_image',
+  twitterTitle: siteName,
+  twitterDescription: defaultDescription,
+  twitterImage: 'https://goldensdachacara.com.br/golden-retriever-canil.png'
 })
 </script>
 
