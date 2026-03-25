@@ -1,11 +1,11 @@
 ---
 title: "Diferença entre hotel canino e creche para cães"
 description: "Entenda as diferenças entre hotel canino e creche, e saiba qual opção é a mais adequada para as necessidades do seu pet e sua rotina."
-image: "https://placedog.net/800/600?id=8"
+image: "/images/diferenca-creche-e-hotel-para-caes.jpg"
 tip: "Muitos estabelecimentos oferecem ambos os serviços. Experimente a creche algumas vezes antes de fazer a primeira hospedagem - isso ajuda seu cão a se adaptar ao ambiente e facilita futuras estadias no hotel."
 date: "2026-01-12 23:59"
 sitemap:
-  lastmod: 2026-01-12
+  lastmod: 2026-03-25
 ---
 
 ## O que é um hotel canino

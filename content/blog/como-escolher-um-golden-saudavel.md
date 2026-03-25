@@ -1,11 +1,11 @@
 ---
 title: "Como escolher um Golden saudável"
 description: "Um guia completo para entender linhagem, saúde e comportamento ao escolher seu futuro companheiro de quatro patas."
-image: "https://placedog.net/800/600?id=2"
+image: "/images/golden-retriever-saudavel-filhote.jpg"
 tip: "Nunca compre um filhote sem conhecer o ambiente onde ele nasceu e sem ver pelo menos a mãe. Isso garante que você está lidando com um criador responsável."
 date: "2026-01-08 23:59"
 sitemap:
-  lastmod: 2026-01-08
+  lastmod: 2026-03-25
 ---
 
 ## O que observar na linhagem

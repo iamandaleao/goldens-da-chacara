@@ -62,7 +62,7 @@
           <div class="h-[500px]">
             <div
               class="w-full h-full bg-gradient-to-br from-[#8B7355] to-[#D4AF37] rounded-3xl flex items-center justify-center text-white text-2xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] bg-cover bg-center"
-              style="background-image: url('https://placedog.net/800/600?id=3');"
+              style="background-image: url('/images/golden-retriever-home-canil.jpg');"
             />
           </div>
         </div>
