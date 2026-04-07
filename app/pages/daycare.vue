@@ -1,3 +1,25 @@
+<script setup lang="ts">
+import {
+  Users,
+  Activity,
+  Clock,
+  Camera,
+  Trees,
+  Eye
+} from '@lucide/vue'
+
+useHead({
+  title: 'Daycare Canino',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Daycare Canino com rotina estruturada. Socialização, atividades recreativas e supervisão constante.'
+    }
+  ]
+})
+</script>
+
 <template>
   <div>
     <FloatingButton />
@@ -201,25 +223,3 @@
     <AppFooter />
   </div>
 </template>
-
-<script setup>
-import {
-  Users,
-  Activity,
-  Clock,
-  Camera,
-  Trees,
-  Eye
-} from 'lucide-vue-next'
-
-useHead({
-  title: 'Daycare Canino',
-  meta: [
-    {
-      name: 'description',
-      content:
-          'Daycare Canino com rotina estruturada. Socialização, atividades recreativas e supervisão constante.'
-    }
-  ]
-})
-</script>

@@ -1,3 +1,32 @@
+<script setup lang="ts">
+const route = useRoute()
+const page = ref(Number.parseInt(route.query.page as string) || 1)
+const postsPerPage = 24
+const { data: paginatedData } = await useAsyncData('blog', async () => {
+  const [posts, count] = await Promise.all([
+    queryCollection('blog')
+      .where('date', '<', useToday())
+      .order('date', 'DESC')
+      .skip((page.value - 1) * postsPerPage)
+      .limit(postsPerPage)
+      .all(),
+    queryCollection('blog')
+      .where('date', '<', useToday())
+      .count()
+  ])
+
+  return { posts, count, totalPages: Math.ceil(count / postsPerPage) }
+}, {
+  watch: [page]
+})
+
+const posts = computed(() => paginatedData.value?.posts || [])
+useSeoMeta({
+  title: 'Blog',
+  description: 'Criação responsável de Golden Retriever, com foco em saúde, genética e temperamento.'
+})
+</script>
+
 <template>
   <div class="min-h-screen bg-white">
     <FloatingButton />
@@ -61,32 +90,3 @@
     <AppFooter />
   </div>
 </template>
-
-<script setup lang="ts">
-const route = useRoute()
-const page = ref(Number.parseInt(route.query.page as string) || 1)
-const postsPerPage = 24
-const { data: paginatedData } = await useAsyncData('blog', async () => {
-  const [posts, count] = await Promise.all([
-    queryCollection('blog')
-      .where('date', '<', useToday())
-      .order('date', 'DESC')
-      .skip((page.value - 1) * postsPerPage)
-      .limit(postsPerPage)
-      .all(),
-    queryCollection('blog')
-      .where('date', '<', useToday())
-      .count()
-  ])
-
-  return { posts, count, totalPages: Math.ceil(count / postsPerPage) }
-}, {
-  watch: [page]
-})
-
-const posts = computed(() => paginatedData.value?.posts || [])
-useSeoMeta({
-  title: 'Blog',
-  description: 'Criação responsável de Golden Retriever, com foco em saúde, genética e temperamento.'
-})
-</script>

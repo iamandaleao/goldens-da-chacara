@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import { MessageCircle } from 'lucide-vue-next'
+import { MessageCircle } from '@lucide/vue'
 
 const openWhatsapp = () => {
   window.open('https://wa.me/5547991611628', '_blank')

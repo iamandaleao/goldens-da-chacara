@@ -210,7 +210,7 @@
 </template>
 
 <script setup>
-import { Mail, Phone, MapPin } from 'lucide-vue-next'
+import { Mail, Phone, MapPin } from '@lucide/vue'
 
 const currentYear = new Date().getFullYear()
 </script>

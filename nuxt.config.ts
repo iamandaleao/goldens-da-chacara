@@ -44,7 +44,6 @@ export default defineNuxtConfig({
     '/blog': { prerender: true },
     '/blog/**': { prerender: true },
     '/hotel-pet': { redirect: { to: '/hotel', statusCode: 301 } }
-
   },
 
   compatibilityDate: '2025-01-15',
@@ -108,7 +107,6 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-
     urls: [
       {
         loc: '/',

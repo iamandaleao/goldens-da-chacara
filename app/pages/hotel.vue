@@ -1,3 +1,25 @@
+<script setup lang="ts">
+import {
+  Home,
+  Dog,
+  Droplets,
+  ShieldCheck,
+  Heart,
+  MessageCircle
+} from '@lucide/vue'
+
+useHead({
+  title: 'Hotel & Resort Canino',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Hotel e Resort Canino em ambiente rural. Piscina, socialização, segurança e cuidado diário.'
+    }
+  ]
+})
+</script>
+
 <template>
   <div>
     <FloatingButton />
@@ -202,25 +224,3 @@
     <AppFooter />
   </div>
 </template>
-
-<script setup>
-import {
-  Home,
-  Dog,
-  Droplets,
-  ShieldCheck,
-  Heart,
-  MessageCircle
-} from 'lucide-vue-next'
-
-useHead({
-  title: 'Hotel & Resort Canino',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Hotel e Resort Canino em ambiente rural. Piscina, socialização, segurança e cuidado diário.'
-    }
-  ]
-})
-</script>

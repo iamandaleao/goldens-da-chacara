@@ -1,3 +1,75 @@
+<script setup lang="ts">
+const route = useRoute()
+
+const { data: post } = await useAsyncData(route.path, () => {
+  return queryCollection('blog').path(route.path).first()
+}, {
+  watch: [route]
+})
+
+if (!post.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Página não encontrada', fatal: true })
+}
+
+useSeoMeta({
+  title: () => post.value?.title,
+  description: () => post.value?.description,
+
+  ogTitle: () => post.value?.title,
+  ogDescription: () => post.value?.description,
+  ogImage: () => post.value?.image,
+  ogType: 'article',
+
+  twitterTitle: () => post.value?.title,
+  twitterDescription: () => post.value?.description,
+  twitterImage: () => post.value?.image,
+  twitterCard: 'summary_large_image'
+})
+
+const contentRef = ref<HTMLElement | null>(null)
+
+function wrapTablesInScrollContainer() {
+  nextTick(() => {
+    const el = contentRef.value
+    if (!el) return
+    el.querySelectorAll('.prose table').forEach((table) => {
+      if (table.parentElement?.classList.contains('table-scroll-wrap')) return
+      const wrapper = document.createElement('div')
+      wrapper.className = 'table-scroll-wrap'
+      table.parentNode?.insertBefore(wrapper, table)
+      wrapper.appendChild(table)
+    })
+  })
+}
+
+function markDetailsAnswerBlocks() {
+  nextTick(() => {
+    const el = contentRef.value
+    if (!el) return
+    el.querySelectorAll('details').forEach((details) => {
+      const summary = details.querySelector(':scope > summary')
+      if (!summary) return
+      if (details.querySelector(':scope > .details-answer')) return
+      const wrapper = document.createElement('div')
+      wrapper.className = 'details-answer'
+      while (summary.nextSibling) {
+        wrapper.appendChild(summary.nextSibling)
+      }
+      details.appendChild(wrapper)
+    })
+  })
+}
+
+onMounted(() => {
+  wrapTablesInScrollContainer()
+  markDetailsAnswerBlocks()
+})
+watch(() => post.value, () => {
+  wrapTablesInScrollContainer()
+  markDetailsAnswerBlocks()
+})
+</script>
+
 <template>
   <div class="min-h-screen bg-white">
     <AppNav />
@@ -86,75 +158,3 @@
     <AppFooter />
   </div>
 </template>
-
-<script lang="ts" setup>
-const route = useRoute()
-
-const { data: post } = await useAsyncData(route.path, () => {
-  return queryCollection('blog').path(route.path).first()
-}, {
-  watch: [route]
-})
-
-if (!post.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Página não encontrada', fatal: true })
-}
-
-useSeoMeta({
-  title: () => post.value?.title,
-  description: () => post.value?.description,
-
-  ogTitle: () => post.value?.title,
-  ogDescription: () => post.value?.description,
-  ogImage: () => post.value?.image,
-  ogType: 'article',
-
-  twitterTitle: () => post.value?.title,
-  twitterDescription: () => post.value?.description,
-  twitterImage: () => post.value?.image,
-  twitterCard: 'summary_large_image'
-})
-
-const contentRef = ref<HTMLElement | null>(null)
-
-function wrapTablesInScrollContainer() {
-  nextTick(() => {
-    const el = contentRef.value
-    if (!el) return
-    el.querySelectorAll('.prose table').forEach((table) => {
-      if (table.parentElement?.classList.contains('table-scroll-wrap')) return
-      const wrapper = document.createElement('div')
-      wrapper.className = 'table-scroll-wrap'
-      table.parentNode?.insertBefore(wrapper, table)
-      wrapper.appendChild(table)
-    })
-  })
-}
-
-function markDetailsAnswerBlocks() {
-  nextTick(() => {
-    const el = contentRef.value
-    if (!el) return
-    el.querySelectorAll('details').forEach((details) => {
-      const summary = details.querySelector(':scope > summary')
-      if (!summary) return
-      if (details.querySelector(':scope > .details-answer')) return
-      const wrapper = document.createElement('div')
-      wrapper.className = 'details-answer'
-      while (summary.nextSibling) {
-        wrapper.appendChild(summary.nextSibling)
-      }
-      details.appendChild(wrapper)
-    })
-  })
-}
-
-onMounted(() => {
-  wrapTablesInScrollContainer()
-  markDetailsAnswerBlocks()
-})
-watch(() => post.value, () => {
-  wrapTablesInScrollContainer()
-  markDetailsAnswerBlocks()
-})
-</script>

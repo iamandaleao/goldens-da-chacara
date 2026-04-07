@@ -183,8 +183,8 @@
             </svg>
           </button>
           <ul
-            id="mobileServicesSubmenu"
             v-show="mobileServicesOpen"
+            id="mobileServicesSubmenu"
             class="pb-2"
           >
             <li>

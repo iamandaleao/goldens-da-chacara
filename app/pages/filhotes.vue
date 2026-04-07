@@ -1,3 +1,32 @@
+<script setup lang="ts">
+import { FileText, Syringe, HeartPulse, CheckCircle, Gift, Phone } from '@lucide/vue'
+
+useHead({
+  title: 'Filhotes Golden Retriever',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Filhotes Golden Retriever disponíveis - Goldens da Chácara. Filhotes com pedigree, vacinados e vermifugados.'
+    },
+    {
+      name: 'keywords',
+      content:
+        'filhotes golden retriever, golden retriever para venda, comprar golden retriever, filhotes disponíveis'
+    },
+    { property: 'og:title', content: 'Filhotes Golden Retriever - Goldens da Chácara' },
+    {
+      property: 'og:description',
+      content:
+        'Filhotes Golden Retriever com pedigree, vacinados e vermifugados.'
+    },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://goldensdachacara.com.br/filhotes' }
+  ],
+  link: [{ rel: 'canonical', href: 'https://goldensdachacara.com.br/filhotes' }]
+})
+</script>
+
 <template>
   <div>
     <FloatingButton />
@@ -200,32 +229,3 @@
     <AppFooter />
   </div>
 </template>
-
-<script setup>
-import { FileText, Syringe, HeartPulse, CheckCircle, Gift, Phone } from 'lucide-vue-next'
-
-useHead({
-  title: 'Filhotes Golden Retriever',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Filhotes Golden Retriever disponíveis - Goldens da Chácara. Filhotes com pedigree, vacinados e vermifugados.'
-    },
-    {
-      name: 'keywords',
-      content:
-        'filhotes golden retriever, golden retriever para venda, comprar golden retriever, filhotes disponíveis'
-    },
-    { property: 'og:title', content: 'Filhotes Golden Retriever - Goldens da Chácara' },
-    {
-      property: 'og:description',
-      content:
-        'Filhotes Golden Retriever com pedigree, vacinados e vermifugados.'
-    },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://goldensdachacara.com.br/filhotes' }
-  ],
-  link: [{ rel: 'canonical', href: 'https://goldensdachacara.com.br/filhotes' }]
-})
-</script>

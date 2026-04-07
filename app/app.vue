@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -18,7 +18,6 @@ useHead({
   }
 })
 
-// SEO base (padrão do site)
 const siteName = 'Goldens da Chácara'
 const defaultDescription = 'Criação responsável de Golden Retriever e conteúdos sobre cuidados, saúde e rotina.'
 

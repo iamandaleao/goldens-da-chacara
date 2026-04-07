@@ -1,3 +1,27 @@
+<script setup lang="ts">
+useHead({
+  title: 'Criação Especializada de Golden Retriever',
+  meta: [
+    {
+      name: 'description',
+      content: 'Goldens da Chácara - Criação especializada de Golden Retriever com filhotes de alta linhagem. Conheça nossos reprodutores e reserve seu filhote.'
+    },
+    {
+      name: 'keywords',
+      content: 'golden retriever, filhotes golden retriever, canil golden retriever, golden retriever para venda, criação golden retriever, filhotes golden'
+    },
+    { property: 'og:title', content: 'Goldens da Chácara - Criação Especializada de Golden Retriever' },
+    { property: 'og:description', content: 'Criação especializada de Golden Retriever com filhotes de alta linhagem em Formiga (MG).' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:image', content: 'https://goldensdachacara.com.br/golden-retriever-canil.png' },
+    { property: 'og:url', content: 'https://goldensdachacara.com.br' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://goldensdachacara.com.br' }
+  ]
+})
+</script>
+
 <template>
   <div>
     <FloatingButton />
@@ -100,30 +124,6 @@
     <AppFooter />
   </div>
 </template>
-
-<script setup>
-useHead({
-  title: 'Criação Especializada de Golden Retriever',
-  meta: [
-    {
-      name: 'description',
-      content: 'Goldens da Chácara - Criação especializada de Golden Retriever com filhotes de alta linhagem. Conheça nossos reprodutores e reserve seu filhote.'
-    },
-    {
-      name: 'keywords',
-      content: 'golden retriever, filhotes golden retriever, canil golden retriever, golden retriever para venda, criação golden retriever, filhotes golden'
-    },
-    { property: 'og:title', content: 'Goldens da Chácara - Criação Especializada de Golden Retriever' },
-    { property: 'og:description', content: 'Criação especializada de Golden Retriever com filhotes de alta linhagem em Formiga (MG).' },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:image', content: 'https://goldensdachacara.com.br/golden-retriever-canil.png' },
-    { property: 'og:url', content: 'https://goldensdachacara.com.br' }
-  ],
-  link: [
-    { rel: 'canonical', href: 'https://goldensdachacara.com.br' }
-  ]
-})
-</script>
 
 <style scoped>
 @keyframes fadeIn {
