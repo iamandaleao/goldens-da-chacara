@@ -1,15 +1,15 @@
 <script setup lang="ts">
 const localePath = useLocalePath()
+const { t } = useI18n()
 </script>
 
 <template>
   <section class="error-page">
     <div class="error-content">
-      <h1>Oops… essa página saiu para passear 🐶</h1>
+      <h1>{{ t('title') }}</h1>
 
       <p>
-        A página que você tentou acessar não existe ou foi movida.
-        Mas nossos Goldens continuam aqui, cheios de carinho esperando por você.
+        {{ t('description') }}
       </p>
 
       <div class="error-actions">
@@ -17,14 +17,14 @@ const localePath = useLocalePath()
           :to="localePath('/')"
           class="btn primary"
         >
-          Voltar para o início
+          {{ t('actions.home') }}
         </NuxtLink>
 
         <NuxtLink
           :to="localePath('/filhotes')"
           class="btn secondary"
         >
-          Ver filhotes disponíveis
+          {{ t('actions.puppies') }}
         </NuxtLink>
 
         <a
@@ -33,12 +33,35 @@ const localePath = useLocalePath()
           rel="noopener noreferrer"
           class="btn whatsapp"
         >
-          Falar no WhatsApp
+          {{ t('actions.whatsapp') }}
         </a>
       </div>
     </div>
   </section>
 </template>
+
+<i18n lang="json">
+{
+  "pt": {
+    "title": "Oops… essa página saiu para passear 🐶",
+    "description": "A página que você tentou acessar não existe ou foi movida. Mas nossos Goldens continuam aqui, cheios de carinho esperando por você.",
+    "actions": {
+      "home": "Voltar para o início",
+      "puppies": "Ver filhotes disponíveis",
+      "whatsapp": "Falar no WhatsApp"
+    }
+  },
+  "en": {
+    "title": "Oops... this page went for a walk 🐶",
+    "description": "The page you tried to access doesn't exist or was moved. But our Goldens are still here, full of love, waiting for you.",
+    "actions": {
+      "home": "Back to home",
+      "puppies": "See available puppies",
+      "whatsapp": "Chat on WhatsApp"
+    }
+  }
+}
+</i18n>
 
 <style scoped>
 .error-page {
