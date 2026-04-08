@@ -15,7 +15,7 @@
           <img
             src="/golden-retriever-canil.png"
             alt="Logo Goldens da Chácara"
-            class="w-[60px] h-[60px] object-contain rounded-full border-3 border-[#D4AF37] p-0 bg-white/10 transition-all duration-300 hover:scale-110 hover:rotate-[5deg] hover:border-white"
+            class="w-[60px] h-[60px] object-contain rounded-full border-3 border-primary p-0 bg-white/10 transition-all duration-300 hover:scale-110 hover:rotate-[5deg] hover:border-white"
           >
           <div class="flex flex-col">
             <span
@@ -32,8 +32,8 @@
         <li>
           <NuxtLink
             :to="localePath('/')"
-            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-[#D4AF37]/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-[#D4AF37] after:transition-transform after:duration-300 hover:after:scale-x-100"
-            :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/') }"
+            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-primary/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
+            :class="{ 'bg-primary/20 after:scale-x-100': isActive('/') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
             {{ t('menu.home') }}
@@ -43,17 +43,17 @@
         <li class="relative group">
           <NuxtLink
             to="#"
-            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-[#D4AF37]/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-[#D4AF37] after:transition-transform after:duration-300 hover:after:scale-x-100"
-            :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/hotel') }"
+            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-primary/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
+            :class="{ 'bg-primary/20 after:scale-x-100': isActive('/hotel') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
             {{ t('menu.services') }}
           </NuxtLink>
-          <ul class="absolute left-1/2 top-full mt-5 -translate-x-1/2 bg-[#2C2416]/98 backdrop-blur-[20px] rounded-xl list-none p-2 min-w-[200px] opacity-0 invisible transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.35)] border border-[#D4AF37]/20 group-hover:opacity-100 group-hover:visible">
+          <ul class="absolute left-1/2 top-full mt-5 -translate-x-1/2 bg-[#2C2416]/98 backdrop-blur-[20px] rounded-xl list-none p-2 min-w-[200px] opacity-0 invisible transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.35)] border border-primary/20 group-hover:opacity-100 group-hover:visible">
             <li>
               <NuxtLink
                 :to="localePath('/hotel')"
-                class="text-white block px-6 py-3 no-underline after:hidden hover:bg-[#D4AF37] hover:text-white"
+                class="text-white block px-6 py-3 no-underline after:hidden hover:bg-primary hover:text-white"
               >
                 {{ t('menu.hotel') }}
               </NuxtLink>
@@ -61,7 +61,7 @@
             <li>
               <NuxtLink
                 :to="localePath('/daycare')"
-                class="text-white block px-6 py-3 no-underline after:hidden hover:bg-[#D4AF37] hover:text-white"
+                class="text-white block px-6 py-3 no-underline after:hidden hover:bg-primary hover:text-white"
               >
                 {{ t('menu.daycare') }}
               </NuxtLink>
@@ -72,8 +72,8 @@
         <li>
           <NuxtLink
             :to="localePath('/filhotes')"
-            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-[#D4AF37]/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-[#D4AF37] after:transition-transform after:duration-300 hover:after:scale-x-100"
-            :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/filhotes') }"
+            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-primary/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
+            :class="{ 'bg-primary/20 after:scale-x-100': isActive('/filhotes') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
             {{ t('menu.puppies') }}
@@ -85,7 +85,7 @@
             href="https://wa.me/5547991611628"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-[#D4AF37]/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-[#D4AF37] after:transition-transform after:duration-300 hover:after:scale-x-100"
+            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-primary/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
             {{ t('menu.contact') }}
@@ -95,8 +95,8 @@
         <li>
           <NuxtLink
             :to="localePath('/blog')"
-            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-[#D4AF37]/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-[#D4AF37] after:transition-transform after:duration-300 hover:after:scale-x-100"
-            :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/blog') }"
+            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-primary/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
+            :class="{ 'bg-primary/20 after:scale-x-100': isActive('/blog') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
             {{ t('menu.blog') }}
@@ -106,8 +106,8 @@
         <li class="flex items-center gap-2 pl-3 ml-2 border-l border-white/20">
           <NuxtLink
             :to="getSwitchPath('pt')"
-            class="w-9 h-9 rounded-full grid place-items-center border transition-all duration-300 hover:scale-110 hover:border-[#D4AF37]"
-            :class="locale === 'pt' ? 'border-[#D4AF37] bg-[#D4AF37]/20' : 'border-white/40 bg-white/5'"
+            class="w-9 h-9 rounded-full grid place-items-center border transition-all duration-300 hover:scale-110 hover:border-primary"
+            :class="locale === 'pt' ? 'border-primary bg-primary/20' : 'border-white/40 bg-white/5'"
             :aria-label="t('locale.ptAria')"
             :title="t('locale.ptTitle')"
           >
@@ -118,8 +118,8 @@
           </NuxtLink>
           <NuxtLink
             :to="getSwitchPath('en')"
-            class="w-9 h-9 rounded-full grid place-items-center border transition-all duration-300 hover:scale-110 hover:border-[#D4AF37]"
-            :class="locale === 'en' ? 'border-[#D4AF37] bg-[#D4AF37]/20' : 'border-white/40 bg-white/5'"
+            class="w-9 h-9 rounded-full grid place-items-center border transition-all duration-300 hover:scale-110 hover:border-primary"
+            :class="locale === 'en' ? 'border-primary bg-primary/20' : 'border-white/40 bg-white/5'"
             :aria-label="t('locale.enAria')"
             :title="t('locale.enTitle')"
           >
@@ -162,11 +162,11 @@
       class="fixed top-0 w-[300px] h-screen bg-[#2C2416]/98 backdrop-blur-[20px] pt-8 transition-[right] duration-300 z-[999] shadow-[-5px_0_20px_rgba(0,0,0,0.3)] overflow-y-auto"
       :class="mobileMenuOpen ? 'right-0' : '-right-full'"
     >
-      <div class="flex flex-col items-center px-5 pb-5 border-b-2 border-[#D4AF37]/30 mb-5">
+      <div class="flex flex-col items-center px-5 pb-5 border-b-2 border-primary/30 mb-5">
         <img
           src="/golden-retriever-canil.png"
           alt="Logo Goldens da Chácara"
-          class="w-20 h-20 object-contain rounded-full border-3 border-[#D4AF37] p-2 bg-white/10 mb-4"
+          class="w-20 h-20 object-contain rounded-full border-3 border-primary p-2 bg-white/10 mb-4"
         >
         <span
           class="text-2xl font-bold text-white text-center"
@@ -180,8 +180,8 @@
         <li class="border-b border-white/10">
           <NuxtLink
             :to="localePath('/')"
-            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10"
-            :class="{ 'bg-[#D4AF37] pl-10': isActive('/') }"
+            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-primary hover:pl-10"
+            :class="{ 'bg-primary pl-10': isActive('/') }"
             @click="closeMobileMenu"
           >
             {{ t('menu.home') }}
@@ -190,8 +190,8 @@
         <li class="border-b border-white/10">
           <button
             type="button"
-            class="w-full text-left text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10 flex items-center justify-between"
-            :class="{ 'bg-[#D4AF37] pl-10': isActive('/hotel') }"
+            class="w-full text-left text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-primary hover:pl-10 flex items-center justify-between"
+            :class="{ 'bg-primary pl-10': isActive('/hotel') }"
             :aria-expanded="mobileServicesOpen"
             aria-controls="mobileServicesSubmenu"
             @click="toggleMobileServices"
@@ -217,8 +217,8 @@
             <li>
               <NuxtLink
                 :to="localePath('/hotel')"
-                class="block text-white/90 no-underline px-8 py-3 pl-12 text-sm transition-all duration-300 hover:bg-[#D4AF37] hover:text-white"
-                :class="{ 'bg-[#D4AF37] text-white': isActive('/hotel') }"
+                class="block text-white/90 no-underline px-8 py-3 pl-12 text-sm transition-all duration-300 hover:bg-primary hover:text-white"
+                :class="{ 'bg-primary text-white': isActive('/hotel') }"
                 @click="closeMobileMenu"
               >
                 {{ t('menu.hotel') }}
@@ -227,7 +227,7 @@
             <li>
               <NuxtLink
                 :to="localePath('/daycare')"
-                class="block text-white/90 no-underline px-8 py-3 pl-12 text-sm transition-all duration-300 hover:bg-[#D4AF37] hover:text-white"
+                class="block text-white/90 no-underline px-8 py-3 pl-12 text-sm transition-all duration-300 hover:bg-primary hover:text-white"
                 @click="closeMobileMenu"
               >
                 {{ t('menu.daycare') }}
@@ -238,8 +238,8 @@
         <li class="border-b border-white/10">
           <NuxtLink
             :to="localePath('/filhotes')"
-            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10"
-            :class="{ 'bg-[#D4AF37] pl-10': isActive('/filhotes') }"
+            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-primary hover:pl-10"
+            :class="{ 'bg-primary pl-10': isActive('/filhotes') }"
             @click="closeMobileMenu"
           >
             {{ t('menu.puppies') }}
@@ -250,7 +250,7 @@
             href="https://wa.me/5547991611628"
             target="_blank"
             rel="noopener noreferrer"
-            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10"
+            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-primary hover:pl-10"
             @click="closeMobileMenu"
           >
             {{ t('menu.contact') }}
@@ -259,8 +259,8 @@
         <li class="border-b border-white/10">
           <NuxtLink
             :to="localePath('/blog')"
-            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10"
-            :class="{ 'bg-[#D4AF37] pl-10': isActive('/blog') }"
+            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-primary hover:pl-10"
+            :class="{ 'bg-primary pl-10': isActive('/blog') }"
             @click="closeMobileMenu"
           >
             {{ t('menu.blog') }}
@@ -271,7 +271,7 @@
             <NuxtLink
               :to="getSwitchPath('pt')"
               class="w-10 h-10 rounded-full grid place-items-center border transition-all duration-300"
-              :class="locale === 'pt' ? 'border-[#D4AF37] bg-[#D4AF37]' : 'border-white/40 bg-white/10'"
+              :class="locale === 'pt' ? 'border-primary bg-primary' : 'border-white/40 bg-white/10'"
               :aria-label="t('locale.ptAria')"
               :title="t('locale.ptTitle')"
               @click="closeMobileMenu"
@@ -284,7 +284,7 @@
             <NuxtLink
               :to="getSwitchPath('en')"
               class="w-10 h-10 rounded-full grid place-items-center border transition-all duration-300"
-              :class="locale === 'en' ? 'border-[#D4AF37] bg-[#D4AF37]' : 'border-white/40 bg-white/10'"
+              :class="locale === 'en' ? 'border-primary bg-primary' : 'border-white/40 bg-white/10'"
               :aria-label="t('locale.enAria')"
               :title="t('locale.enTitle')"
               @click="closeMobileMenu"

@@ -75,25 +75,25 @@ useHead({
         <div class="my-10">
           <h3 class="text-3xl md:text-4xl text-[#2C2416] mb-4 font-extrabold text-center relative inline-block w-full">
             {{ t('delivery.title') }}
-            <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] rounded-sm" />
+            <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-primary to-[#8B7355] rounded-sm" />
           </h3>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 mt-10">
-            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group">
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group">
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
-              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#D4AF37]/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
+              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
                 <div
-                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-[#D4AF37] to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
+                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-primary to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
                   style="-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;"
                 />
                 <FileText
                   :size="32"
-                  class="text-[#D4AF37] transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
+                  class="text-primary transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
                 />
               </div>
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
+              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-primary">
                 {{ t('cards.pedigree.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
@@ -101,21 +101,21 @@ useHead({
               </p>
             </div>
 
-            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group">
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group">
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
-              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#D4AF37]/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
+              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
                 <div
-                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-[#D4AF37] to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
+                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-primary to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
                   style="-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;"
                 />
                 <Syringe
                   :size="32"
-                  class="text-[#D4AF37] transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
+                  class="text-primary transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
                 />
               </div>
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
+              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-primary">
                 {{ t('cards.vaccines.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
@@ -123,21 +123,21 @@ useHead({
               </p>
             </div>
 
-            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group">
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group">
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
-              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#D4AF37]/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
+              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
                 <div
-                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-[#D4AF37] to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
+                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-primary to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
                   style="-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;"
                 />
                 <HeartPulse
                   :size="32"
-                  class="text-[#D4AF37] transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
+                  class="text-primary transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
                 />
               </div>
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
+              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-primary">
                 {{ t('cards.deworming.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
@@ -145,21 +145,21 @@ useHead({
               </p>
             </div>
 
-            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group">
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group">
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
-              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#D4AF37]/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
+              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
                 <div
-                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-[#D4AF37] to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
+                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-primary to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
                   style="-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;"
                 />
                 <CheckCircle
                   :size="32"
-                  class="text-[#D4AF37] transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
+                  class="text-primary transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
                 />
               </div>
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
+              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-primary">
                 {{ t('cards.healthGuarantee.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
@@ -167,21 +167,21 @@ useHead({
               </p>
             </div>
 
-            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group">
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group">
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
-              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#D4AF37]/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
+              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
                 <div
-                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-[#D4AF37] to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
+                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-primary to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
                   style="-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;"
                 />
                 <Gift
                   :size="32"
-                  class="text-[#D4AF37] transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
+                  class="text-primary transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
                 />
               </div>
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
+              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-primary">
                 {{ t('cards.puppyManual.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
@@ -189,21 +189,21 @@ useHead({
               </p>
             </div>
 
-            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group">
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+            <div class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-[400ms] border-2 border-transparent hover:-translate-y-3 hover:scale-105 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group">
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
-              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#D4AF37]/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
+              <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-[#8B7355]/10 rounded-3xl flex items-center justify-center transition-all duration-400 relative group-hover:scale-110 group-hover:rotate-[5deg]">
                 <div
-                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-[#D4AF37] to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
+                  class="absolute inset-[-2px] rounded-3xl p-0.5 bg-gradient-to-br from-primary to-[#8B7355] opacity-0 transition-opacity duration-400 group-hover:opacity-100"
                   style="-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;"
                 />
                 <Phone
                   :size="32"
-                  class="text-[#D4AF37] transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
+                  class="text-primary transition-all duration-400 group-hover:text-[#8B7355] group-hover:scale-110"
                 />
               </div>
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
+              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-primary">
                 {{ t('cards.support.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
@@ -213,7 +213,7 @@ useHead({
           </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#D4AF37] to-[#8B7355] p-16 rounded-3xl text-center text-white shadow-2xl mt-16">
+        <div class="bg-gradient-to-br from-primary to-[#8B7355] p-16 rounded-3xl text-center text-white shadow-2xl mt-16">
           <h3 class="text-4xl mb-4 font-extrabold">
             {{ t('cta.title') }}
           </h3>
@@ -222,7 +222,7 @@ useHead({
           </p>
           <a
             :href="`https://wa.me/5547991611628?text=${puppiesWhatsappMessage}`"
-            class="inline-block px-6 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-xl uppercase tracking-wide hover:-translate-y-2 hover:shadow-2xl hover:bg-[#C9A02C]"
+            class="inline-block px-6 py-5 bg-primary text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-xl uppercase tracking-wide hover:-translate-y-2 hover:shadow-2xl hover:bg-[#C9A02C]"
             target="_blank"
             rel="noopener noreferrer"
           >

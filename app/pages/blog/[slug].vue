@@ -161,7 +161,7 @@ function formatDate(date: string | Date) {
             />
           </div>
 
-          <div class="bg-[#D4AF37]/10 border-l-4 border-[#D4AF37] py-6 px-8 my-8 rounded-r-lg">
+          <div class="bg-primary/10 border-l-4 border-primary py-6 px-8 my-8 rounded-r-lg">
             <p class="text-[#333] font-medium m-0">
               💡 <strong>{{ t('labels.importantTip') }}:</strong> {{ post.tip }}
             </p>
@@ -172,7 +172,7 @@ function formatDate(date: string | Date) {
         <div class="mt-12 pt-8 border-t border-gray-300">
           <NuxtLink
             :to="localePath('/blog')"
-            class="inline-block px-8 py-3.5 bg-[#D4AF37] text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
+            class="inline-block px-8 py-3.5 bg-primary text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
           >
             ← {{ t('actions.viewMorePosts') }}
           </NuxtLink>
@@ -191,7 +191,7 @@ function formatDate(date: string | Date) {
         </h1>
         <NuxtLink
           :to="localePath('/blog')"
-          class="inline-flex items-center px-4 py-2 text-[#D4AF37] no-underline font-medium rounded-lg mb-6 transition-all duration-300 hover:bg-[#D4AF37]/10 hover:text-[#C9A02C]"
+          class="inline-flex items-center px-4 py-2 text-primary no-underline font-medium rounded-lg mb-6 transition-all duration-300 hover:bg-primary/10 hover:text-[#C9A02C]"
         >
           ← {{ t('actions.backToBlog') }}
         </NuxtLink>

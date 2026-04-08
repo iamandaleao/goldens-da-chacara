@@ -60,7 +60,7 @@ useHead({
         </p>
         <NuxtLink
           :to="localePath('/filhotes')"
-          class="inline-block px-6 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide animate-fadeInDelay2 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#C9A02C]"
+          class="inline-block px-6 py-5 bg-primary text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide animate-fadeInDelay2 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#C9A02C]"
         >
           {{ t('hero.cta') }}
         </NuxtLink>
@@ -92,7 +92,7 @@ useHead({
 
           <div class="h-[500px]">
             <div
-              class="w-full h-full bg-gradient-to-br from-[#8B7355] to-[#D4AF37] rounded-3xl flex items-center justify-center text-white text-2xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] bg-cover bg-center"
+              class="w-full h-full bg-gradient-to-br from-[#8B7355] to-primary rounded-3xl flex items-center justify-center text-white text-2xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] bg-cover bg-center"
               style="background-image: url('/images/golden-retriever-home-canil.jpg');"
             />
           </div>
@@ -112,13 +112,13 @@ useHead({
         <div class="flex gap-6 justify-center flex-wrap">
           <NuxtLink
             :to="localePath('/filhotes')"
-            class="inline-block px-6 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#C9A02C]"
+            class="inline-block px-6 py-5 bg-primary text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#C9A02C]"
           >
             {{ t('finalCta.primary') }}
           </NuxtLink>
           <a
             href="https://wa.me/5547991611628"
-            class="inline-block px-6 py-5 bg-transparent text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide border-3 border-[#D4AF37] hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#D4AF37]"
+            class="inline-block px-6 py-5 bg-transparent text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide border-3 border-primary hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-primary"
             target="_blank"
             rel="noopener noreferrer"
           >

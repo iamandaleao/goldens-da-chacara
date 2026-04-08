@@ -56,7 +56,7 @@ useSeoMeta({
     <section class="py-28 bg-white min-h-screen">
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="mb-16">
-          <h1 class="text-5xl text-[#D4AF37] mb-4 font-extrabold text-center">
+          <h1 class="text-5xl text-primary mb-4 font-extrabold text-center">
             {{ t('hero.title') }}
           </h1>
           <p class="text-xl text-gray-600 leading-relaxed text-center">
@@ -68,7 +68,7 @@ useSeoMeta({
           <article
             v-for="post in posts"
             :key="post.path"
-            class="bg-white rounded-3xl shadow-lg transition-all duration-300 overflow-hidden border border-[#D4AF37]/20 hover:-translate-y-2 hover:shadow-2xl"
+            class="bg-white rounded-3xl shadow-lg transition-all duration-300 overflow-hidden border border-primary/20 hover:-translate-y-2 hover:shadow-2xl"
           >
             <NuxtLink :to="getPostPath(post.path)">
               <img
@@ -79,7 +79,7 @@ useSeoMeta({
             </NuxtLink>
 
             <div class="p-8 md:p-10">
-              <h2 class="text-3xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 overflow-hidden text-ellipsis whitespace-nowrap hover:text-[#D4AF37]">
+              <h2 class="text-3xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 overflow-hidden text-ellipsis whitespace-nowrap hover:text-primary">
                 <NuxtLink :to="getPostPath(post.path)">
                   {{ post.title }}
                 </NuxtLink>
@@ -98,7 +98,7 @@ useSeoMeta({
 
               <NuxtLink
                 :to="getPostPath(post.path)"
-                class="inline-block px-8 py-3.5 bg-[#D4AF37] text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
+                class="inline-block px-8 py-3.5 bg-primary text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
               >
                 {{ t('actions.readFullPost') }} →
               </NuxtLink>

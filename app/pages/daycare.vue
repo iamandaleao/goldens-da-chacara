@@ -86,19 +86,19 @@ useHead({
           >
             {{ t('benefits.title') }}
             <span
-              class="absolute bottom-[-12px] left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] rounded-sm"
+              class="absolute bottom-[-12px] left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-primary to-[#8B7355] rounded-sm"
             />
           </h3>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
             <!-- CARD -->
             <div
-              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group"
+              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Users
-                class="mx-auto mb-6 text-[#D4AF37]"
+                class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
@@ -111,12 +111,12 @@ useHead({
             </div>
 
             <div
-              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group"
+              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Activity
-                class="mx-auto mb-6 text-[#D4AF37]"
+                class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
@@ -129,12 +129,12 @@ useHead({
             </div>
 
             <div
-              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group"
+              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Clock
-                class="mx-auto mb-6 text-[#D4AF37]"
+                class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
@@ -147,12 +147,12 @@ useHead({
             </div>
 
             <div
-              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group"
+              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Camera
-                class="mx-auto mb-6 text-[#D4AF37]"
+                class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
@@ -165,12 +165,12 @@ useHead({
             </div>
 
             <div
-              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group"
+              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Trees
-                class="mx-auto mb-6 text-[#D4AF37]"
+                class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
@@ -183,12 +183,12 @@ useHead({
             </div>
 
             <div
-              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-[#D4AF37]/30 relative overflow-hidden group"
+              class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Eye
-                class="mx-auto mb-6 text-[#D4AF37]"
+                class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
@@ -216,7 +216,7 @@ useHead({
 
           <a
             href="https://wa.me/5547991611628"
-            class="inline-block px-6 py-5 bg-transparent text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide border-3 border-[#D4AF37] hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#D4AF37]"
+            class="inline-block px-6 py-5 bg-transparent text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide border-3 border-primary hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-primary"
             target="_blank"
             rel="noopener noreferrer"
           >
