@@ -111,7 +111,10 @@
             aria-label="Mudar para português"
             title="Português (Brasil)"
           >
-            <span class="text-lg leading-none">🇧🇷</span>
+            <CircleFlagsBr
+              class="text-lg"
+              aria-hidden="true"
+            />
           </NuxtLink>
           <NuxtLink
             :to="getSwitchPath('en')"
@@ -120,7 +123,10 @@
             aria-label="Switch to English"
             title="English (United States)"
           >
-            <span class="text-lg leading-none">🇺🇸</span>
+            <CircleFlagsUs
+              class="text-lg"
+              aria-hidden="true"
+            />
           </NuxtLink>
         </li>
       </ul>
@@ -270,7 +276,10 @@
               title="Português (Brasil)"
               @click="closeMobileMenu"
             >
-              <span class="text-lg leading-none">🇧🇷</span>
+              <CircleFlagsBr
+                class="text-xl"
+                aria-hidden="true"
+              />
             </NuxtLink>
             <NuxtLink
               :to="getSwitchPath('en')"
@@ -280,7 +289,10 @@
               title="English (United States)"
               @click="closeMobileMenu"
             >
-              <span class="text-lg leading-none">🇺🇸</span>
+              <CircleFlagsUs
+                class="text-xl"
+                aria-hidden="true"
+              />
             </NuxtLink>
           </div>
         </li>
