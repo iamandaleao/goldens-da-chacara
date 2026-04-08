@@ -1,26 +1,30 @@
+<script setup lang="ts">
+const localePath = useLocalePath()
+const { t } = useI18n()
+</script>
+
 <template>
   <section class="error-page">
     <div class="error-content">
-      <h1>Oops… essa página saiu para passear 🐶</h1>
+      <h1>{{ t('title') }}</h1>
 
       <p>
-        A página que você tentou acessar não existe ou foi movida.
-        Mas nossos Goldens continuam aqui, cheios de carinho esperando por você.
+        {{ t('description') }}
       </p>
 
       <div class="error-actions">
         <NuxtLink
-          to="/"
+          :to="localePath('/')"
           class="btn primary"
         >
-          Voltar para o início
+          {{ t('actions.home') }}
         </NuxtLink>
 
         <NuxtLink
-          to="/filhotes"
+          :to="localePath('/filhotes')"
           class="btn secondary"
         >
-          Ver filhotes disponíveis
+          {{ t('actions.puppies') }}
         </NuxtLink>
 
         <a
@@ -29,22 +33,56 @@
           rel="noopener noreferrer"
           class="btn whatsapp"
         >
-          Falar no WhatsApp
+          {{ t('actions.whatsapp') }}
         </a>
       </div>
     </div>
   </section>
 </template>
 
+<i18n lang="json">
+{
+  "pt": {
+    "title": "Oops… essa página saiu para passear 🐶",
+    "description": "A página que você tentou acessar não existe ou foi movida. Mas nossos Goldens continuam aqui, cheios de carinho esperando por você.",
+    "actions": {
+      "home": "Voltar para o início",
+      "puppies": "Ver filhotes disponíveis",
+      "whatsapp": "Falar no WhatsApp"
+    }
+  },
+  "en": {
+    "title": "Oops... this page went for a walk 🐶",
+    "description": "The page you tried to access doesn't exist or was moved. But our Goldens are still here, full of love, waiting for you.",
+    "actions": {
+      "home": "Back to home",
+      "puppies": "See available puppies",
+      "whatsapp": "Chat on WhatsApp"
+    }
+  }
+}
+</i18n>
+
 <style scoped>
 .error-page {
+  --error-bg-top: #FFE9C5;
+  --error-title: #5A3E1B;
+  --error-body: #3F2A15;
+  --error-btn-primary-start: #D4AF379F;
+  --error-btn-primary-end: #C19A2EE7;
+  --error-btn-secondary-start: #B37B2CC4;
+  --error-btn-secondary-end: #8B5A2B;
+  --error-btn-text: #1F1A0F;
+  --error-btn-secondary-text: #FFF7E5;
+  --error-whatsapp-start: #25D365A4;
+  --error-whatsapp-end: #1EBE5EDC;
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: linear-gradient(to bottom, #ffe9c5, #d4af37);
+  background: linear-gradient(to bottom, var(--error-bg-top), var(--color-primary));
   overflow: hidden;
 }
 
@@ -87,7 +125,7 @@
 .error-content h1 {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #5a3e1b;
+  color: var(--error-title);
   margin-bottom: 1rem;
   line-height: 2.5rem;
 }
@@ -95,7 +133,7 @@
 .error-content p {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #3f2a15;
+  color: var(--error-body);
   margin-bottom: 2rem;
 }
 
@@ -120,18 +158,18 @@
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #d4af379f, #c19a2ee7);
-  color: #1f1a0f;
+  background: linear-gradient(135deg, var(--error-btn-primary-start), var(--error-btn-primary-end));
+  color: var(--error-btn-text);
 }
 
 .btn.secondary {
-  background: linear-gradient(135deg, #b37b2cc4, #8b5a2b);
-  color: #fff7e5;
+  background: linear-gradient(135deg, var(--error-btn-secondary-start), var(--error-btn-secondary-end));
+  color: var(--error-btn-secondary-text);
 }
 
 .btn.whatsapp {
-  background: linear-gradient(135deg, #25d365a4, #1ebe5edc);
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--error-whatsapp-start), var(--error-whatsapp-end));
+  color: white;
 }
 
 .btn:hover {

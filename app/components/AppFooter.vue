@@ -1,14 +1,14 @@
 <template>
-  <footer class="bg-[#1a1a1a] text-white pt-16 pb-5">
+  <footer class="bg-surface-dark text-white pt-16 pb-5">
     <div class="max-w-[1200px] mx-auto px-5">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
         <!-- Coluna 1 -->
         <div>
-          <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
+          <h3 class="text-xl mb-6 text-primary font-bold">
             Goldens da Chácara
           </h3>
-          <p class="text-[#ccc] mb-6 leading-relaxed">
-            Criação especializada de Golden Retriever com amor e responsabilidade.
+          <p class="text-muted mb-6 leading-relaxed">
+            {{ t('about') }}
           </p>
 
           <div class="flex gap-4">
@@ -18,7 +18,7 @@
               rel="noopener noreferrer"
               aria-label="Instagram"
               title="Instagram"
-              class="w-10 h-10 bg-[#D4AF37]/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-[#D4AF37] hover:-translate-y-1 hover:scale-110"
+              class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-primary hover:-translate-y-1 hover:scale-110"
             >
               <svg
                 width="20"
@@ -38,7 +38,7 @@
               rel="noopener noreferrer"
               aria-label="Facebook"
               title="Facebook"
-              class="w-10 h-10 bg-[#D4AF37]/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-[#D4AF37] hover:-translate-y-1 hover:scale-110"
+              class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-primary hover:-translate-y-1 hover:scale-110"
             >
               <svg
                 width="20"
@@ -58,7 +58,7 @@
               rel="noopener noreferrer"
               aria-label="YouTube"
               title="YouTube"
-              class="w-10 h-10 bg-[#D4AF37]/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-[#D4AF37] hover:-translate-y-1 hover:scale-110"
+              class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-primary hover:-translate-y-1 hover:scale-110"
             >
               <svg
                 width="20"
@@ -76,32 +76,32 @@
 
         <!-- Coluna 2 -->
         <div>
-          <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
-            Links Rápidos
+          <h3 class="text-xl mb-6 text-primary font-bold">
+            {{ t('sections.quickLinks') }}
           </h3>
           <ul class="list-none">
             <li class="mb-3">
               <NuxtLink
-                to="/"
-                class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
+                :to="localePath('/')"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
-                Home
+                {{ t('links.home') }}
               </NuxtLink>
             </li>
             <li class="mb-3">
               <NuxtLink
-                to="/filhotes"
-                class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
+                :to="localePath('/filhotes')"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
-                Filhotes
+                {{ t('links.puppies') }}
               </NuxtLink>
             </li>
             <li class="mb-3">
               <NuxtLink
-                to="/blog"
-                class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
+                :to="localePath('/blog')"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
-                Blog
+                {{ t('links.blog') }}
               </NuxtLink>
             </li>
           </ul>
@@ -109,18 +109,18 @@
 
         <!-- Coluna 3 -->
         <div>
-          <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
-            Contato
+          <h3 class="text-xl mb-6 text-primary font-bold">
+            {{ t('sections.contact') }}
           </h3>
           <ul class="list-none">
             <li class="flex items-center gap-2.5 mb-3">
               <Mail
                 :size="18"
-                class="text-[#D4AF37] shrink-0 transition-all duration-300"
+                class="text-primary shrink-0 transition-all duration-300"
               />
               <a
                 href="mailto:goldensdachacara@gmail.com"
-                class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
                 goldensdachacara@gmail.com
               </a>
@@ -128,13 +128,13 @@
             <li class="flex items-center gap-2.5 mb-3 group">
               <Phone
                 :size="18"
-                class="text-[#D4AF37] shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-white"
+                class="text-primary shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-white"
               />
               <a
                 href="https://wa.me/5547991611628"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
                 (47) 99161-1628
               </a>
@@ -142,26 +142,26 @@
             <li class="flex items-center gap-2.5 mb-3 group">
               <MapPin
                 :size="18"
-                class="text-[#D4AF37] shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-white"
+                class="text-primary shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-white"
               />
-              <span class="text-[#ccc] transition-all duration-300 group-hover:text-[#D4AF37] group-hover:pl-1">
+              <address class="text-muted transition-all duration-300 group-hover:text-primary group-hover:pl-1 not-italic">
                 Formiga, MG
-              </span>
+              </address>
             </li>
           </ul>
         </div>
 
         <!-- Coluna 4 -->
         <div>
-          <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
-            Horário de Atendimento
+          <h3 class="text-xl mb-6 text-primary font-bold">
+            {{ t('sections.hours') }}
           </h3>
           <ul class="list-none">
-            <li class="text-[#ccc] mb-3 leading-relaxed">
-              Segunda a sábado: 9h às 21h
+            <li class="text-muted mb-3 leading-relaxed">
+              {{ t('hours.weekdays') }}
             </li>
-            <li class="text-[#ccc] mb-3 leading-relaxed">
-              Domingos e feriados: 13h às 20h
+            <li class="text-muted mb-3 leading-relaxed">
+              {{ t('hours.weekends') }}
             </li>
           </ul>
           <!-- Selos -->
@@ -197,20 +197,69 @@
         </div>
       </div>
 
-      <div class="text-center pt-8 border-t border-[#333]">
-        <p class="text-[#999] text-[0.95rem] mb-2">
-          &copy; {{ currentYear }} Goldens da Chácara. Todos os direitos reservados.
+      <div class="text-center pt-8 border-t border-strong">
+        <p class="text-subtle text-[0.95rem] mb-2">
+          &copy; {{ currentYear }} {{ t('copyright.line1') }}
         </p>
-        <p class="text-[#999] text-[0.95rem] mb-2">
-          Criação especializada de Golden Retriever | Filhotes Golden Retriever Formiga/MG
+        <p class="text-subtle text-[0.95rem] mb-2">
+          {{ t('copyright.line2') }}
         </p>
       </div>
     </div>
   </footer>
 </template>
 
-<script setup>
-import { Mail, Phone, MapPin } from 'lucide-vue-next'
+<script setup lang="ts">
+import { Mail, Phone, MapPin } from '@lucide/vue'
 
 const currentYear = new Date().getFullYear()
+const localePath = useLocalePath()
+const { t } = useI18n()
 </script>
+
+<i18n lang="json">
+{
+  "pt": {
+    "about": "Criação especializada de Golden Retriever com amor e responsabilidade.",
+    "sections": {
+      "quickLinks": "Links Rápidos",
+      "contact": "Contato",
+      "hours": "Horário de Atendimento"
+    },
+    "links": {
+      "home": "Home",
+      "puppies": "Filhotes",
+      "blog": "Blog"
+    },
+    "hours": {
+      "weekdays": "Segunda a sábado: 9h às 21h",
+      "weekends": "Domingos e feriados: 13h às 20h"
+    },
+    "copyright": {
+      "line1": "Goldens da Chácara. Todos os direitos reservados.",
+      "line2": "Criação especializada de Golden Retriever | Filhotes Golden Retriever Formiga/MG"
+    }
+  },
+  "en": {
+    "about": "Specialized Golden Retriever breeding with love and responsibility.",
+    "sections": {
+      "quickLinks": "Quick Links",
+      "contact": "Contact",
+      "hours": "Business Hours"
+    },
+    "links": {
+      "home": "Home",
+      "puppies": "Puppies",
+      "blog": "Blog"
+    },
+    "hours": {
+      "weekdays": "Monday to Saturday: 9am to 9pm",
+      "weekends": "Sundays and holidays: 1pm to 8pm"
+    },
+    "copyright": {
+      "line1": "Goldens da Chácara. All rights reserved.",
+      "line2": "Specialized Golden Retriever breeding | Golden Retriever puppies in Formiga, MG"
+    }
+  }
+}
+</i18n>

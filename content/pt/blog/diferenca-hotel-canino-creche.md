@@ -6,6 +6,13 @@ tip: "Muitos estabelecimentos oferecem ambos os serviços. Experimente a creche 
 date: "2026-01-12 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Diferença entre hotel canino e creche para cães"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-12"
 ---
 
 ## O que é um hotel canino

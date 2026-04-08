@@ -6,6 +6,13 @@ tip: "Escove seu Golden diariamente durante as épocas de troca de pelo (primave
 date: "2026-01-06 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Banho e tosa em Golden Retriever: cuidados essenciais"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-06"
 ---
 
 ## Frequência ideal de banhos

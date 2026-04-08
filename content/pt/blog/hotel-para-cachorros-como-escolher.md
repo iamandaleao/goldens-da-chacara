@@ -6,6 +6,13 @@ tip: "Agende uma visita ao hotel antes de fazer a reserva. Observe a limpeza do 
 date: "2026-01-16 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Como escolher o melhor hotel para seu cachorro"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-16"
 ---
 
 ## Infraestrutura e segurança em primeiro lugar

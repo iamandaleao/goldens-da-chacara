@@ -6,6 +6,13 @@ tip: "Comece levando seu cachorro para períodos curtos na creche antes de deix�
 date: "2026-01-10 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Creche para cachorros: por que seu pet precisa"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-10"
 ---
 
 ## Socialização e estímulo mental

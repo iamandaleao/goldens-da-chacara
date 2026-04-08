@@ -1,7 +1,21 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* --- Accordion-style details/summary (base) --- */
+@theme {
+    --color-primary: #D4AF37;
+    --color-primary-strong: #C9A02C;
+    --color-secondary: #8B7355;
+    --color-ink: #2C2416;
+    --color-ink-deep: #1F1A12;
+    --color-surface-cream: #F5F5DC;
+    --color-surface-dark: #1A1A1A;
+    --color-strong: #333333;
+    --color-muted: #CCCCCC;
+    --color-subtle: #999999;
+    --color-whatsapp: #25D366;
+    --color-whatsapp-dark: #1EBE5D;
+}
+
 details {
     border: 1px solid oklch(0.88 0.01 260);
     border-radius: 0.5rem;
@@ -63,7 +77,6 @@ details[open] summary::after {
     transform: rotate(-135deg);
 }
 
-/* Conteúdo da resposta (área que abre ao clicar) — padding no início */
 .details-answer {
     padding: 1rem 1rem 1rem 2rem;
     padding-inline-start: 2rem;
@@ -81,14 +94,12 @@ details>*:not(summary),
     box-sizing: border-box;
 }
 
-/* --- Tabelas em posts: scroll estável com barra de rolagem --- */
 .table-scroll-wrap {
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     margin: 1rem 0;
-    /* Reserva espaço para a barra de rolagem para não “dançar” o layout */
     scrollbar-gutter: stable;
 }
 

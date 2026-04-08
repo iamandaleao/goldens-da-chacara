@@ -6,6 +6,13 @@ tip: "Planeje a hospedagem com antecedência sempre que possível. Uma visita pr
 date: "2026-01-24 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Sinais de que seu cão precisa de um hotel canino"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-24"
 ---
 
 ## Viagens a trabalho ou férias prolongadas

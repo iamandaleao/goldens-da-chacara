@@ -6,6 +6,13 @@ tip: "Golden Retrievers são extremamente motivados por comida e elogios. Use pe
 date: "2026-01-02 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Adestramento de Golden Retriever: guia completo"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-02"
 ---
 
 ## Comece cedo e seja consistente

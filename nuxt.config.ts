@@ -2,22 +2,21 @@ import { defineOrganization } from 'nuxt-schema-org/schema'
 import { defineNuxtConfig } from 'nuxt/config'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxtjs/seo', '@nuxt/content', '@nuxt/scripts'],
+  modules: ['@nuxt/eslint', '@nuxtjs/seo', '@nuxtjs/i18n', '@nuxt/content', '@nuxt/scripts'],
 
   $production: {
     scripts: {
       registry: {
         googleAnalytics: {
-          id: 'G-W4RRNKNZTS'
+          id: 'G-W4RRNKNZTS' as never
         }
       }
     }
   },
 
   devtools: {
-    enabled: true
+    enabled: false
   },
 
   css: ['~/assets/css/style.css'],
@@ -39,17 +38,39 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/': { prerender: true },
+    '/en': { prerender: true },
     '/filhotes': { prerender: true },
+    '/en/puppies': { prerender: true },
+    '/daycare': { prerender: true },
+    '/en/daycare': { prerender: true },
     '/hotel': { prerender: true },
+    '/en/boarding': { prerender: true },
     '/blog': { prerender: true },
     '/blog/**': { prerender: true },
+    '/en/blog': { prerender: true },
+    '/en/blog/**': { prerender: true },
     '/hotel-pet': { redirect: { to: '/hotel', statusCode: 301 } }
+  },
 
+  sourcemap: {
+    client: false,
+    server: false
   },
 
   compatibilityDate: '2025-01-15',
 
+  nitro: {
+    devStorage: {
+      'cache:nuxt:payload': {
+        driver: 'memory'
+      }
+    }
+  },
+
   vite: {
+    build: {
+      sourcemap: false
+    },
     plugins: [
       tailwindcss()
     ]
@@ -62,6 +83,21 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  i18n: {
+    locales: [
+      { code: 'pt', name: 'Português', language: 'pt-br' },
+      { code: 'en', name: 'English', language: 'en-US' }
+    ],
+    baseUrl: 'https://goldensdachacara.com.br',
+    customRoutes: 'meta',
+    strategy: 'prefix_except_default',
+    defaultLocale: 'pt'
+  },
+
+  ogImage: {
+    enabled: false
   },
 
   schemaOrg: {
@@ -108,7 +144,6 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-
     urls: [
       {
         loc: '/',

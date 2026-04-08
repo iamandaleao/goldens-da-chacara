@@ -6,6 +6,13 @@ tip: "Evitar pisos lisos, controlar o peso e não forçar exercícios em filhote
 date: "2026-03-16 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Displasia coxofemoral em cães: guia completo para entender, prevenir e cuidar"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-03-16"
 ---
 
 ## O que é a displasia coxofemoral?

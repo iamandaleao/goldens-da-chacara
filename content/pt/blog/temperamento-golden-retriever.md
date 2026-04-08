@@ -6,6 +6,13 @@ tip: "Golden Retrievers são cães sociáveis que precisam de companhia constant
 date: "2026-01-28 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Temperamento e personalidade do Golden Retriever"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-28"
 ---
 
 ## Personalidade dócil e amigável

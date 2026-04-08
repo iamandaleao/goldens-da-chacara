@@ -11,22 +11,29 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxt/content": "^3.9.0",
-    "@nuxt/scripts": "0.13.2",
-    "@nuxt/ui": "^4.2.1",
-    "@nuxtjs/seo": "3.0.3",
-    "@tailwindcss/vite": "^4.2.1",
-    "@unhead/vue": "^2.0.19",
-    "lucide-vue-next": "^0.556.0",
-    "nuxt": "^4.2.1",
-    "tailwindcss": "^4.2.1"
+    "@lucide/vue": "^1.7.0",
+    "@nuxt/content": "^3.12.0",
+    "@nuxt/scripts": "1.0.0-rc.5",
+    "@nuxtjs/i18n": "^10.2.4",
+    "@nuxtjs/seo": "^5.1.2",
+    "@tailwindcss/vite": "^4.2.2",
+    "nuxt": "^4.4.2",
+    "tailwindcss": "^4.2.2",
+    "zod": "^3.25.76",
+    "zod-to-json-schema": "^3.25.2"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.10.0",
+    "@nuxt/eslint": "^1.15.2",
     "@tailwindcss/typography": "^0.5.19",
-    "eslint": "^9.39.1",
-    "typescript": "^5.9.3",
-    "vue-tsc": "^3.1.5"
+    "eslint": "^10.2.0",
+    "typescript": "^6.0.2",
+    "vue-tsc": "^3.2.6"
   },
-  "packageManager": "pnpm@10.23.0"
+  "packageManager": "pnpm@10.23.0",
+  "pnpm": {
+    "public-hoist-pattern": [
+      "zod",
+      "zod-to-json-schema"
+    ]
+  }
 }
