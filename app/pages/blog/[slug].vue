@@ -128,7 +128,7 @@ function formatDate(date: string | Date) {
         >
 
         <!-- Título -->
-        <h1 class="text-4xl md:text-5xl text-[#2C2416] mb-4 font-extrabold">
+        <h1 class="text-4xl md:text-5xl text-ink mb-4 font-extrabold">
           {{ post.title }}
         </h1>
 
@@ -162,7 +162,7 @@ function formatDate(date: string | Date) {
           </div>
 
           <div class="bg-primary/10 border-l-4 border-primary py-6 px-8 my-8 rounded-r-lg">
-            <p class="text-[#333] font-medium m-0">
+            <p class="text-text-strong font-medium m-0">
               💡 <strong>{{ t('labels.importantTip') }}:</strong> {{ post.tip }}
             </p>
           </div>
@@ -172,7 +172,7 @@ function formatDate(date: string | Date) {
         <div class="mt-12 pt-8 border-t border-gray-300">
           <NuxtLink
             :to="localePath('/blog')"
-            class="inline-block px-8 py-3.5 bg-primary text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
+            class="inline-block px-8 py-3.5 bg-primary text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-primary-strong hover:-translate-y-0.5 hover:shadow-lg"
           >
             ← {{ t('actions.viewMorePosts') }}
           </NuxtLink>
@@ -186,12 +186,12 @@ function formatDate(date: string | Date) {
       class="py-20"
     >
       <div class="max-w-[900px] mx-auto mt-12 px-5 text-center">
-        <h1 class="text-4xl text-[#2C2416] mb-4 font-extrabold">
+        <h1 class="text-4xl text-ink mb-4 font-extrabold">
           {{ t('errors.postNotFound') }}
         </h1>
         <NuxtLink
           :to="localePath('/blog')"
-          class="inline-flex items-center px-4 py-2 text-primary no-underline font-medium rounded-lg mb-6 transition-all duration-300 hover:bg-primary/10 hover:text-[#C9A02C]"
+          class="inline-flex items-center px-4 py-2 text-primary no-underline font-medium rounded-lg mb-6 transition-all duration-300 hover:bg-primary/10 hover:text-primary-strong"
         >
           ← {{ t('actions.backToBlog') }}
         </NuxtLink>

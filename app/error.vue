@@ -48,7 +48,7 @@ const localePath = useLocalePath()
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: linear-gradient(to bottom, #ffe9c5, #d4af37);
+  background: linear-gradient(to bottom, var(--color-error-bg-top), var(--color-primary));
   overflow: hidden;
 }
 
@@ -91,7 +91,7 @@ const localePath = useLocalePath()
 .error-content h1 {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #5a3e1b;
+  color: var(--color-error-title);
   margin-bottom: 1rem;
   line-height: 2.5rem;
 }
@@ -99,7 +99,7 @@ const localePath = useLocalePath()
 .error-content p {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #3f2a15;
+  color: var(--color-error-body);
   margin-bottom: 2rem;
 }
 
@@ -124,18 +124,18 @@ const localePath = useLocalePath()
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #d4af379f, #c19a2ee7);
-  color: #1f1a0f;
+  background: linear-gradient(135deg, var(--color-error-btn-primary-start), var(--color-error-btn-primary-end));
+  color: var(--color-error-btn-text);
 }
 
 .btn.secondary {
-  background: linear-gradient(135deg, #b37b2cc4, #8b5a2b);
-  color: #fff7e5;
+  background: linear-gradient(135deg, var(--color-error-btn-secondary-start), var(--color-error-btn-secondary-end));
+  color: var(--color-error-btn-secondary-text);
 }
 
 .btn.whatsapp {
-  background: linear-gradient(135deg, #25d365a4, #1ebe5edc);
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--color-whatsapp-alpha-start), var(--color-whatsapp-alpha-end));
+  color: white;
 }
 
 .btn:hover {

@@ -79,7 +79,7 @@ useSeoMeta({
             </NuxtLink>
 
             <div class="p-8 md:p-10">
-              <h2 class="text-3xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 overflow-hidden text-ellipsis whitespace-nowrap hover:text-primary">
+              <h2 class="text-3xl text-ink mb-3 font-bold transition-colors duration-300 overflow-hidden text-ellipsis whitespace-nowrap hover:text-primary">
                 <NuxtLink :to="getPostPath(post.path)">
                   {{ post.title }}
                 </NuxtLink>
@@ -98,7 +98,7 @@ useSeoMeta({
 
               <NuxtLink
                 :to="getPostPath(post.path)"
-                class="inline-block px-8 py-3.5 bg-primary text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
+                class="inline-block px-8 py-3.5 bg-primary text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-primary-strong hover:-translate-y-0.5 hover:shadow-lg"
               >
                 {{ t('actions.readFullPost') }} →
               </NuxtLink>

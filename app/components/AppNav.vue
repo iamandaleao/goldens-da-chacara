@@ -1,7 +1,7 @@
 <template>
   <nav
-    class="fixed top-0 left-0 right-0 z-[1000] bg-[#2C2416]/70 backdrop-blur-[20px] border-b border-white/15 shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-all duration-300"
-    :class="{ 'bg-[#2C2416]/95': isScrolled }"
+    class="fixed top-0 left-0 right-0 z-[1000] bg-ink/70 backdrop-blur-[20px] border-b border-white/15 shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-all duration-300"
+    :class="{ 'bg-ink/95': isScrolled }"
   >
     <div class="max-w-[1400px] mx-auto px-5 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-8">
       <!-- Logo Section -->
@@ -49,7 +49,7 @@
           >
             {{ t('menu.services') }}
           </NuxtLink>
-          <ul class="absolute left-1/2 top-full mt-5 -translate-x-1/2 bg-[#2C2416]/98 backdrop-blur-[20px] rounded-xl list-none p-2 min-w-[200px] opacity-0 invisible transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.35)] border border-primary/20 group-hover:opacity-100 group-hover:visible">
+          <ul class="absolute left-1/2 top-full mt-5 -translate-x-1/2 bg-ink/98 backdrop-blur-[20px] rounded-xl list-none p-2 min-w-[200px] opacity-0 invisible transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.35)] border border-primary/20 group-hover:opacity-100 group-hover:visible">
             <li>
               <NuxtLink
                 :to="localePath('/hotel')"
@@ -159,7 +159,7 @@
     <!-- Mobile Navigation -->
     <div
       id="mobileNav"
-      class="fixed top-0 w-[300px] h-screen bg-[#2C2416]/98 backdrop-blur-[20px] pt-8 transition-[right] duration-300 z-[999] shadow-[-5px_0_20px_rgba(0,0,0,0.3)] overflow-y-auto"
+      class="fixed top-0 w-[300px] h-screen bg-ink/98 backdrop-blur-[20px] pt-8 transition-[right] duration-300 z-[999] shadow-[-5px_0_20px_rgba(0,0,0,0.3)] overflow-y-auto"
       :class="mobileMenuOpen ? 'right-0' : '-right-full'"
     >
       <div class="flex flex-col items-center px-5 pb-5 border-b-2 border-primary/30 mb-5">

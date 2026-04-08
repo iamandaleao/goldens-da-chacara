@@ -71,7 +71,7 @@ useHead({
     <section class="py-10 lg:py-16 bg-white">
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="text-center max-w-[850px] mx-auto mb-20">
-          <h2 class="text-4xl md:text-5xl text-[#2C2416] mb-6 font-extrabold">
+          <h2 class="text-4xl md:text-5xl text-ink mb-6 font-extrabold">
             {{ t('intro.title') }}
           </h2>
           <p class="text-lg text-gray-600 leading-relaxed">
@@ -82,11 +82,11 @@ useHead({
         <!-- DIFERENCIAIS -->
         <div class="my-20">
           <h3
-            class="text-3xl text-[#2C2416] mb-6 font-extrabold text-center relative inline-block w-full"
+            class="text-3xl text-ink mb-6 font-extrabold text-center relative inline-block w-full"
           >
             {{ t('benefits.title') }}
             <span
-              class="absolute bottom-[-12px] left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-primary to-[#8B7355] rounded-sm"
+              class="absolute bottom-[-12px] left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-sm"
             />
           </h3>
 
@@ -95,14 +95,14 @@ useHead({
             <div
               class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Users
                 class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
+              <h4 class="text-2xl text-ink mb-3 font-bold">
                 {{ t('cards.socialization.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
@@ -113,14 +113,14 @@ useHead({
             <div
               class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Activity
                 class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
+              <h4 class="text-2xl text-ink mb-3 font-bold">
                 {{ t('cards.activities.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
@@ -131,14 +131,14 @@ useHead({
             <div
               class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Clock
                 class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
+              <h4 class="text-2xl text-ink mb-3 font-bold">
                 {{ t('cards.structuredRoutine.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
@@ -149,14 +149,14 @@ useHead({
             <div
               class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Camera
                 class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
+              <h4 class="text-2xl text-ink mb-3 font-bold">
                 {{ t('cards.photoUpdates.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
@@ -167,14 +167,14 @@ useHead({
             <div
               class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Trees
                 class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
+              <h4 class="text-2xl text-ink mb-3 font-bold">
                 {{ t('cards.spaciousEnvironment.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
@@ -185,14 +185,14 @@ useHead({
             <div
               class="bg-white p-10 rounded-3xl text-center shadow-lg transition-all duration-400 border-2 border-transparent hover:-translate-y-3 hover:shadow-2xl hover:border-primary/30 relative overflow-hidden group"
             >
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-[#8B7355] scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary scale-x-0 origin-left transition-transform duration-400 group-hover:scale-x-100" />
 
               <Eye
                 class="mx-auto mb-6 text-primary"
                 :size="46"
               />
 
-              <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
+              <h4 class="text-2xl text-ink mb-3 font-bold">
                 {{ t('cards.supervision.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
@@ -204,7 +204,7 @@ useHead({
 
         <!-- CTA / VALOR -->
         <div
-          class="bg-gradient-to-br from-[#2C2416] to-[#1f1a12] p-16 rounded-3xl text-center text-white shadow-2xl mt-20"
+          class="bg-gradient-to-br from-ink to-ink-deep p-16 rounded-3xl text-center text-white shadow-2xl mt-20"
         >
           <h3 class="text-4xl mb-4 font-extrabold">
             {{ t('cta.price') }}
