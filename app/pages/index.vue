@@ -40,8 +40,8 @@ useHead({
     <!-- Hero Section -->
     <section
       id="home"
-      class="relative h-[70vh] lg:h-screen flex items-center justify-center text-white text-center bg-cover bg-[position:50%_30%] bg-no-repeat"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1633722715463-d30f4f325e24?q=80&w=2000');"
+      class="relative h-[70vh] lg:h-screen flex items-center justify-center text-white text-center bg-cover bg-[position:60%_60%] bg-no-repeat"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/capa-home.JPEG');"
     >
       <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
 

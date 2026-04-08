@@ -40,8 +40,8 @@ useHead({
     <AppNav />
 
     <section
-      class="relative h-[70vh] flex items-center justify-center text-white text-center bg-cover bg-[position:50%_20%] bg-no-repeat"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/capa-golden-retriever-filhotes.jpg');"
+      class="relative h-[70vh] flex items-center justify-center text-white text-center bg-cover bg-[position:50%_40%] bg-no-repeat"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/capa-golden-retriever-filhotes.JPEG');"
     >
       <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
 
