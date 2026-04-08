@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { FileText, Syringe, HeartPulse, CheckCircle, Gift, Phone } from '@lucide/vue'
+
 const { t } = useI18n()
 const route = useRoute()
 const siteUrl = 'https://goldensdachacara.com.br'

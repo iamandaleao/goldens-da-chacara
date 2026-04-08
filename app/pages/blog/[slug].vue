@@ -1,31 +1,47 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content'
+import { getLocalizedBlogSlug } from '~/utils/blogSlugs'
 
 const route = useRoute()
 const { locale, t } = useI18n()
 const localePath = useLocalePath()
+const setI18nParams = useSetI18nParams()
 
 function getBlogCollection(localeCode: string): keyof Collections {
   return localeCode === 'en' ? 'blog_en' : 'blog_pt'
 }
 
-const contentPath = computed(() => {
+const routeSlug = computed(() => {
   const slug = route.params.slug
-  const normalizedSlug = Array.isArray(slug) ? slug.join('/') : String(slug || '')
-  return `/blog/${normalizedSlug}`
+  return Array.isArray(slug) ? slug.join('/') : String(slug || '')
 })
+
+const ptSlug = computed(() => getLocalizedBlogSlug(routeSlug.value, 'pt'))
+const enSlug = computed(() => getLocalizedBlogSlug(routeSlug.value, 'en'))
+const contentPath = computed(() => `/blog/${locale.value === 'en' ? enSlug.value : ptSlug.value}`)
+
+watch([ptSlug, enSlug], () => {
+  setI18nParams({
+    pt: { slug: ptSlug.value },
+    en: { slug: enSlug.value }
+  })
+}, { immediate: true })
 
 const { data: post } = await useAsyncData(() => `blog-post-${locale.value}-${contentPath.value}`, async () => {
   const collection = getBlogCollection(locale.value)
   const localizedPost = await queryCollection(collection).path(contentPath.value).first()
 
-  if (localizedPost || locale.value === 'pt') {
+  if (localizedPost) {
     return localizedPost
   }
 
-  return queryCollection('blog_pt').path(contentPath.value).first()
+  if (locale.value === 'en') {
+    return queryCollection('blog_pt').path(`/blog/${ptSlug.value}`).first()
+  }
+
+  return queryCollection('blog_en').path(`/blog/${enSlug.value}`).first()
 }, {
-  watch: [contentPath, locale]
+  watch: [contentPath, locale, ptSlug, enSlug]
 })
 
 if (!post.value) {

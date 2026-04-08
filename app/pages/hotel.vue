@@ -7,6 +7,7 @@ import {
   Heart,
   MessageCircle
 } from '@lucide/vue'
+
 const { t } = useI18n()
 const route = useRoute()
 const siteUrl = 'https://goldensdachacara.com.br'
