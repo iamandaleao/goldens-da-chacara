@@ -55,7 +55,7 @@ useSeoMeta({
 
     <section class="py-28 bg-white min-h-screen">
       <div class="max-w-[1200px] mx-auto px-5">
-        <div class="mb-16">
+        <div class="mb-16 mt-6">
           <h1 class="text-5xl text-primary mb-4 font-extrabold text-center">
             {{ t('hero.title') }}
           </h1>
@@ -70,7 +70,11 @@ useSeoMeta({
             :key="post.path"
             class="bg-white rounded-3xl shadow-lg transition-all duration-300 overflow-hidden border border-primary/20 hover:-translate-y-2 hover:shadow-2xl"
           >
-            <NuxtLink :to="getPostPath(post.path)">
+            <NuxtLink
+              :to="getPostPath(post.path)"
+              :aria-label="post.title"
+              :title="post.title"
+            >
               <img
                 :src="post.image"
                 :alt="post.title"
@@ -79,7 +83,7 @@ useSeoMeta({
             </NuxtLink>
 
             <div class="p-8 md:p-10">
-              <h2 class="text-3xl text-ink mb-3 font-bold transition-colors duration-300 overflow-hidden text-ellipsis whitespace-nowrap hover:text-primary">
+              <h2 class="text-3xl text-ink mb-3 font-bold transition-colors duration-300 line-clamp-2 hover:text-primary">
                 <NuxtLink :to="getPostPath(post.path)">
                   {{ post.title }}
                 </NuxtLink>

@@ -52,9 +52,17 @@ export default defineNuxtConfig({
     '/hotel-pet': { redirect: { to: '/hotel', statusCode: 301 } }
   },
 
+  sourcemap: {
+    client: false,
+    server: false
+  },
+
   compatibilityDate: '2025-01-15',
 
   vite: {
+    build: {
+      sourcemap: false
+    },
     plugins: [
       tailwindcss()
     ]
@@ -74,6 +82,7 @@ export default defineNuxtConfig({
       { code: 'pt', name: 'Português', language: 'pt-br' },
       { code: 'en', name: 'English', language: 'en-US' }
     ],
+    baseUrl: 'https://goldensdachacara.com.br',
     customRoutes: 'meta',
     strategy: 'prefix_except_default',
     defaultLocale: 'pt'

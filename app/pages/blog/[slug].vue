@@ -123,19 +123,16 @@ useSeoMeta(post.value.seo || {})
       class="py-20"
     >
       <div class="max-w-[900px] mx-auto mt-12 px-5">
-        <!-- Imagem destaque -->
         <img
           :src="post.image"
           :alt="post.title"
           class="w-full h-[400px] object-cover object-center rounded-3xl mb-8 shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
         >
 
-        <!-- Título -->
         <h1 class="text-4xl md:text-5xl text-ink mb-4 font-extrabold">
           {{ post.title }}
         </h1>
 
-        <!-- Data de atualização -->
         <time
           :datetime="post.date"
           class="text-sm text-gray-500 block mb-6"
@@ -143,13 +140,11 @@ useSeoMeta(post.value.seo || {})
           {{ t('labels.updatedAt') }}: {{ formatDate(post.date) }}
         </time>
 
-        <!-- Conteúdo do post -->
         <div class="text-lg leading-relaxed text-gray-700">
           <p class="text-xl text-gray-600 leading-relaxed">
             {{ post.description }}
           </p>
 
-          <!-- Conteúdo markdown renderizado -->
           <div
             ref="contentRef"
             class="blog-content"
@@ -171,7 +166,6 @@ useSeoMeta(post.value.seo || {})
           </div>
         </div>
 
-        <!-- Botão voltar no final -->
         <div class="mt-12 pt-8 border-t border-gray-300">
           <NuxtLink
             :to="localePath('/blog')"
@@ -183,7 +177,6 @@ useSeoMeta(post.value.seo || {})
       </div>
     </article>
 
-    <!-- Se não encontrar o post -->
     <div
       v-else
       class="py-20"
