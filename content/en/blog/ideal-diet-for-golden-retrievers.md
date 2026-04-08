@@ -6,6 +6,13 @@ tip: "Always keep fresh water available and avoid feeding your Golden before or 
 date: "2026-03-02 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Ideal Nutrition for Golden Retrievers: complete life-stage guide"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-03-02"
 ---
 
 ## Ideal nutrition for Golden Retrievers

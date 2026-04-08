@@ -6,6 +6,13 @@ tip: "Start by taking your dog for short daycare stays before leaving them all d
 date: "2026-01-10 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Dog Daycare: why your pet needs it"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-10"
 ---
 
 ## Socialization and mental stimulation

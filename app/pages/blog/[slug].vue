@@ -110,6 +110,9 @@ function formatDate(date: string | Date) {
   const languageTag = locale.value === 'en' ? 'en-US' : 'pt-BR'
   return new Date(date).toLocaleDateString(languageTag)
 }
+
+useSchemaOrg(post.value.schemaOrg || [])
+useSeoMeta(post.value.seo || {})
 </script>
 
 <template>

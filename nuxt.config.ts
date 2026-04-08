@@ -79,6 +79,10 @@ export default defineNuxtConfig({
     defaultLocale: 'pt'
   },
 
+  ogImage: {
+    enabled: false
+  },
+
   schemaOrg: {
     identity: defineOrganization({
       name: 'Goldens da Chácara',

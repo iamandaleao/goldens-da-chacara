@@ -6,6 +6,13 @@ tip: "O microchip só cumpre sua função se os dados estiverem atualizados. Sem
 date: "2026-01-18 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Microchip em cães: por que nossos filhotes Golden saem microchipados"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-18"
 ---
 
 ## O que é o microchip canino

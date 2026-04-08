@@ -6,6 +6,13 @@ tip: "Golden Retrievers are highly motivated by food and praise. Use healthy tre
 date: "2026-01-02 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Golden Retriever Training: complete guide"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-02"
 ---
 
 ## Start early and stay consistent

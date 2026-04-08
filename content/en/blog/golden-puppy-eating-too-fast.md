@@ -6,6 +6,13 @@ tip: "Golden Retrievers are highly food-motivated. Use part of their regular kib
 date: "2026-03-09 22:30"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Golden Puppy Eating Too Fast: how to teach calmer mealtimes"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-03-09"
 ---
 
 ## Why Golden puppies eat so fast

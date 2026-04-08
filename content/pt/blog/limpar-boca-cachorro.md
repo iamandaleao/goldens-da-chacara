@@ -6,6 +6,13 @@ tip: "Criar o hábito da limpeza bucal desde filhote facilita muito o processo. 
 date: "2026-02-13 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Como limpar a boca do seu cachorro: cuidados essenciais"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-02-13"
 ---
 
 ## Por que a higiene bucal é tão importante?

@@ -6,6 +6,13 @@ tip: "Twice-yearly vet checkups are essential for early detection. Goldens are p
 date: "2026-01-26 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Health and Prevention in Golden Retrievers"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-26"
 ---
 
 ## Hip and elbow dysplasia

@@ -6,6 +6,13 @@ tip: "Avoid slippery floors, keep weight under control, and do not force exercis
 date: "2026-03-16 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Hip Dysplasia in Dogs: a complete guide to understanding, prevention, and care"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-03-16"
 ---
 
 ## What is hip dysplasia?

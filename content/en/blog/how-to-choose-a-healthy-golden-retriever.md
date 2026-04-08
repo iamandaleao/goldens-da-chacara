@@ -6,6 +6,13 @@ tip: "Never buy a puppy without seeing where it was raised and at least meeting 
 date: "2026-01-08 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "How to Choose a Healthy Golden"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-08"
 ---
 
 ## What to evaluate in the bloodline

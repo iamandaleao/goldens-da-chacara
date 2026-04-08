@@ -6,6 +6,13 @@ tip: "A microchip only works if the contact details are current. Update your reg
 date: "2026-01-18 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Microchipping Dogs: why our Golden puppies go home microchipped"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-18"
 ---
 
 ## What is a canine microchip

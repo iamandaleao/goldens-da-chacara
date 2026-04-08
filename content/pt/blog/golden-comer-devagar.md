@@ -6,6 +6,13 @@ tip: "Golden Retrievers são muito motivados por comida. Use a própria ração 
 date: "2026-03-09 22:30"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Filhote de Golden com ansiedade na comida: como ensinar a comer com calma"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-03-09"
 ---
 
 ## Por que filhotes de Golden comem tão rápido

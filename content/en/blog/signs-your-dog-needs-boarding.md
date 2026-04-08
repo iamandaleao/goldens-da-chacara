@@ -6,6 +6,13 @@ tip: "Whenever possible, plan boarding in advance. A prior visit helps your dog 
 date: "2026-01-24 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Signs Your Dog Needs a Boarding Hotel"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-24"
 ---
 
 ## Work trips or extended vacations

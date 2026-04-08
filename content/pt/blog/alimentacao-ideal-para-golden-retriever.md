@@ -6,6 +6,13 @@ tip: "Mantenha sempre água fresca disponível e evite alimentar seu Golden ante
 date: "2026-03-02 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Alimentação ideal para Golden Retriever: guia completo por fase"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-03-02"
 ---
 
 ## Alimentação ideal para Golden Retriever

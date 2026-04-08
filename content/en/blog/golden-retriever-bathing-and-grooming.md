@@ -6,6 +6,13 @@ tip: "Brush your Golden daily during shedding seasons (spring and fall) to reduc
 date: "2026-01-06 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Bathing and Grooming a Golden Retriever: essential care"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-06"
 ---
 
 ## Ideal bathing frequency

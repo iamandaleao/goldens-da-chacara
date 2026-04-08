@@ -6,6 +6,13 @@ tip: "Many facilities offer both services. Try daycare a few times before the fi
 date: "2026-01-12 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Difference Between Dog Boarding and Dog Daycare"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-12"
 ---
 
 ## What is a dog boarding hotel

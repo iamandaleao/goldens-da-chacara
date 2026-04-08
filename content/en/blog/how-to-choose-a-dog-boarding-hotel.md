@@ -6,6 +6,13 @@ tip: "Schedule a visit before booking. Check cleanliness, observe how staff inte
 date: "2026-01-16 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "How to Choose the Best Boarding Hotel for Your Dog"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-16"
 ---
 
 ## Infrastructure and safety first

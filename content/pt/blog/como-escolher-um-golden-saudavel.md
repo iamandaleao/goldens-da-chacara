@@ -6,6 +6,13 @@ tip: "Nunca compre um filhote sem conhecer o ambiente onde ele nasceu e sem ver 
 date: "2026-01-08 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Como escolher um Golden saudável"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-08"
 ---
 
 ## O que observar na linhagem

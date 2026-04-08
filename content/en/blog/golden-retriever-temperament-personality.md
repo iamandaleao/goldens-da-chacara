@@ -6,6 +6,13 @@ tip: "Golden Retrievers are social dogs that need steady companionship. They are
 date: "2026-01-28 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Golden Retriever Temperament and Personality"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-28"
 ---
 
 ## Gentle and friendly personality

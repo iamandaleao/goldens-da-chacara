@@ -6,6 +6,13 @@ tip: "Avoid walks in public areas before all vaccinations are complete. This pro
 date: "2026-01-20 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "First Care Steps for a Puppy"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-20"
 ---
 
 ## Preparing your home

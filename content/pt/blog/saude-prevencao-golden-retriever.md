@@ -6,6 +6,13 @@ tip: "Consultas veterinárias semestrais são essenciais para detecção precoce
 date: "2026-01-26 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Saúde e prevenção em Golden Retrievers"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-26"
 ---
 
 ## Displasia coxofemoral e de cotovelo

@@ -6,6 +6,13 @@ tip: "Evite exercícios muito intensos em filhotes até 1 ano de idade, pois sua
 date: "2026-01-14 23:59"
 sitemap:
   lastmod: 2026-03-25
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Exercícios e brincadeiras para Goldens"
+    author:
+      type: "Person"
+      name: "Amanda Beatriz"
+    datePublished: "2026-01-14"
 ---
 
 ## Necessidades de exercício diário
