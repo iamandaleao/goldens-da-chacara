@@ -14,7 +14,8 @@ export const PT_TO_EN_BLOG_SLUG: Record<string, string> = {
   'primeiros-cuidados-filhote': 'first-puppy-care-steps',
   'quando-seu-cao-precisa-hotel-canino': 'signs-your-dog-needs-boarding',
   'saude-prevencao-golden-retriever': 'golden-retriever-health-and-prevention',
-  'temperamento-golden-retriever': 'golden-retriever-temperament-personality'
+  'temperamento-golden-retriever': 'golden-retriever-temperament-personality',
+  'saude-golden-retriever-doencas': 'golden-retriever-health-diseases'
 }
 
 export const EN_TO_PT_BLOG_SLUG = Object.fromEntries(
