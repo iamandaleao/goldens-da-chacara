@@ -102,6 +102,27 @@
             Blog
           </NuxtLink>
         </li>
+
+        <li class="flex items-center gap-2 pl-3 ml-2 border-l border-white/20">
+          <NuxtLink
+            :to="getSwitchPath('pt')"
+            class="w-9 h-9 rounded-full grid place-items-center border transition-all duration-300 hover:scale-110 hover:border-[#D4AF37]"
+            :class="locale === 'pt' ? 'border-[#D4AF37] bg-[#D4AF37]/20' : 'border-white/40 bg-white/5'"
+            aria-label="Mudar para português"
+            title="Português (Brasil)"
+          >
+            <span class="text-lg leading-none">🇧🇷</span>
+          </NuxtLink>
+          <NuxtLink
+            :to="getSwitchPath('en')"
+            class="w-9 h-9 rounded-full grid place-items-center border transition-all duration-300 hover:scale-110 hover:border-[#D4AF37]"
+            :class="locale === 'en' ? 'border-[#D4AF37] bg-[#D4AF37]/20' : 'border-white/40 bg-white/5'"
+            aria-label="Switch to English"
+            title="English (United States)"
+          >
+            <span class="text-lg leading-none">🇺🇸</span>
+          </NuxtLink>
+        </li>
       </ul>
 
       <!-- Mobile Menu Button -->
@@ -239,6 +260,30 @@
             Blog
           </NuxtLink>
         </li>
+        <li class="border-b border-white/10 px-8 py-4">
+          <div class="flex items-center gap-3">
+            <NuxtLink
+              :to="getSwitchPath('pt')"
+              class="w-10 h-10 rounded-full grid place-items-center border transition-all duration-300"
+              :class="locale === 'pt' ? 'border-[#D4AF37] bg-[#D4AF37]' : 'border-white/40 bg-white/10'"
+              aria-label="Mudar para português"
+              title="Português (Brasil)"
+              @click="closeMobileMenu"
+            >
+              <span class="text-lg leading-none">🇧🇷</span>
+            </NuxtLink>
+            <NuxtLink
+              :to="getSwitchPath('en')"
+              class="w-10 h-10 rounded-full grid place-items-center border transition-all duration-300"
+              :class="locale === 'en' ? 'border-[#D4AF37] bg-[#D4AF37]' : 'border-white/40 bg-white/10'"
+              aria-label="Switch to English"
+              title="English (United States)"
+              @click="closeMobileMenu"
+            >
+              <span class="text-lg leading-none">🇺🇸</span>
+            </NuxtLink>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
@@ -253,6 +298,12 @@ const mobileServicesOpen = ref(false)
 const isScrolled = ref(false)
 const route = useRoute()
 const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
+const { locale } = useI18n()
+
+function getSwitchPath(targetLocale: 'pt' | 'en') {
+  return switchLocalePath(targetLocale) || localePath('/')
+}
 
 function updateBodyScrollLock(isLocked: boolean) {
   document.body.style.overflow = isLocked ? 'hidden' : ''
