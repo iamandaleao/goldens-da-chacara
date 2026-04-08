@@ -59,6 +59,14 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-01-15',
 
+  nitro: {
+    devStorage: {
+      'cache:nuxt:payload': {
+        driver: 'memory'
+      }
+    }
+  },
+
   vite: {
     build: {
       sourcemap: false
