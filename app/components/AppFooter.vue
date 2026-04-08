@@ -82,7 +82,7 @@
           <ul class="list-none">
             <li class="mb-3">
               <NuxtLink
-                to="/"
+                :to="localePath('/')"
                 class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
               >
                 Home
@@ -90,7 +90,7 @@
             </li>
             <li class="mb-3">
               <NuxtLink
-                to="/filhotes"
+                :to="localePath('/filhotes')"
                 class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
               >
                 Filhotes
@@ -98,7 +98,7 @@
             </li>
             <li class="mb-3">
               <NuxtLink
-                to="/blog"
+                :to="localePath('/blog')"
                 class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
               >
                 Blog
@@ -213,4 +213,5 @@
 import { Mail, Phone, MapPin } from '@lucide/vue'
 
 const currentYear = new Date().getFullYear()
+const localePath = useLocalePath()
 </script>

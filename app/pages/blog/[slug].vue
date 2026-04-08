@@ -1,10 +1,31 @@
 <script setup lang="ts">
-const route = useRoute()
+import type { Collections } from '@nuxt/content'
 
-const { data: post } = await useAsyncData(route.path, () => {
-  return queryCollection('blog').path(route.path).first()
+const route = useRoute()
+const { locale } = useI18n()
+const localePath = useLocalePath()
+
+function getBlogCollection(localeCode: string): keyof Collections {
+  return localeCode === 'en' ? 'blog_en' : 'blog_pt'
+}
+
+const contentPath = computed(() => {
+  const slug = route.params.slug
+  const normalizedSlug = Array.isArray(slug) ? slug.join('/') : String(slug || '')
+  return `/blog/${normalizedSlug}`
+})
+
+const { data: post } = await useAsyncData(() => `blog-post-${locale.value}-${contentPath.value}`, async () => {
+  const collection = getBlogCollection(locale.value)
+  const localizedPost = await queryCollection(collection).path(contentPath.value).first()
+
+  if (localizedPost || locale.value === 'pt') {
+    return localizedPost
+  }
+
+  return queryCollection('blog_pt').path(contentPath.value).first()
 }, {
-  watch: [route]
+  watch: [contentPath, locale]
 })
 
 if (!post.value) {
@@ -68,6 +89,11 @@ watch(() => post.value, () => {
   wrapTablesInScrollContainer()
   markDetailsAnswerBlocks()
 })
+
+function formatDate(date: string | Date) {
+  const languageTag = locale.value === 'en' ? 'en-US' : 'pt-BR'
+  return new Date(date).toLocaleDateString(languageTag)
+}
 </script>
 
 <template>
@@ -95,7 +121,7 @@ watch(() => post.value, () => {
           :datetime="post.date"
           class="text-sm text-gray-500 block mb-6"
         >
-          Atualizado em: {{ new Date(post.date).toLocaleDateString() }}
+          Atualizado em: {{ formatDate(post.date) }}
         </time>
 
         <!-- Conteúdo do post -->
@@ -129,7 +155,7 @@ watch(() => post.value, () => {
         <!-- Botão voltar no final -->
         <div class="mt-12 pt-8 border-t border-gray-300">
           <NuxtLink
-            to="/blog"
+            :to="localePath('/blog')"
             class="inline-block px-8 py-3.5 bg-[#D4AF37] text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
           >
             ← Ver mais artigos
@@ -148,7 +174,7 @@ watch(() => post.value, () => {
           Post não encontrado
         </h1>
         <NuxtLink
-          to="/blog"
+          :to="localePath('/blog')"
           class="inline-flex items-center px-4 py-2 text-[#D4AF37] no-underline font-medium rounded-lg mb-6 transition-all duration-300 hover:bg-[#D4AF37]/10 hover:text-[#C9A02C]"
         >
           ← Voltar para o blog

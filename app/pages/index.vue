@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const localePath = useLocalePath()
+
 useHead({
   title: 'Criação Especializada de Golden Retriever',
   meta: [
@@ -49,7 +51,7 @@ useHead({
           Criação Especializada de Golden Retriever
         </p>
         <NuxtLink
-          to="/filhotes"
+          :to="localePath('/filhotes')"
           class="inline-block px-6 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide animate-fadeInDelay2 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#C9A02C]"
         >
           Conheça Nossos Filhotes
@@ -104,7 +106,7 @@ useHead({
         </p>
         <div class="flex gap-6 justify-center flex-wrap">
           <NuxtLink
-            to="/filhotes"
+            :to="localePath('/filhotes')"
             class="inline-block px-6 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-[#C9A02C]"
           >
             Ver Filhotes

@@ -7,7 +7,7 @@
       <!-- Logo Section -->
       <div class="flex items-center gap-4">
         <NuxtLink
-          to="/"
+          :to="localePath('/')"
           class="flex items-center gap-4"
           aria-label="Ir para a página inicial"
           @click="closeMobileMenu"
@@ -31,7 +31,7 @@
       <ul class="hidden lg:flex list-none gap-2 items-center justify-end">
         <li>
           <NuxtLink
-            to="/"
+            :to="localePath('/')"
             class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-[#D4AF37]/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-[#D4AF37] after:transition-transform after:duration-300 hover:after:scale-x-100"
             :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
@@ -52,7 +52,7 @@
           <ul class="absolute left-1/2 top-full mt-5 -translate-x-1/2 bg-[#2C2416]/98 backdrop-blur-[20px] rounded-xl list-none p-2 min-w-[200px] opacity-0 invisible transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.35)] border border-[#D4AF37]/20 group-hover:opacity-100 group-hover:visible">
             <li>
               <NuxtLink
-                to="/hotel"
+                :to="localePath('/hotel')"
                 class="text-white block px-6 py-3 no-underline after:hidden hover:bg-[#D4AF37] hover:text-white"
               >
                 Hotel
@@ -60,7 +60,7 @@
             </li>
             <li>
               <NuxtLink
-                to="/daycare"
+                :to="localePath('/daycare')"
                 class="text-white block px-6 py-3 no-underline after:hidden hover:bg-[#D4AF37] hover:text-white"
               >
                 Daycare
@@ -71,7 +71,7 @@
 
         <li>
           <NuxtLink
-            to="/filhotes"
+            :to="localePath('/filhotes')"
             class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-[#D4AF37]/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-[#D4AF37] after:transition-transform after:duration-300 hover:after:scale-x-100"
             :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/filhotes') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
@@ -94,7 +94,7 @@
 
         <li>
           <NuxtLink
-            to="/blog"
+            :to="localePath('/blog')"
             class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-[#D4AF37]/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-[#D4AF37] after:transition-transform after:duration-300 hover:after:scale-x-100"
             :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/blog') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
@@ -152,7 +152,7 @@
       <ul class="list-none">
         <li class="border-b border-white/10">
           <NuxtLink
-            to="/"
+            :to="localePath('/')"
             class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10"
             :class="{ 'bg-[#D4AF37] pl-10': isActive('/') }"
             @click="closeMobileMenu"
@@ -189,7 +189,7 @@
           >
             <li>
               <NuxtLink
-                to="/hotel"
+                :to="localePath('/hotel')"
                 class="block text-white/90 no-underline px-8 py-3 pl-12 text-sm transition-all duration-300 hover:bg-[#D4AF37] hover:text-white"
                 :class="{ 'bg-[#D4AF37] text-white': isActive('/hotel') }"
                 @click="closeMobileMenu"
@@ -199,7 +199,7 @@
             </li>
             <li>
               <NuxtLink
-                to="/daycare"
+                :to="localePath('/daycare')"
                 class="block text-white/90 no-underline px-8 py-3 pl-12 text-sm transition-all duration-300 hover:bg-[#D4AF37] hover:text-white"
                 @click="closeMobileMenu"
               >
@@ -210,7 +210,7 @@
         </li>
         <li class="border-b border-white/10">
           <NuxtLink
-            to="/filhotes"
+            :to="localePath('/filhotes')"
             class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10"
             :class="{ 'bg-[#D4AF37] pl-10': isActive('/filhotes') }"
             @click="closeMobileMenu"
@@ -231,7 +231,7 @@
         </li>
         <li class="border-b border-white/10">
           <NuxtLink
-            to="/blog"
+            :to="localePath('/blog')"
             class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10"
             :class="{ 'bg-[#D4AF37] pl-10': isActive('/blog') }"
             @click="closeMobileMenu"
@@ -252,6 +252,7 @@ const mobileMenuOpen = ref(false)
 const mobileServicesOpen = ref(false)
 const isScrolled = ref(false)
 const route = useRoute()
+const localePath = useLocalePath()
 
 function updateBodyScrollLock(isLocked: boolean) {
   document.body.style.overflow = isLocked ? 'hidden' : ''
@@ -275,9 +276,19 @@ function closeMobileMenu() {
   updateBodyScrollLock(false)
 }
 
+function normalizePath(path: string) {
+  return path !== '/' && path.endsWith('/') ? path.slice(0, -1) : path
+}
+
 function isActive(path: string) {
-  if (path === '/') return route.path === '/'
-  return route.path.startsWith(path)
+  const localizedPath = normalizePath(localePath(path))
+  const currentPath = normalizePath(route.path)
+
+  if (localizedPath === '/') {
+    return currentPath === '/'
+  }
+
+  return currentPath === localizedPath || currentPath.startsWith(`${localizedPath}/`)
 }
 
 function onScroll() {

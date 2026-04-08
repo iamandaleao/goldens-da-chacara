@@ -1,26 +1,47 @@
 <script setup lang="ts">
+import type { Collections } from '@nuxt/content'
+
 const route = useRoute()
-const page = ref(Number.parseInt(route.query.page as string) || 1)
+const { locale } = useI18n()
+const localePath = useLocalePath()
+
+const page = computed(() => Number.parseInt(String(route.query.page || '1'), 10) || 1)
 const postsPerPage = 24
-const { data: paginatedData } = await useAsyncData('blog', async () => {
+
+function getBlogCollection(localeCode: string): keyof Collections {
+  return localeCode === 'en' ? 'blog_en' : 'blog_pt'
+}
+
+const { data: paginatedData } = await useAsyncData(() => `blog-${locale.value}-${page.value}`, async () => {
+  const collection = getBlogCollection(locale.value)
   const [posts, count] = await Promise.all([
-    queryCollection('blog')
+    queryCollection(collection)
       .where('date', '<', useToday())
       .order('date', 'DESC')
       .skip((page.value - 1) * postsPerPage)
       .limit(postsPerPage)
       .all(),
-    queryCollection('blog')
+    queryCollection(collection)
       .where('date', '<', useToday())
       .count()
   ])
 
   return { posts, count, totalPages: Math.ceil(count / postsPerPage) }
 }, {
-  watch: [page]
+  watch: [page, locale]
 })
 
 const posts = computed(() => paginatedData.value?.posts || [])
+
+function getPostPath(path: string) {
+  return localePath(path)
+}
+
+function formatDate(date: string | Date) {
+  const languageTag = locale.value === 'en' ? 'en-US' : 'pt-BR'
+  return new Date(date).toLocaleDateString(languageTag)
+}
+
 useSeoMeta({
   title: 'Blog',
   description: 'Criação responsável de Golden Retriever, com foco em saúde, genética e temperamento.'
@@ -46,10 +67,10 @@ useSeoMeta({
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <article
             v-for="post in posts"
-            :key="post.stem"
+            :key="post.path"
             class="bg-white rounded-3xl shadow-lg transition-all duration-300 overflow-hidden border border-[#D4AF37]/20 hover:-translate-y-2 hover:shadow-2xl"
           >
-            <NuxtLink :to="post.stem">
+            <NuxtLink :to="getPostPath(post.path)">
               <img
                 :src="post.image"
                 :alt="post.title"
@@ -59,16 +80,16 @@ useSeoMeta({
 
             <div class="p-8 md:p-10">
               <h2 class="text-3xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 overflow-hidden text-ellipsis whitespace-nowrap hover:text-[#D4AF37]">
-                <NuxtLink :to="post.stem">
+                <NuxtLink :to="getPostPath(post.path)">
                   {{ post.title }}
                 </NuxtLink>
               </h2>
 
               <time
-                :datatime="post.date"
+                :datetime="post.date"
                 class="text-sm text-gray-500 block mb-4"
               >
-                {{ new Date(post.date).toLocaleDateString() }}
+                {{ formatDate(post.date) }}
               </time>
 
               <p class="text-gray-600 mb-6 leading-relaxed line-clamp-2">
@@ -76,7 +97,7 @@ useSeoMeta({
               </p>
 
               <NuxtLink
-                :to="post.stem"
+                :to="getPostPath(post.path)"
                 class="inline-block px-8 py-3.5 bg-[#D4AF37] text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
               >
                 Ler artigo completo →

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const localePath = useLocalePath()
+</script>
+
 <template>
   <section class="error-page">
     <div class="error-content">
@@ -10,14 +14,14 @@
 
       <div class="error-actions">
         <NuxtLink
-          to="/"
+          :to="localePath('/')"
           class="btn primary"
         >
           Voltar para o início
         </NuxtLink>
 
         <NuxtLink
-          to="/filhotes"
+          :to="localePath('/filhotes')"
           class="btn secondary"
         >
           Ver filhotes disponíveis
