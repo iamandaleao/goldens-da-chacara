@@ -335,8 +335,8 @@ function isActive(path: string) {
   const localizedPath = normalizePath(localePath(path))
   const currentPath = normalizePath(route.path)
 
-  if (localizedPath === '/') {
-    return currentPath === '/'
+  if (path === '/') {
+    return currentPath === localizedPath
   }
 
   return currentPath === localizedPath || currentPath.startsWith(`${localizedPath}/`)
