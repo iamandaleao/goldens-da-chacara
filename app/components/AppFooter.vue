@@ -144,9 +144,9 @@
                 :size="18"
                 class="text-primary shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-white"
               />
-              <span class="text-text-soft transition-all duration-300 group-hover:text-primary group-hover:pl-1">
+              <address class="text-text-soft transition-all duration-300 group-hover:text-primary group-hover:pl-1">
                 Formiga, MG
-              </span>
+              </address>
             </li>
           </ul>
         </div>
