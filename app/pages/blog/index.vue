@@ -2,7 +2,7 @@
 import type { Collections } from '@nuxt/content'
 
 const route = useRoute()
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const localePath = useLocalePath()
 
 const page = computed(() => Number.parseInt(String(route.query.page || '1'), 10) || 1)
@@ -43,8 +43,8 @@ function formatDate(date: string | Date) {
 }
 
 useSeoMeta({
-  title: 'Blog',
-  description: 'Criação responsável de Golden Retriever, com foco em saúde, genética e temperamento.'
+  title: () => t('seo.title'),
+  description: () => t('seo.description')
 })
 </script>
 
@@ -57,10 +57,10 @@ useSeoMeta({
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="mb-16">
           <h1 class="text-5xl text-[#D4AF37] mb-4 font-extrabold text-center">
-            Blog Goldens da Chácara
+            {{ t('hero.title') }}
           </h1>
           <p class="text-xl text-gray-600 leading-relaxed text-center">
-            Dicas, histórias e cuidados com nossos amigos de quatro patas
+            {{ t('hero.description') }}
           </p>
         </div>
 
@@ -100,7 +100,7 @@ useSeoMeta({
                 :to="getPostPath(post.path)"
                 class="inline-block px-8 py-3.5 bg-[#D4AF37] text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
               >
-                Ler artigo completo →
+                {{ t('actions.readFullPost') }} →
               </NuxtLink>
             </div>
           </article>
@@ -111,3 +111,34 @@ useSeoMeta({
     <AppFooter />
   </div>
 </template>
+
+<i18n lang="json">
+{
+  "pt": {
+    "seo": {
+      "title": "Blog",
+      "description": "Criação responsável de Golden Retriever, com foco em saúde, genética e temperamento."
+    },
+    "hero": {
+      "title": "Blog Goldens da Chácara",
+      "description": "Dicas, histórias e cuidados com nossos amigos de quatro patas"
+    },
+    "actions": {
+      "readFullPost": "Ler artigo completo"
+    }
+  },
+  "en": {
+    "seo": {
+      "title": "Blog",
+      "description": "Responsible Golden Retriever breeding with focus on health, genetics, and temperament."
+    },
+    "hero": {
+      "title": "Goldens da Chácara Blog",
+      "description": "Tips, stories, and care guides for our four-legged friends"
+    },
+    "actions": {
+      "readFullPost": "Read full post"
+    }
+  }
+}
+</i18n>

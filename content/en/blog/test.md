@@ -1,11 +1,11 @@
 ---
-title: "Adestramento de Golden Retriever: guia completo"
-description: "Aprenda as melhores técnicas para treinar seu Golden e aproveitar toda a inteligência e docilidade da raça."
+title: "Golden Retriever Training: complete guide"
+description: "Learn the best techniques to train your Golden and make the most of this breed's intelligence and gentle temperament."
 image: "/images/adestramento-de-golden-retriever.jpg"
-tip: "Golden Retrievers são extremamente motivados por comida e elogios. Use petiscos saudáveis durante o treino e sempre recompense comportamentos positivos imediatamente para fixar o aprendizado."
+tip: "Golden Retrievers are highly motivated by food and praise. Use healthy treats during training and always reward positive behaviors immediately to reinforce learning."
 date: "2026-01-02 23:59"
 sitemap:
   lastmod: 2026-03-25
 ---
 
-## Comece cedo e seja consistente
+## Start early and stay consistent

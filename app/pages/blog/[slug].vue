@@ -2,7 +2,7 @@
 import type { Collections } from '@nuxt/content'
 
 const route = useRoute()
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const localePath = useLocalePath()
 
 function getBlogCollection(localeCode: string): keyof Collections {
@@ -29,7 +29,7 @@ const { data: post } = await useAsyncData(() => `blog-post-${locale.value}-${con
 })
 
 if (!post.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Página não encontrada', fatal: true })
+  throw createError({ statusCode: 404, statusMessage: t('errors.pageNotFound'), fatal: true })
 }
 
 useSeoMeta({
@@ -121,7 +121,7 @@ function formatDate(date: string | Date) {
           :datetime="post.date"
           class="text-sm text-gray-500 block mb-6"
         >
-          Atualizado em: {{ formatDate(post.date) }}
+          {{ t('labels.updatedAt') }}: {{ formatDate(post.date) }}
         </time>
 
         <!-- Conteúdo do post -->
@@ -147,7 +147,7 @@ function formatDate(date: string | Date) {
 
           <div class="bg-[#D4AF37]/10 border-l-4 border-[#D4AF37] py-6 px-8 my-8 rounded-r-lg">
             <p class="text-[#333] font-medium m-0">
-              💡 <strong>Dica importante:</strong> {{ post.tip }}
+              💡 <strong>{{ t('labels.importantTip') }}:</strong> {{ post.tip }}
             </p>
           </div>
         </div>
@@ -158,7 +158,7 @@ function formatDate(date: string | Date) {
             :to="localePath('/blog')"
             class="inline-block px-8 py-3.5 bg-[#D4AF37] text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#C9A02C] hover:-translate-y-0.5 hover:shadow-lg"
           >
-            ← Ver mais artigos
+            ← {{ t('actions.viewMorePosts') }}
           </NuxtLink>
         </div>
       </div>
@@ -171,16 +171,49 @@ function formatDate(date: string | Date) {
     >
       <div class="max-w-[900px] mx-auto mt-12 px-5 text-center">
         <h1 class="text-4xl text-[#2C2416] mb-4 font-extrabold">
-          Post não encontrado
+          {{ t('errors.postNotFound') }}
         </h1>
         <NuxtLink
           :to="localePath('/blog')"
           class="inline-flex items-center px-4 py-2 text-[#D4AF37] no-underline font-medium rounded-lg mb-6 transition-all duration-300 hover:bg-[#D4AF37]/10 hover:text-[#C9A02C]"
         >
-          ← Voltar para o blog
+          ← {{ t('actions.backToBlog') }}
         </NuxtLink>
       </div>
     </div>
     <AppFooter />
   </div>
 </template>
+
+<i18n lang="json">
+{
+  "pt": {
+    "labels": {
+      "updatedAt": "Atualizado em",
+      "importantTip": "Dica importante"
+    },
+    "actions": {
+      "viewMorePosts": "Ver mais artigos",
+      "backToBlog": "Voltar para o blog"
+    },
+    "errors": {
+      "pageNotFound": "Página não encontrada",
+      "postNotFound": "Post não encontrado"
+    }
+  },
+  "en": {
+    "labels": {
+      "updatedAt": "Updated on",
+      "importantTip": "Important tip"
+    },
+    "actions": {
+      "viewMorePosts": "See more posts",
+      "backToBlog": "Back to blog"
+    },
+    "errors": {
+      "pageNotFound": "Page not found",
+      "postNotFound": "Post not found"
+    }
+  }
+}
+</i18n>

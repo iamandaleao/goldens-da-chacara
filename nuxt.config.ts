@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     scripts: {
       registry: {
         googleAnalytics: {
-          id: 'G-W4RRNKNZTS'
+          id: 'G-W4RRNKNZTS' as never
         }
       }
     }
