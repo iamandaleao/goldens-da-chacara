@@ -1,29 +1,35 @@
 <script setup lang="ts">
 import { FileText, Syringe, HeartPulse, CheckCircle, Gift, Phone } from '@lucide/vue'
+const { t } = useI18n()
+const route = useRoute()
+const siteUrl = 'https://goldensdachacara.com.br'
+
+definePageMeta({
+  i18n: {
+    paths: {
+      pt: '/filhotes',
+      en: '/puppies'
+    }
+  }
+})
+
+const puppiesWhatsappMessage = computed(() => encodeURIComponent(t('cta.whatsappMessage')))
+
+useSeoMeta({
+  title: () => t('seo.title'),
+  description: () => t('seo.description'),
+  keywords: () => t('seo.keywords'),
+  ogTitle: () => t('seo.ogTitle'),
+  ogDescription: () => t('seo.ogDescription'),
+  ogType: 'website',
+  ogUrl: () => `${siteUrl}${route.path}`
+})
 
 useHead({
-  title: 'Filhotes Golden Retriever',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Filhotes Golden Retriever disponíveis - Goldens da Chácara. Filhotes com pedigree, vacinados e vermifugados.'
-    },
-    {
-      name: 'keywords',
-      content:
-        'filhotes golden retriever, golden retriever para venda, comprar golden retriever, filhotes disponíveis'
-    },
-    { property: 'og:title', content: 'Filhotes Golden Retriever - Goldens da Chácara' },
-    {
-      property: 'og:description',
-      content:
-        'Filhotes Golden Retriever com pedigree, vacinados e vermifugados.'
-    },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://goldensdachacara.com.br/filhotes' }
-  ],
-  link: [{ rel: 'canonical', href: 'https://goldensdachacara.com.br/filhotes' }]
+  link: [{
+    rel: 'canonical',
+    href: () => `${siteUrl}${route.path}`
+  }]
 })
 </script>
 
@@ -43,13 +49,13 @@ useHead({
           class="text-4xl md:text-6xl lg:text-7xl mb-4 font-extrabold tracking-wide leading-tight"
           style="text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);"
         >
-          Nossos Filhotes
+          {{ t('hero.title') }}
         </h1>
         <p
           class="text-xl md:text-2xl lg:text-3xl mb-10 font-light"
           style="text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);"
         >
-          Conheça nossos adoráveis filhotes Golden Retriever
+          {{ t('hero.subtitle') }}
         </p>
       </div>
     </section>
@@ -58,16 +64,16 @@ useHead({
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="text-center max-w-[800px] mx-auto mb-16">
           <h2 class="text-4xl md:text-5xl text-[#2C2416] mb-5 font-extrabold leading-tight">
-            O Amor que nos Move
+            {{ t('intro.title') }}
           </h2>
           <p class="text-lg text-gray-600 leading-relaxed">
-            Aqui cada filhote nasce em ambiente familiar e recebe todos os cuidados necessários para iniciar sua nova vida com saúde, equilíbrio e carinho. Nossa paixão por Golden Retrievers vai além da criação - cada filhote é tratado como parte da família, recebendo amor, atenção e preparação para levar alegria ao seu novo lar.
+            {{ t('intro.description') }}
           </p>
         </div>
 
         <div class="my-10">
           <h3 class="text-3xl md:text-4xl text-[#2C2416] mb-4 font-extrabold text-center relative inline-block w-full">
-            Nossa entrega:
+            {{ t('delivery.title') }}
             <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] rounded-sm" />
           </h3>
 
@@ -87,10 +93,10 @@ useHead({
               </div>
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
-                Pedigree
+                {{ t('cards.pedigree.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
-                Registro oficial da raça
+                {{ t('cards.pedigree.description') }}
               </p>
             </div>
 
@@ -109,10 +115,10 @@ useHead({
               </div>
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
-                Vacinas
+                {{ t('cards.vaccines.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
-                Carteira de vacinação conforme a idade
+                {{ t('cards.vaccines.description') }}
               </p>
             </div>
 
@@ -131,10 +137,10 @@ useHead({
               </div>
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
-                Vermifugação
+                {{ t('cards.deworming.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
-                Protocolo veterinário
+                {{ t('cards.deworming.description') }}
               </p>
             </div>
 
@@ -153,10 +159,10 @@ useHead({
               </div>
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
-                Garantia de Saúde
+                {{ t('cards.healthGuarantee.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
-                Contrato com garantias
+                {{ t('cards.healthGuarantee.description') }}
               </p>
             </div>
 
@@ -175,10 +181,10 @@ useHead({
               </div>
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
-                Manual do Filhote
+                {{ t('cards.puppyManual.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
-                Cuidados, adaptação e rotina
+                {{ t('cards.puppyManual.description') }}
               </p>
             </div>
 
@@ -197,10 +203,10 @@ useHead({
               </div>
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold transition-colors duration-300 group-hover:text-[#D4AF37]">
-                Suporte
+                {{ t('cards.support.title') }}
               </h4>
               <p class="text-gray-600 text-base leading-relaxed transition-colors duration-300 group-hover:text-gray-700">
-                Acompanhamento pós-venda
+                {{ t('cards.support.description') }}
               </p>
             </div>
           </div>
@@ -208,19 +214,18 @@ useHead({
 
         <div class="bg-gradient-to-br from-[#D4AF37] to-[#8B7355] p-16 rounded-3xl text-center text-white shadow-2xl mt-16">
           <h3 class="text-4xl mb-4 font-extrabold">
-            Garanta Seu Filhote Agora
+            {{ t('cta.title') }}
           </h3>
           <p class="text-xl mb-8">
-            Entre em contato e receba informações completas sobre disponibilidade,
-            valores e reservas.
+            {{ t('cta.description') }}
           </p>
           <a
-            href="https://wa.me/5547991611628?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20filhotes%20Golden%20Retriever."
+            :href="`https://wa.me/5547991611628?text=${puppiesWhatsappMessage}`"
             class="inline-block px-6 py-5 bg-[#D4AF37] text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-xl uppercase tracking-wide hover:-translate-y-2 hover:shadow-2xl hover:bg-[#C9A02C]"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Reserve Agora
+            {{ t('cta.button') }}
           </a>
         </div>
       </div>
@@ -229,3 +234,112 @@ useHead({
     <AppFooter />
   </div>
 </template>
+
+<i18n lang="json">
+{
+  "pt": {
+    "seo": {
+      "title": "Filhotes Golden Retriever",
+      "description": "Filhotes Golden Retriever disponíveis - Goldens da Chácara. Filhotes com pedigree, vacinados e vermifugados.",
+      "keywords": "filhotes golden retriever, golden retriever para venda, comprar golden retriever, filhotes disponíveis",
+      "ogTitle": "Filhotes Golden Retriever - Goldens da Chácara",
+      "ogDescription": "Filhotes Golden Retriever com pedigree, vacinados e vermifugados."
+    },
+    "hero": {
+      "title": "Nossos Filhotes",
+      "subtitle": "Conheça nossos adoráveis filhotes Golden Retriever"
+    },
+    "intro": {
+      "title": "O Amor que nos Move",
+      "description": "Aqui cada filhote nasce em ambiente familiar e recebe todos os cuidados necessários para iniciar sua nova vida com saúde, equilíbrio e carinho. Nossa paixão por Golden Retrievers vai além da criação - cada filhote é tratado como parte da família, recebendo amor, atenção e preparação para levar alegria ao seu novo lar."
+    },
+    "delivery": {
+      "title": "Nossa entrega:"
+    },
+    "cards": {
+      "pedigree": {
+        "title": "Pedigree",
+        "description": "Registro oficial da raça"
+      },
+      "vaccines": {
+        "title": "Vacinas",
+        "description": "Carteira de vacinação conforme a idade"
+      },
+      "deworming": {
+        "title": "Vermifugação",
+        "description": "Protocolo veterinário"
+      },
+      "healthGuarantee": {
+        "title": "Garantia de Saúde",
+        "description": "Contrato com garantias"
+      },
+      "puppyManual": {
+        "title": "Manual do Filhote",
+        "description": "Cuidados, adaptação e rotina"
+      },
+      "support": {
+        "title": "Suporte",
+        "description": "Acompanhamento pós-venda"
+      }
+    },
+    "cta": {
+      "title": "Garanta Seu Filhote Agora",
+      "description": "Entre em contato e receba informações completas sobre disponibilidade, valores e reservas.",
+      "button": "Reserve Agora",
+      "whatsappMessage": "Olá! Gostaria de saber mais sobre os filhotes Golden Retriever."
+    }
+  },
+  "en": {
+    "seo": {
+      "title": "Golden Retriever Puppies",
+      "description": "Golden Retriever puppies available at Goldens da Chácara. Puppies with pedigree, vaccinated and dewormed.",
+      "keywords": "golden retriever puppies, golden retriever for sale, buy golden retriever, puppies available",
+      "ogTitle": "Golden Retriever Puppies - Goldens da Chácara",
+      "ogDescription": "Golden Retriever puppies with pedigree, vaccinated and dewormed."
+    },
+    "hero": {
+      "title": "Our Puppies",
+      "subtitle": "Meet our adorable Golden Retriever puppies"
+    },
+    "intro": {
+      "title": "The Love That Moves Us",
+      "description": "Each puppy is born in a family environment and receives all the care needed to start a new life with health, balance, and affection. Our passion for Golden Retrievers goes beyond breeding - every puppy is treated like family, receiving love, attention, and preparation to bring joy to a new home."
+    },
+    "delivery": {
+      "title": "What we deliver:"
+    },
+    "cards": {
+      "pedigree": {
+        "title": "Pedigree",
+        "description": "Official breed registration"
+      },
+      "vaccines": {
+        "title": "Vaccinations",
+        "description": "Vaccination card according to age"
+      },
+      "deworming": {
+        "title": "Deworming",
+        "description": "Veterinary protocol"
+      },
+      "healthGuarantee": {
+        "title": "Health Guarantee",
+        "description": "Contract with guarantees"
+      },
+      "puppyManual": {
+        "title": "Puppy Guide",
+        "description": "Care, adaptation, and routine"
+      },
+      "support": {
+        "title": "Support",
+        "description": "Post-sale follow-up"
+      }
+    },
+    "cta": {
+      "title": "Reserve Your Puppy Now",
+      "description": "Contact us and receive complete information about availability, pricing, and reservations.",
+      "button": "Reserve Now",
+      "whatsappMessage": "Hi! I would like to know more about the Golden Retriever puppies."
+    }
+  }
+}
+</i18n>

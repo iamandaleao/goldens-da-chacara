@@ -7,16 +7,33 @@ import {
   Heart,
   MessageCircle
 } from '@lucide/vue'
+const { t } = useI18n()
+const route = useRoute()
+const siteUrl = 'https://goldensdachacara.com.br'
+
+definePageMeta({
+  i18n: {
+    paths: {
+      pt: '/hotel',
+      en: '/boarding'
+    }
+  }
+})
+
+useSeoMeta({
+  title: () => t('seo.title'),
+  description: () => t('seo.description'),
+  ogTitle: () => t('seo.ogTitle'),
+  ogDescription: () => t('seo.ogDescription'),
+  ogType: 'website',
+  ogUrl: () => `${siteUrl}${route.path}`
+})
 
 useHead({
-  title: 'Hotel & Resort Canino',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Hotel e Resort Canino em ambiente rural. Piscina, socialização, segurança e cuidado diário.'
-    }
-  ]
+  link: [{
+    rel: 'canonical',
+    href: () => `${siteUrl}${route.path}`
+  }]
 })
 </script>
 
@@ -37,14 +54,14 @@ useHead({
           class="text-4xl md:text-6xl lg:text-7xl mb-6 font-extrabold tracking-wide leading-tight"
           style="text-shadow: 3px 3px 8px rgba(0,0,0,.7)"
         >
-          Hotel & Resort Canino
+          {{ t('hero.title') }}
         </h1>
 
         <p
           class="text-xl md:text-2xl lg:text-3xl font-light"
           style="text-shadow: 2px 2px 6px rgba(0,0,0,.7)"
         >
-          Um espaço pensado para o bem-estar, lazer e segurança do seu cão
+          {{ t('hero.subtitle') }}
         </p>
       </div>
     </section>
@@ -54,17 +71,10 @@ useHead({
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="text-center max-w-[850px] mx-auto mb-20">
           <h2 class="text-4xl md:text-5xl text-[#2C2416] mb-6 font-extrabold">
-            Mais espaço, cuidado e tranquilidade
+            {{ t('intro.title') }}
           </h2>
           <p class="text-lg text-gray-600 leading-relaxed">
-            Acreditamos que hospedagem canina vai muito além
-            de um local para dormir. Aqui, seu cão não fica preso em baias nem isolado.
-            Ele vive uma rotina equilibrada em ambiente rural, com espaço, estímulos,
-            socialização supervisionada e acompanhamento constante.
-            <br><br>
-            Cada detalhe da estrutura e da rotina foi pensado para reduzir o estresse,
-            promover bem-estar e garantir segurança, respeitando o perfil individual
-            de cada cão.
+            {{ t('intro.description') }}
           </p>
         </div>
 
@@ -73,7 +83,7 @@ useHead({
           <h3
             class="text-3xl text-[#2C2416] mb-6 font-extrabold text-center relative inline-block w-full"
           >
-            Por que escolher nosso hotel?
+            {{ t('benefits.title') }}
             <span
               class="absolute bottom-[-12px] left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] rounded-sm"
             />
@@ -92,11 +102,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Ambiente Familiar
+                {{ t('cards.familyEnvironment.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Seu cão convive em um espaço tranquilo, limpo e seguro,
-                sem estresse e sem confinamento.
+                {{ t('cards.familyEnvironment.description') }}
               </p>
             </div>
 
@@ -111,11 +120,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Socialização Monitorada
+                {{ t('cards.socialization.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Brincadeiras supervisionadas respeitando porte,
-                idade e temperamento.
+                {{ t('cards.socialization.description') }}
               </p>
             </div>
 
@@ -130,11 +138,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Piscina e Atividades
+                {{ t('cards.poolActivities.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Piscina para cães, brincadeiras diárias
-                e estímulos físicos e mentais.
+                {{ t('cards.poolActivities.description') }}
               </p>
             </div>
 
@@ -149,11 +156,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Segurança Total
+                {{ t('cards.safety.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Espaço cercado, rotina organizada
-                e supervisão constante.
+                {{ t('cards.safety.description') }}
               </p>
             </div>
 
@@ -168,11 +174,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Cuidado Individual
+                {{ t('cards.individualCare.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Atenção diária, respeito às necessidades
-                e acompanhamento próximo.
+                {{ t('cards.individualCare.description') }}
               </p>
             </div>
 
@@ -187,11 +192,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Contato Direto
+                {{ t('cards.directContact.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Comunicação fácil e transparente
-                durante toda a estadia.
+                {{ t('cards.directContact.description') }}
               </p>
             </div>
           </div>
@@ -202,11 +206,11 @@ useHead({
           class="bg-gradient-to-br from-[#2C2416] to-[#1f1a12] p-16 rounded-3xl text-center text-white shadow-2xl mt-20"
         >
           <h3 class="text-4xl mb-4 font-extrabold">
-            Diárias a partir de R$ 50,00
+            {{ t('cta.price') }}
           </h3>
 
           <p class="text-sm mb-10 text-gray-300 opacity-80">
-            O valor pode variar conforme necessidades específicas.
+            {{ t('cta.note') }}
           </p>
 
           <a
@@ -215,7 +219,7 @@ useHead({
             target="_blank"
             rel="noopener noreferrer"
           >
-            Solicitar orçamento
+            {{ t('cta.button') }}
           </a>
         </div>
       </div>
@@ -224,3 +228,108 @@ useHead({
     <AppFooter />
   </div>
 </template>
+
+<i18n lang="json">
+{
+  "pt": {
+    "seo": {
+      "title": "Hotel & Resort Canino",
+      "description": "Hotel e Resort Canino em ambiente rural. Piscina, socialização, segurança e cuidado diário.",
+      "ogTitle": "Hotel & Resort Canino",
+      "ogDescription": "Hospedagem canina com bem-estar, socialização supervisionada e segurança."
+    },
+    "hero": {
+      "title": "Hotel & Resort Canino",
+      "subtitle": "Um espaço pensado para o bem-estar, lazer e segurança do seu cão"
+    },
+    "intro": {
+      "title": "Mais espaço, cuidado e tranquilidade",
+      "description": "Acreditamos que hospedagem canina vai muito além de um local para dormir. Aqui, seu cão não fica preso em baias nem isolado. Ele vive uma rotina equilibrada em ambiente rural, com espaço, estímulos, socialização supervisionada e acompanhamento constante. Cada detalhe da estrutura e da rotina foi pensado para reduzir o estresse, promover bem-estar e garantir segurança, respeitando o perfil individual de cada cão."
+    },
+    "benefits": {
+      "title": "Por que escolher nosso hotel?"
+    },
+    "cards": {
+      "familyEnvironment": {
+        "title": "Ambiente Familiar",
+        "description": "Seu cão convive em um espaço tranquilo, limpo e seguro, sem estresse e sem confinamento."
+      },
+      "socialization": {
+        "title": "Socialização Monitorada",
+        "description": "Brincadeiras supervisionadas respeitando porte, idade e temperamento."
+      },
+      "poolActivities": {
+        "title": "Piscina e Atividades",
+        "description": "Piscina para cães, brincadeiras diárias e estímulos físicos e mentais."
+      },
+      "safety": {
+        "title": "Segurança Total",
+        "description": "Espaço cercado, rotina organizada e supervisão constante."
+      },
+      "individualCare": {
+        "title": "Cuidado Individual",
+        "description": "Atenção diária, respeito às necessidades e acompanhamento próximo."
+      },
+      "directContact": {
+        "title": "Contato Direto",
+        "description": "Comunicação fácil e transparente durante toda a estadia."
+      }
+    },
+    "cta": {
+      "price": "Diárias a partir de R$ 50,00",
+      "note": "O valor pode variar conforme necessidades específicas.",
+      "button": "Solicitar orçamento"
+    }
+  },
+  "en": {
+    "seo": {
+      "title": "Dog Hotel & Resort",
+      "description": "Dog hotel and resort in a rural environment. Pool, socialization, safety, and daily care.",
+      "ogTitle": "Dog Hotel & Resort",
+      "ogDescription": "Dog boarding focused on well-being, supervised socialization, and safety."
+    },
+    "hero": {
+      "title": "Dog Hotel & Resort",
+      "subtitle": "A space designed for your dog's well-being, fun, and safety"
+    },
+    "intro": {
+      "title": "More space, care, and peace of mind",
+      "description": "We believe dog boarding is much more than a place to sleep. Here, your dog is not confined to kennels or isolated. They enjoy a balanced routine in a rural environment, with space, stimulation, supervised socialization, and constant care. Every detail of our structure and routine is designed to reduce stress, promote well-being, and ensure safety while respecting each dog's individual profile."
+    },
+    "benefits": {
+      "title": "Why choose our hotel?"
+    },
+    "cards": {
+      "familyEnvironment": {
+        "title": "Family Environment",
+        "description": "Your dog stays in a calm, clean, and safe space, without stress or confinement."
+      },
+      "socialization": {
+        "title": "Monitored Socialization",
+        "description": "Supervised playtime that respects size, age, and temperament."
+      },
+      "poolActivities": {
+        "title": "Pool and Activities",
+        "description": "Dog pool, daily playtime, and physical and mental stimulation."
+      },
+      "safety": {
+        "title": "Total Safety",
+        "description": "Fenced space, organized routine, and constant supervision."
+      },
+      "individualCare": {
+        "title": "Individual Care",
+        "description": "Daily attention, respect for needs, and close follow-up."
+      },
+      "directContact": {
+        "title": "Direct Contact",
+        "description": "Easy and transparent communication throughout the stay."
+      }
+    },
+    "cta": {
+      "price": "Daily rates from R$ 50.00",
+      "note": "Price may vary based on specific needs.",
+      "button": "Request a quote"
+    }
+  }
+}
+</i18n>

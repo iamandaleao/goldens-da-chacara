@@ -7,16 +7,33 @@ import {
   Trees,
   Eye
 } from '@lucide/vue'
+const { t } = useI18n()
+const route = useRoute()
+const siteUrl = 'https://goldensdachacara.com.br'
+
+definePageMeta({
+  i18n: {
+    paths: {
+      pt: '/daycare',
+      en: '/daycare'
+    }
+  }
+})
+
+useSeoMeta({
+  title: () => t('seo.title'),
+  description: () => t('seo.description'),
+  ogTitle: () => t('seo.ogTitle'),
+  ogDescription: () => t('seo.ogDescription'),
+  ogType: 'website',
+  ogUrl: () => `${siteUrl}${route.path}`
+})
 
 useHead({
-  title: 'Daycare Canino',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Daycare Canino com rotina estruturada. Socialização, atividades recreativas e supervisão constante.'
-    }
-  ]
+  link: [{
+    rel: 'canonical',
+    href: () => `${siteUrl}${route.path}`
+  }]
 })
 </script>
 
@@ -37,14 +54,14 @@ useHead({
           class="text-4xl md:text-6xl lg:text-7xl mb-6 font-extrabold tracking-wide leading-tight"
           style="text-shadow: 3px 3px 8px rgba(0,0,0,.7)"
         >
-          Daycare Canino
+          {{ t('hero.title') }}
         </h1>
 
         <p
           class="text-xl md:text-2xl lg:text-3xl font-light"
           style="text-shadow: 2px 2px 6px rgba(0,0,0,.7)"
         >
-          Seu cão se diverte enquanto você trabalha ou resolve suas atividades
+          {{ t('hero.subtitle') }}
         </p>
       </div>
     </section>
@@ -54,16 +71,10 @@ useHead({
       <div class="max-w-[1200px] mx-auto px-5">
         <div class="text-center max-w-[850px] mx-auto mb-20">
           <h2 class="text-4xl md:text-5xl text-[#2C2416] mb-6 font-extrabold">
-            Um dia inteiro de diversão e socialização
+            {{ t('intro.title') }}
           </h2>
           <p class="text-lg text-gray-600 leading-relaxed">
-            Aqui seu cão passa o dia em um ambiente
-            estimulante e seguro, longe do tédio e da solidão. Oferecemos uma rotina planejada
-            com brincadeiras, socialização supervisionada, descanso programado e muita atenção.
-            <br><br>
-            Ideal para cães que ficam sozinhos durante o dia ou que precisam gastar energia de
-            forma saudável. Aqui, cada cão é tratado individualmente, respeitando seu ritmo,
-            temperamento e necessidades especiais.
+            {{ t('intro.description') }}
           </p>
         </div>
 
@@ -72,7 +83,7 @@ useHead({
           <h3
             class="text-3xl text-[#2C2416] mb-6 font-extrabold text-center relative inline-block w-full"
           >
-            O que seu cão vai encontrar no Daycare?
+            {{ t('benefits.title') }}
             <span
               class="absolute bottom-[-12px] left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#D4AF37] to-[#8B7355] rounded-sm"
             />
@@ -91,11 +102,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Socialização Controlada
+                {{ t('cards.socialization.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Grupos pequenos organizados por porte e temperamento,
-                para interações seguras e positivas.
+                {{ t('cards.socialization.description') }}
               </p>
             </div>
 
@@ -110,11 +120,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Atividades Recreativas
+                {{ t('cards.activities.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Brincadeiras, jogos, corridas livres e desafios
-                que estimulam corpo e mente.
+                {{ t('cards.activities.description') }}
               </p>
             </div>
 
@@ -129,11 +138,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Rotina Estruturada
+                {{ t('cards.structuredRoutine.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Horários definidos para brincadeiras, alimentação,
-                descanso e hidratação.
+                {{ t('cards.structuredRoutine.description') }}
               </p>
             </div>
 
@@ -148,11 +156,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Fotos e Atualizações
+                {{ t('cards.photoUpdates.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Receba fotos e vídeos do dia do seu cão,
-                para acompanhar a diversão.
+                {{ t('cards.photoUpdates.description') }}
               </p>
             </div>
 
@@ -167,11 +174,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Ambiente Amplo
+                {{ t('cards.spaciousEnvironment.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Espaço rural cercado, gramado, sombra natural
-                e áreas cobertas para todos os climas.
+                {{ t('cards.spaciousEnvironment.description') }}
               </p>
             </div>
 
@@ -186,11 +192,10 @@ useHead({
               />
 
               <h4 class="text-2xl text-[#2C2416] mb-3 font-bold">
-                Supervisão Constante
+                {{ t('cards.supervision.title') }}
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Profissionais atentos e presentes durante todo
-                o período para garantir segurança.
+                {{ t('cards.supervision.description') }}
               </p>
             </div>
           </div>
@@ -201,11 +206,11 @@ useHead({
           class="bg-gradient-to-br from-[#2C2416] to-[#1f1a12] p-16 rounded-3xl text-center text-white shadow-2xl mt-20"
         >
           <h3 class="text-4xl mb-4 font-extrabold">
-            Diárias a partir de R$ 40,00
+            {{ t('cta.price') }}
           </h3>
 
           <p class="text-xl mb-10 text-gray-200">
-            Pacotes semanais e mensais com condições especiais disponíveis.
+            {{ t('cta.note') }}
           </p>
 
           <a
@@ -214,7 +219,7 @@ useHead({
             target="_blank"
             rel="noopener noreferrer"
           >
-            Agendar uma visita
+            {{ t('cta.button') }}
           </a>
         </div>
       </div>
@@ -223,3 +228,108 @@ useHead({
     <AppFooter />
   </div>
 </template>
+
+<i18n lang="json">
+{
+  "pt": {
+    "seo": {
+      "title": "Daycare Canino",
+      "description": "Daycare Canino com rotina estruturada. Socialização, atividades recreativas e supervisão constante.",
+      "ogTitle": "Daycare Canino",
+      "ogDescription": "Daycare com rotina equilibrada, socialização supervisionada e acompanhamento contínuo."
+    },
+    "hero": {
+      "title": "Daycare Canino",
+      "subtitle": "Seu cão se diverte enquanto você trabalha ou resolve suas atividades"
+    },
+    "intro": {
+      "title": "Um dia inteiro de diversão e socialização",
+      "description": "Aqui seu cão passa o dia em um ambiente estimulante e seguro, longe do tédio e da solidão. Oferecemos uma rotina planejada com brincadeiras, socialização supervisionada, descanso programado e muita atenção. Ideal para cães que ficam sozinhos durante o dia ou que precisam gastar energia de forma saudável. Aqui, cada cão é tratado individualmente, respeitando seu ritmo, temperamento e necessidades especiais."
+    },
+    "benefits": {
+      "title": "O que seu cão vai encontrar no Daycare?"
+    },
+    "cards": {
+      "socialization": {
+        "title": "Socialização Controlada",
+        "description": "Grupos pequenos organizados por porte e temperamento, para interações seguras e positivas."
+      },
+      "activities": {
+        "title": "Atividades Recreativas",
+        "description": "Brincadeiras, jogos, corridas livres e desafios que estimulam corpo e mente."
+      },
+      "structuredRoutine": {
+        "title": "Rotina Estruturada",
+        "description": "Horários definidos para brincadeiras, alimentação, descanso e hidratação."
+      },
+      "photoUpdates": {
+        "title": "Fotos e Atualizações",
+        "description": "Receba fotos e vídeos do dia do seu cão, para acompanhar a diversão."
+      },
+      "spaciousEnvironment": {
+        "title": "Ambiente Amplo",
+        "description": "Espaço rural cercado, gramado, sombra natural e áreas cobertas para todos os climas."
+      },
+      "supervision": {
+        "title": "Supervisão Constante",
+        "description": "Profissionais atentos e presentes durante todo o período para garantir segurança."
+      }
+    },
+    "cta": {
+      "price": "Diárias a partir de R$ 40,00",
+      "note": "Pacotes semanais e mensais com condições especiais disponíveis.",
+      "button": "Agendar uma visita"
+    }
+  },
+  "en": {
+    "seo": {
+      "title": "Dog Daycare",
+      "description": "Dog daycare with a structured routine. Socialization, recreational activities, and constant supervision.",
+      "ogTitle": "Dog Daycare",
+      "ogDescription": "Daycare with balanced routine, supervised socialization, and continuous care."
+    },
+    "hero": {
+      "title": "Dog Daycare",
+      "subtitle": "Your dog has fun while you work or take care of your day"
+    },
+    "intro": {
+      "title": "A full day of fun and socialization",
+      "description": "Here your dog spends the day in a stimulating and safe environment, away from boredom and loneliness. We offer a planned routine with play, supervised socialization, scheduled rest, and lots of attention. Ideal for dogs that stay alone during the day or need to burn energy in a healthy way. Here, each dog is treated individually, respecting their pace, temperament, and special needs."
+    },
+    "benefits": {
+      "title": "What your dog will enjoy at Daycare"
+    },
+    "cards": {
+      "socialization": {
+        "title": "Controlled Socialization",
+        "description": "Small groups organized by size and temperament for safe and positive interactions."
+      },
+      "activities": {
+        "title": "Recreational Activities",
+        "description": "Playtime, games, free runs, and challenges that stimulate body and mind."
+      },
+      "structuredRoutine": {
+        "title": "Structured Routine",
+        "description": "Defined schedules for play, feeding, rest, and hydration."
+      },
+      "photoUpdates": {
+        "title": "Photos and Updates",
+        "description": "Receive photos and videos of your dog's day to follow the fun."
+      },
+      "spaciousEnvironment": {
+        "title": "Spacious Environment",
+        "description": "Fenced rural space with grass, natural shade, and covered areas for all weather."
+      },
+      "supervision": {
+        "title": "Constant Supervision",
+        "description": "Attentive professionals present throughout the day to ensure safety."
+      }
+    },
+    "cta": {
+      "price": "Daily rates from R$ 40.00",
+      "note": "Weekly and monthly packages with special conditions are available.",
+      "button": "Schedule a visit"
+    }
+  }
+}
+</i18n>

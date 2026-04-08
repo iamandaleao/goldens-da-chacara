@@ -9,7 +9,7 @@
         <NuxtLink
           :to="localePath('/')"
           class="flex items-center gap-4"
-          aria-label="Ir para a página inicial"
+          :aria-label="t('aria.goHome')"
           @click="closeMobileMenu"
         >
           <img
@@ -36,7 +36,7 @@
             :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
-            Home
+            {{ t('menu.home') }}
           </NuxtLink>
         </li>
 
@@ -47,7 +47,7 @@
             :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/hotel') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
-            Serviços
+            {{ t('menu.services') }}
           </NuxtLink>
           <ul class="absolute left-1/2 top-full mt-5 -translate-x-1/2 bg-[#2C2416]/98 backdrop-blur-[20px] rounded-xl list-none p-2 min-w-[200px] opacity-0 invisible transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.35)] border border-[#D4AF37]/20 group-hover:opacity-100 group-hover:visible">
             <li>
@@ -55,7 +55,7 @@
                 :to="localePath('/hotel')"
                 class="text-white block px-6 py-3 no-underline after:hidden hover:bg-[#D4AF37] hover:text-white"
               >
-                Hotel
+                {{ t('menu.hotel') }}
               </NuxtLink>
             </li>
             <li>
@@ -63,7 +63,7 @@
                 :to="localePath('/daycare')"
                 class="text-white block px-6 py-3 no-underline after:hidden hover:bg-[#D4AF37] hover:text-white"
               >
-                Daycare
+                {{ t('menu.daycare') }}
               </NuxtLink>
             </li>
           </ul>
@@ -76,7 +76,7 @@
             :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/filhotes') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
-            Filhotes
+            {{ t('menu.puppies') }}
           </NuxtLink>
         </li>
 
@@ -88,7 +88,7 @@
             class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-[#D4AF37]/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-[#D4AF37] after:transition-transform after:duration-300 hover:after:scale-x-100"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
-            Contato
+            {{ t('menu.contact') }}
           </a>
         </li>
 
@@ -99,7 +99,7 @@
             :class="{ 'bg-[#D4AF37]/20 after:scale-x-100': isActive('/blog') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
-            Blog
+            {{ t('menu.blog') }}
           </NuxtLink>
         </li>
 
@@ -108,8 +108,8 @@
             :to="getSwitchPath('pt')"
             class="w-9 h-9 rounded-full grid place-items-center border transition-all duration-300 hover:scale-110 hover:border-[#D4AF37]"
             :class="locale === 'pt' ? 'border-[#D4AF37] bg-[#D4AF37]/20' : 'border-white/40 bg-white/5'"
-            aria-label="Mudar para português"
-            title="Português (Brasil)"
+            :aria-label="t('locale.ptAria')"
+            :title="t('locale.ptTitle')"
           >
             <CircleFlagsBr
               class="text-lg"
@@ -120,8 +120,8 @@
             :to="getSwitchPath('en')"
             class="w-9 h-9 rounded-full grid place-items-center border transition-all duration-300 hover:scale-110 hover:border-[#D4AF37]"
             :class="locale === 'en' ? 'border-[#D4AF37] bg-[#D4AF37]/20' : 'border-white/40 bg-white/5'"
-            aria-label="Switch to English"
-            title="English (United States)"
+            :aria-label="t('locale.enAria')"
+            :title="t('locale.enTitle')"
           >
             <CircleFlagsUs
               class="text-lg"
@@ -137,7 +137,7 @@
         class="lg:hidden flex-col gap-1.5 cursor-pointer z-[1001] ml-auto"
         :class="mobileMenuOpen ? 'flex' : 'lg:hidden flex'"
         type="button"
-        aria-label="Abrir menu"
+        :aria-label="t('aria.openMenu')"
         :aria-expanded="mobileMenuOpen"
         @click="toggleMobileMenu"
       >
@@ -184,7 +184,7 @@
             :class="{ 'bg-[#D4AF37] pl-10': isActive('/') }"
             @click="closeMobileMenu"
           >
-            Home
+            {{ t('menu.home') }}
           </NuxtLink>
         </li>
         <li class="border-b border-white/10">
@@ -196,7 +196,7 @@
             aria-controls="mobileServicesSubmenu"
             @click="toggleMobileServices"
           >
-            <span>Serviços</span>
+            <span>{{ t('menu.services') }}</span>
             <svg
               viewBox="0 0 20 20"
               class="w-4 h-4 text-white/90 transition-transform duration-300"
@@ -221,7 +221,7 @@
                 :class="{ 'bg-[#D4AF37] text-white': isActive('/hotel') }"
                 @click="closeMobileMenu"
               >
-                Hotel
+                {{ t('menu.hotel') }}
               </NuxtLink>
             </li>
             <li>
@@ -230,7 +230,7 @@
                 class="block text-white/90 no-underline px-8 py-3 pl-12 text-sm transition-all duration-300 hover:bg-[#D4AF37] hover:text-white"
                 @click="closeMobileMenu"
               >
-                Daycare
+                {{ t('menu.daycare') }}
               </NuxtLink>
             </li>
           </ul>
@@ -242,7 +242,7 @@
             :class="{ 'bg-[#D4AF37] pl-10': isActive('/filhotes') }"
             @click="closeMobileMenu"
           >
-            Filhotes
+            {{ t('menu.puppies') }}
           </NuxtLink>
         </li>
         <li class="border-b border-white/10">
@@ -253,7 +253,7 @@
             class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-[#D4AF37] hover:pl-10"
             @click="closeMobileMenu"
           >
-            Contato
+            {{ t('menu.contact') }}
           </a>
         </li>
         <li class="border-b border-white/10">
@@ -263,7 +263,7 @@
             :class="{ 'bg-[#D4AF37] pl-10': isActive('/blog') }"
             @click="closeMobileMenu"
           >
-            Blog
+            {{ t('menu.blog') }}
           </NuxtLink>
         </li>
         <li class="border-b border-white/10 px-8 py-4">
@@ -272,8 +272,8 @@
               :to="getSwitchPath('pt')"
               class="w-10 h-10 rounded-full grid place-items-center border transition-all duration-300"
               :class="locale === 'pt' ? 'border-[#D4AF37] bg-[#D4AF37]' : 'border-white/40 bg-white/10'"
-              aria-label="Mudar para português"
-              title="Português (Brasil)"
+              :aria-label="t('locale.ptAria')"
+              :title="t('locale.ptTitle')"
               @click="closeMobileMenu"
             >
               <CircleFlagsBr
@@ -285,8 +285,8 @@
               :to="getSwitchPath('en')"
               class="w-10 h-10 rounded-full grid place-items-center border transition-all duration-300"
               :class="locale === 'en' ? 'border-[#D4AF37] bg-[#D4AF37]' : 'border-white/40 bg-white/10'"
-              aria-label="Switch to English"
-              title="English (United States)"
+              :aria-label="t('locale.enAria')"
+              :title="t('locale.enTitle')"
               @click="closeMobileMenu"
             >
               <CircleFlagsUs
@@ -311,7 +311,7 @@ const isScrolled = ref(false)
 const route = useRoute()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 function getSwitchPath(targetLocale: 'pt' | 'en') {
   return switchLocalePath(targetLocale) || localePath('/')
@@ -385,3 +385,50 @@ onBeforeUnmount(() => {
   document.removeEventListener('click', onDocumentClick)
 })
 </script>
+
+<i18n lang="json">
+{
+  "pt": {
+    "aria": {
+      "goHome": "Ir para a página inicial",
+      "openMenu": "Abrir menu"
+    },
+    "menu": {
+      "home": "Home",
+      "services": "Serviços",
+      "hotel": "Hotel",
+      "daycare": "Daycare",
+      "puppies": "Filhotes",
+      "contact": "Contato",
+      "blog": "Blog"
+    },
+    "locale": {
+      "ptAria": "Mudar para português",
+      "ptTitle": "Português (Brasil)",
+      "enAria": "Mudar para inglês",
+      "enTitle": "English (United States)"
+    }
+  },
+  "en": {
+    "aria": {
+      "goHome": "Go to home page",
+      "openMenu": "Open menu"
+    },
+    "menu": {
+      "home": "Home",
+      "services": "Services",
+      "hotel": "Boarding",
+      "daycare": "Daycare",
+      "puppies": "Puppies",
+      "contact": "Contact",
+      "blog": "Blog"
+    },
+    "locale": {
+      "ptAria": "Switch to Portuguese",
+      "ptTitle": "Português (Brasil)",
+      "enAria": "Switch to English",
+      "enTitle": "English (United States)"
+    }
+  }
+}
+</i18n>

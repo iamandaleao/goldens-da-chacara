@@ -40,11 +40,11 @@ export default defineNuxtConfig({
     '/': { prerender: true },
     '/en': { prerender: true },
     '/filhotes': { prerender: true },
-    '/en/filhotes': { prerender: true },
+    '/en/puppies': { prerender: true },
     '/daycare': { prerender: true },
     '/en/daycare': { prerender: true },
     '/hotel': { prerender: true },
-    '/en/hotel': { prerender: true },
+    '/en/boarding': { prerender: true },
     '/blog': { prerender: true },
     '/blog/**': { prerender: true },
     '/en/blog': { prerender: true },
@@ -74,6 +74,7 @@ export default defineNuxtConfig({
       { code: 'pt', name: 'Português', language: 'pt-br' },
       { code: 'en', name: 'English', language: 'en-US' }
     ],
+    customRoutes: 'meta',
     strategy: 'prefix_except_default',
     defaultLocale: 'pt'
   },

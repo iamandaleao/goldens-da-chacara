@@ -8,7 +8,7 @@
             Goldens da Chácara
           </h3>
           <p class="text-[#ccc] mb-6 leading-relaxed">
-            Criação especializada de Golden Retriever com amor e responsabilidade.
+            {{ t('about') }}
           </p>
 
           <div class="flex gap-4">
@@ -77,7 +77,7 @@
         <!-- Coluna 2 -->
         <div>
           <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
-            Links Rápidos
+            {{ t('sections.quickLinks') }}
           </h3>
           <ul class="list-none">
             <li class="mb-3">
@@ -85,7 +85,7 @@
                 :to="localePath('/')"
                 class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
               >
-                Home
+                {{ t('links.home') }}
               </NuxtLink>
             </li>
             <li class="mb-3">
@@ -93,7 +93,7 @@
                 :to="localePath('/filhotes')"
                 class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
               >
-                Filhotes
+                {{ t('links.puppies') }}
               </NuxtLink>
             </li>
             <li class="mb-3">
@@ -101,7 +101,7 @@
                 :to="localePath('/blog')"
                 class="text-[#ccc] no-underline transition-all duration-300 hover:text-[#D4AF37] hover:pl-1"
               >
-                Blog
+                {{ t('links.blog') }}
               </NuxtLink>
             </li>
           </ul>
@@ -110,7 +110,7 @@
         <!-- Coluna 3 -->
         <div>
           <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
-            Contato
+            {{ t('sections.contact') }}
           </h3>
           <ul class="list-none">
             <li class="flex items-center gap-2.5 mb-3">
@@ -154,14 +154,14 @@
         <!-- Coluna 4 -->
         <div>
           <h3 class="text-xl mb-6 text-[#D4AF37] font-bold">
-            Horário de Atendimento
+            {{ t('sections.hours') }}
           </h3>
           <ul class="list-none">
             <li class="text-[#ccc] mb-3 leading-relaxed">
-              Segunda a sábado: 9h às 21h
+              {{ t('hours.weekdays') }}
             </li>
             <li class="text-[#ccc] mb-3 leading-relaxed">
-              Domingos e feriados: 13h às 20h
+              {{ t('hours.weekends') }}
             </li>
           </ul>
           <!-- Selos -->
@@ -199,19 +199,67 @@
 
       <div class="text-center pt-8 border-t border-[#333]">
         <p class="text-[#999] text-[0.95rem] mb-2">
-          &copy; {{ currentYear }} Goldens da Chácara. Todos os direitos reservados.
+          &copy; {{ currentYear }} {{ t('copyright.line1') }}
         </p>
         <p class="text-[#999] text-[0.95rem] mb-2">
-          Criação especializada de Golden Retriever | Filhotes Golden Retriever Formiga/MG
+          {{ t('copyright.line2') }}
         </p>
       </div>
     </div>
   </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { Mail, Phone, MapPin } from '@lucide/vue'
 
 const currentYear = new Date().getFullYear()
 const localePath = useLocalePath()
+const { t } = useI18n()
 </script>
+
+<i18n lang="json">
+{
+  "pt": {
+    "about": "Criação especializada de Golden Retriever com amor e responsabilidade.",
+    "sections": {
+      "quickLinks": "Links Rápidos",
+      "contact": "Contato",
+      "hours": "Horário de Atendimento"
+    },
+    "links": {
+      "home": "Home",
+      "puppies": "Filhotes",
+      "blog": "Blog"
+    },
+    "hours": {
+      "weekdays": "Segunda a sábado: 9h às 21h",
+      "weekends": "Domingos e feriados: 13h às 20h"
+    },
+    "copyright": {
+      "line1": "Goldens da Chácara. Todos os direitos reservados.",
+      "line2": "Criação especializada de Golden Retriever | Filhotes Golden Retriever Formiga/MG"
+    }
+  },
+  "en": {
+    "about": "Specialized Golden Retriever breeding with love and responsibility.",
+    "sections": {
+      "quickLinks": "Quick Links",
+      "contact": "Contact",
+      "hours": "Business Hours"
+    },
+    "links": {
+      "home": "Home",
+      "puppies": "Puppies",
+      "blog": "Blog"
+    },
+    "hours": {
+      "weekdays": "Monday to Saturday: 9am to 9pm",
+      "weekends": "Sundays and holidays: 1pm to 8pm"
+    },
+    "copyright": {
+      "line1": "Goldens da Chácara. All rights reserved.",
+      "line2": "Specialized Golden Retriever breeding | Golden Retriever puppies in Formiga, MG"
+    }
+  }
+}
+</i18n>
