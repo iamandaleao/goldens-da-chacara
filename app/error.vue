@@ -65,13 +65,24 @@ const { t } = useI18n()
 
 <style scoped>
 .error-page {
+  --error-bg-top: #FFE9C5;
+  --error-title: #5A3E1B;
+  --error-body: #3F2A15;
+  --error-btn-primary-start: #D4AF379F;
+  --error-btn-primary-end: #C19A2EE7;
+  --error-btn-secondary-start: #B37B2CC4;
+  --error-btn-secondary-end: #8B5A2B;
+  --error-btn-text: #1F1A0F;
+  --error-btn-secondary-text: #FFF7E5;
+  --error-whatsapp-start: #25D365A4;
+  --error-whatsapp-end: #1EBE5EDC;
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: linear-gradient(to bottom, var(--color-error-bg-top), var(--color-primary));
+  background: linear-gradient(to bottom, var(--error-bg-top), var(--color-primary));
   overflow: hidden;
 }
 
@@ -114,7 +125,7 @@ const { t } = useI18n()
 .error-content h1 {
   font-size: 2.4rem;
   font-weight: 800;
-  color: var(--color-error-title);
+  color: var(--error-title);
   margin-bottom: 1rem;
   line-height: 2.5rem;
 }
@@ -122,7 +133,7 @@ const { t } = useI18n()
 .error-content p {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: var(--color-error-body);
+  color: var(--error-body);
   margin-bottom: 2rem;
 }
 
@@ -147,17 +158,17 @@ const { t } = useI18n()
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, var(--color-error-btn-primary-start), var(--color-error-btn-primary-end));
-  color: var(--color-error-btn-text);
+  background: linear-gradient(135deg, var(--error-btn-primary-start), var(--error-btn-primary-end));
+  color: var(--error-btn-text);
 }
 
 .btn.secondary {
-  background: linear-gradient(135deg, var(--color-error-btn-secondary-start), var(--color-error-btn-secondary-end));
-  color: var(--color-error-btn-secondary-text);
+  background: linear-gradient(135deg, var(--error-btn-secondary-start), var(--error-btn-secondary-end));
+  color: var(--error-btn-secondary-text);
 }
 
 .btn.whatsapp {
-  background: linear-gradient(135deg, var(--color-whatsapp-alpha-start), var(--color-whatsapp-alpha-end));
+  background: linear-gradient(135deg, var(--error-whatsapp-start), var(--error-whatsapp-end));
   color: white;
 }
 

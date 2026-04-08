@@ -9,22 +9,11 @@
     --color-ink-deep: #1F1A12;
     --color-surface-cream: #F5F5DC;
     --color-surface-dark: #1A1A1A;
-    --color-text-strong: #333333;
-    --color-text-soft: #CCCCCC;
-    --color-text-muted: #999999;
+    --color-strong: #333333;
+    --color-muted: #CCCCCC;
+    --color-subtle: #999999;
     --color-whatsapp: #25D366;
     --color-whatsapp-dark: #1EBE5D;
-    --color-error-bg-top: #FFE9C5;
-    --color-error-title: #5A3E1B;
-    --color-error-body: #3F2A15;
-    --color-error-btn-primary-start: #D4AF379F;
-    --color-error-btn-primary-end: #C19A2EE7;
-    --color-error-btn-secondary-start: #B37B2CC4;
-    --color-error-btn-secondary-end: #8B5A2B;
-    --color-error-btn-text: #1F1A0F;
-    --color-error-btn-secondary-text: #FFF7E5;
-    --color-whatsapp-alpha-start: #25D365A4;
-    --color-whatsapp-alpha-end: #1EBE5EDC;
 }
 
 details {

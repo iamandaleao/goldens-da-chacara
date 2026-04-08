@@ -162,7 +162,7 @@ function formatDate(date: string | Date) {
           </div>
 
           <div class="bg-primary/10 border-l-4 border-primary py-6 px-8 my-8 rounded-r-lg">
-            <p class="text-text-strong font-medium m-0">
+            <p class="text-strong font-medium m-0">
               💡 <strong>{{ t('labels.importantTip') }}:</strong> {{ post.tip }}
             </p>
           </div>

@@ -7,7 +7,7 @@
           <h3 class="text-xl mb-6 text-primary font-bold">
             Goldens da Chácara
           </h3>
-          <p class="text-text-soft mb-6 leading-relaxed">
+          <p class="text-muted mb-6 leading-relaxed">
             {{ t('about') }}
           </p>
 
@@ -83,7 +83,7 @@
             <li class="mb-3">
               <NuxtLink
                 :to="localePath('/')"
-                class="text-text-soft no-underline transition-all duration-300 hover:text-primary hover:pl-1"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
                 {{ t('links.home') }}
               </NuxtLink>
@@ -91,7 +91,7 @@
             <li class="mb-3">
               <NuxtLink
                 :to="localePath('/filhotes')"
-                class="text-text-soft no-underline transition-all duration-300 hover:text-primary hover:pl-1"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
                 {{ t('links.puppies') }}
               </NuxtLink>
@@ -99,7 +99,7 @@
             <li class="mb-3">
               <NuxtLink
                 :to="localePath('/blog')"
-                class="text-text-soft no-underline transition-all duration-300 hover:text-primary hover:pl-1"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
                 {{ t('links.blog') }}
               </NuxtLink>
@@ -120,7 +120,7 @@
               />
               <a
                 href="mailto:goldensdachacara@gmail.com"
-                class="text-text-soft no-underline transition-all duration-300 hover:text-primary hover:pl-1"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
                 goldensdachacara@gmail.com
               </a>
@@ -134,7 +134,7 @@
                 href="https://wa.me/5547991611628"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-text-soft no-underline transition-all duration-300 hover:text-primary hover:pl-1"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
                 (47) 99161-1628
               </a>
@@ -144,7 +144,7 @@
                 :size="18"
                 class="text-primary shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-white"
               />
-              <address class="text-text-soft transition-all duration-300 group-hover:text-primary group-hover:pl-1">
+              <address class="text-muted transition-all duration-300 group-hover:text-primary group-hover:pl-1">
                 Formiga, MG
               </address>
             </li>
@@ -157,10 +157,10 @@
             {{ t('sections.hours') }}
           </h3>
           <ul class="list-none">
-            <li class="text-text-soft mb-3 leading-relaxed">
+            <li class="text-muted mb-3 leading-relaxed">
               {{ t('hours.weekdays') }}
             </li>
-            <li class="text-text-soft mb-3 leading-relaxed">
+            <li class="text-muted mb-3 leading-relaxed">
               {{ t('hours.weekends') }}
             </li>
           </ul>
@@ -197,11 +197,11 @@
         </div>
       </div>
 
-      <div class="text-center pt-8 border-t border-text-strong">
-        <p class="text-text-muted text-[0.95rem] mb-2">
+      <div class="text-center pt-8 border-t border-strong">
+        <p class="text-subtle text-[0.95rem] mb-2">
           &copy; {{ currentYear }} {{ t('copyright.line1') }}
         </p>
-        <p class="text-text-muted text-[0.95rem] mb-2">
+        <p class="text-subtle text-[0.95rem] mb-2">
           {{ t('copyright.line2') }}
         </p>
       </div>
