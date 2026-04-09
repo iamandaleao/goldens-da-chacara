@@ -49,7 +49,8 @@ export default defineNuxtConfig({
     '/blog/**': { prerender: true },
     '/en/blog': { prerender: true },
     '/en/blog/**': { prerender: true },
-    '/hotel-pet': { redirect: { to: '/hotel', statusCode: 301 } }
+    '/hotel-pet': { redirect: { to: '/hotel', statusCode: 301 } },
+    '/blog/alimentacao-golden-retriever': { redirect: { to: '/blog/alimentacao-ideal-para-golden-retriever', statusCode: 301 } }
   },
 
   sourcemap: {
