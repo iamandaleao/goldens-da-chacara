@@ -1,7 +1,7 @@
 ---
 title: "Golden Puppy Eating Too Fast: how to teach calmer mealtimes"
 description: "Golden Retriever puppies often eat too quickly. Learn how to teach your dog to wait and eat in a calmer, safer way."
-image: "/images/como-ensinar-filhote-golden-comer-devagar.PNG"
+image: "/images/como-ensinar-filhote-golden-comer-devagar.png"
 tip: "Golden Retrievers are highly food-motivated. Use part of their regular kibble as a reward in short self-control exercises to encourage calm behavior at mealtime."
 date: "2026-03-09 22:30"
 sitemap:

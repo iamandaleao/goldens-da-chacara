@@ -1,7 +1,7 @@
 ---
 title: "Displasia coxofemoral em cães: guia completo para entender, prevenir e cuidar"
 description: "Entenda o que é a displasia coxofemoral, como identificar, prevenir e garantir a saúde do quadril do seu cão."
-image: "/images/displasia-coxofemoral-em-caes.PNG"
+image: "/images/displasia-coxofemoral-em-caes.png"
 tip: "Evitar pisos lisos, controlar o peso e não forçar exercícios em filhotes são atitudes simples que ajudam muito a reduzir o risco de displasia no seu cão."
 date: "2026-03-16 23:59"
 sitemap:

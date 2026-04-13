@@ -1,7 +1,7 @@
 ---
 title: "Hip Dysplasia in Dogs: a complete guide to understanding, prevention, and care"
 description: "Understand what hip dysplasia is, how to identify it, how to prevent it, and how to protect your dog's hip health."
-image: "/images/displasia-coxofemoral-em-caes.PNG"
+image: "/images/displasia-coxofemoral-em-caes.png"
 tip: "Avoid slippery floors, keep weight under control, and do not force exercise in puppies. These simple measures greatly reduce dysplasia risk."
 date: "2026-03-16 23:59"
 sitemap:

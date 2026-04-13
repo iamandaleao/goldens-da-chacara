@@ -1,7 +1,7 @@
 ---
 title: "Ideal Nutrition for Golden Retrievers: complete life-stage guide"
 description: "A complete guide to ideal nutrition for Golden Retriever puppies, adults, and pregnant females. Daily portions, Farmina table, safe treats, and foods to avoid."
-image: "/images/alimentacao-ideal-golden-retriever.PNG"
+image: "/images/alimentacao-ideal-golden-retriever.png"
 tip: "Always keep fresh water available and avoid feeding your Golden before or right after intense exercise to help prevent gastric torsion, a serious issue in large dogs."
 date: "2026-03-02 23:59"
 sitemap:
