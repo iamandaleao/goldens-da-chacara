@@ -1,7 +1,7 @@
 ---
 title: "Filhote de Golden com ansiedade na comida: como ensinar a comer com calma"
 description: "Filhotes de Golden Retriever costumam comer muito rápido. Veja como ensinar seu cão a esperar e comer de forma mais tranquila e segura."
-image: "/images/como-ensinar-filhote-golden-comer-devagar.jpg"
+image: "/images/como-ensinar-filhote-golden-comer-devagar.PNG"
 tip: "Golden Retrievers são muito motivados por comida. Use a própria ração como recompensa durante pequenos treinos de autocontrole para ensinar calma na hora da refeição."
 date: "2026-03-09 22:30"
 sitemap:
