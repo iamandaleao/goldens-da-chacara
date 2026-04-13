@@ -1,7 +1,7 @@
 ---
 title: "CBKC Pedigree: what is it and is it worth it?"
 description: "Understand what a CBKC pedigree is, the difference between puppies with and without pedigree, and why it makes all the difference when choosing your dog."
-image: "/images/pedigree-cbkc-golden.PNG"
+image: "/images/pedigree-cbkc-golden.png"
 tip: "Before choosing a puppy, always check its origin, visit the kennel, and ask about the parents. Pedigree matters, but responsible breeding makes all the difference."
 date: "2026-04-12 10:00"
 sitemap:
