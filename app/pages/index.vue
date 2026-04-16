@@ -65,10 +65,7 @@ useHead({
           {{ t('hero.cta') }}
         </NuxtLink>
       </div>
-
-      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
-        <span class="block w-[30px] h-[50px] border-2 border-white rounded-[25px] relative before:content-[''] before:absolute before:top-2.5 before:left-1/2 before:-translate-x-1/2 before:w-1.5 before:h-2.5 before:bg-white before:rounded-sm before:animate-scroll" />
-      </div>
+      
     </section>
 
     <!-- Sobre Section -->
