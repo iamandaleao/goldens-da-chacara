@@ -221,7 +221,7 @@ useHead({
             {{ t('cta.description') }}
           </p>
           <a
-            :href="`https://wa.me/5547991611628?text=${puppiesWhatsappMessage}`"
+            :href="`https://wa.me/5537999691236?text=${puppiesWhatsappMessage}`"
             class="inline-block px-6 py-5 bg-primary text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-xl uppercase tracking-wide hover:-translate-y-2 hover:shadow-2xl hover:bg-primary-strong"
             target="_blank"
             rel="noopener noreferrer"

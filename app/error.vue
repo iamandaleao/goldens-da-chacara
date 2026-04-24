@@ -28,7 +28,7 @@ const { t } = useI18n()
         </NuxtLink>
 
         <a
-          href="https://wa.me/5547991611628"
+          href="https://wa.me/5537999691236"
           target="_blank"
           rel="noopener noreferrer"
           class="btn whatsapp"

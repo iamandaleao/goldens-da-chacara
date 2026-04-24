@@ -114,7 +114,7 @@ useHead({
             {{ t('finalCta.primary') }}
           </NuxtLink>
           <a
-            href="https://wa.me/5547991611628"
+            href="https://wa.me/5537999691236"
             class="inline-block px-6 py-5 bg-transparent text-white no-underline rounded-full font-bold text-sm transition-all duration-400 shadow-[0_10px_30px_rgba(212,175,55,0.5)] uppercase tracking-wide border-3 border-primary hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(212,175,55,0.7)] hover:bg-primary"
             target="_blank"
             rel="noopener noreferrer"

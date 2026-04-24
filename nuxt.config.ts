@@ -119,11 +119,11 @@ export default defineNuxtConfig({
       },
 
       email: 'goldensdachacara@gmail.com',
-      telephone: '+5547991611628',
+      telephone: '+5537999691236',
 
       contactPoint: {
         '@type': 'ContactPoint',
-        'telephone': '+5547991611628',
+        'telephone': '+5537999691236',
         'email': 'goldensdachacara@gmail.com'
       },
 
@@ -139,7 +139,7 @@ export default defineNuxtConfig({
         'https://www.instagram.com/goldensdachacara',
         'https://www.facebook.com/goldensdachacara',
         'https://www.youtube.com/@goldensdachacara',
-        'https://api.whatsapp.com/send?phone=5547991611628'
+        'https://api.whatsapp.com/send?phone=5537999691236'
       ]
     })
   },

@@ -14,7 +14,7 @@
 import { MessageCircle } from '@lucide/vue'
 
 const openWhatsapp = () => {
-  window.open('https://wa.me/5547991611628', '_blank')
+  window.open('https://wa.me/5537999691236', '_blank')
 }
 </script>
 

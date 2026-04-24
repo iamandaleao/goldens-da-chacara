@@ -131,7 +131,7 @@
                 class="text-primary shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-white"
               />
               <a
-                href="https://wa.me/5547991611628"
+                href="https://wa.me/5537999691236"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
