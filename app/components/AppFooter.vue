@@ -136,7 +136,7 @@
                 rel="noopener noreferrer"
                 class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
-                (47) 99161-1628
+                (37) 99969-1236
               </a>
             </li>
             <li class="flex items-center gap-2.5 mb-3 group">
