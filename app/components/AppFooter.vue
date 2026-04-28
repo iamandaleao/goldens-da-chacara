@@ -176,20 +176,20 @@
                 src="/selos/cbkc-logo.png"
                 title="CBKC"
                 alt="CBKC"
-                class="h-12 opacity-80"
+                class="h-13.5 opacity-80"
               >
             </a>
 
             <a
-              href="https://www.alkc.org.br/"
+              href="https://www.fci.be/en/"
               target="_blank"
               rel="noopener noreferrer"
               class="transition-opacity duration-300 hover:opacity-100"
             >
               <img
-                src="/selos/alkc-logo.avif"
-                title="ALKC"
-                alt="ALKC"
+                src="/selos/logo-fci.png"
+                title="FCI"
+                alt="FCI"
                 class="h-12 opacity-80"
               >
             </a>
