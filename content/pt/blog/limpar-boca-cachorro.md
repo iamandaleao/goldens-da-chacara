@@ -1,7 +1,7 @@
 ---
 title: "Como limpar a boca do seu cachorro: cuidados essenciais"
 description: "Aprenda como higienizar corretamente a boca do seu cão, prevenir mau hálito e manter dentes e gengivas saudáveis."
-image: "/images/microchip-para-caes.jpg"
+image: "/images/limpar-a-boca-cachorro.png"
 tip: "Criar o hábito da limpeza bucal desde filhote facilita muito o processo. Comece com o dedo ou uma dedeira e evolua para a escova aos poucos, sempre associando a algo positivo."
 date: "2026-02-13 23:59"
 sitemap:

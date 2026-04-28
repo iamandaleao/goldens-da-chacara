@@ -1,7 +1,7 @@
 ---
 title: "First Care Steps for a Puppy"
 description: "Practical and essential tips to help your puppy grow happy, healthy, and well adapted to the new home."
-image: "/images/primeiros-cuidados-filhote.jpg"
+image: "/images/primeiros-cuidados-filhotes.png"
 tip: "Avoid walks in public areas before all vaccinations are complete. This protects your puppy from contagious diseases."
 date: "2026-01-20 23:59"
 sitemap:

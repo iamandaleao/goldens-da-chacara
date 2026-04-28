@@ -1,7 +1,7 @@
 ---
 title: "How to Choose the Best Boarding Hotel for Your Dog"
 description: "Traveling and need a safe place for your pet? Learn what to evaluate when choosing a secure and comfortable dog hotel."
-image: "/images/como-escolher-hotel-para-cachorro.jpg"
+image: "/images/hotel-para-cachorro.png"
 tip: "Schedule a visit before booking. Check cleanliness, observe how staff interact with animals, and ask to see where your pet will stay."
 date: "2026-01-16 23:59"
 sitemap:

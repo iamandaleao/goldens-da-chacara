@@ -1,7 +1,7 @@
 ---
 title: "Temperamento e personalidade do Golden Retriever"
 description: "Conheça as características que fazem do Golden Retriever uma das raças mais amadas do mundo e descubra se ele é o cão ideal para sua família."
-image: "/images/temperamento-golden-retriever.jpg"
+image: "/images/temperamento-golden-retriever.png"
 tip: "Golden Retrievers são cães sociáveis que precisam de companhia constante. Não são adequados para quem fica muito tempo fora de casa, pois podem desenvolver ansiedade de separação."
 date: "2026-01-28 23:59"
 sitemap:

@@ -1,7 +1,7 @@
 ---
 title: "Golden Retriever Temperament and Personality"
 description: "Learn the traits that make the Golden Retriever one of the world's most loved breeds and find out whether it is the right dog for your family."
-image: "/images/temperamento-golden-retriever.jpg"
+image: "/images/temperamento-golden-retriever.png"
 tip: "Golden Retrievers are social dogs that need steady companionship. They are not ideal for people who stay away from home for long hours, as they may develop separation anxiety."
 date: "2026-01-28 23:59"
 sitemap:

@@ -1,7 +1,7 @@
 ---
 title: "How to Clean Your Dog's Mouth: essential care"
 description: "Learn how to properly clean your dog's mouth, prevent bad breath, and keep teeth and gums healthy."
-image: "/images/microchip-para-caes.jpg"
+image: "/images/limpar-a-boca-cachorro.png"
 tip: "Building an oral hygiene routine from puppyhood makes everything easier. Start with a finger or finger brush and gradually move to a toothbrush, always with positive reinforcement."
 date: "2026-02-13 23:59"
 sitemap:
