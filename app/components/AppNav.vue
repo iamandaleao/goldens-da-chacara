@@ -81,18 +81,6 @@
         </li>
 
         <li>
-          <a
-            href="https://wa.me/5537999691236"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-primary/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
-            style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
-          >
-            {{ t('menu.contact') }}
-          </a>
-        </li>
-
-        <li>
           <NuxtLink
             :to="localePath('/blog')"
             class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-primary/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
@@ -245,17 +233,7 @@
             {{ t('menu.puppies') }}
           </NuxtLink>
         </li>
-        <li class="border-b border-white/10">
-          <a
-            href="https://wa.me/5537999691236"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-primary hover:pl-10"
-            @click="closeMobileMenu"
-          >
-            {{ t('menu.contact') }}
-          </a>
-        </li>
+        
         <li class="border-b border-white/10">
           <NuxtLink
             :to="localePath('/blog')"
@@ -399,7 +377,6 @@ onBeforeUnmount(() => {
       "hotel": "Hotel",
       "daycare": "Daycare",
       "puppies": "Filhotes",
-      "contact": "Contato",
       "blog": "Blog"
     },
     "locale": {
