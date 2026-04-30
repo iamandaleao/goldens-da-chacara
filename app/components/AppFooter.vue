@@ -174,8 +174,8 @@
             >
               <img
                 src="/selos/cbkc-logo.png"
-                title="CBKC"
-                alt="CBKC"
+                title="Associado à FCI"
+                alt="Associado à FCI"
                 class="h-13.5 opacity-80"
               >
             </a>
@@ -188,8 +188,8 @@
             >
               <img
                 src="/selos/logo-fci.png"
-                title="FCI"
-                alt="FCI"
+                title="Associado à FCI"
+                alt="Associado à FCI"
                 class="h-12 opacity-80"
               >
             </a>
