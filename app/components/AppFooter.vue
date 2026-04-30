@@ -174,8 +174,8 @@
             >
               <img
                 src="/selos/cbkc-logo.png"
-                title="Associado à FCI"
-                alt="Associado à FCI"
+                title="Associado à CBKC"
+                alt="Associado à CBKC"
                 class="h-13.5 opacity-80"
               >
             </a>
