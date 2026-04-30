@@ -173,10 +173,10 @@
               class="transition-opacity duration-300 hover:opacity-100"
             >
               <img
-                src="/selos/cbkc-logo.png"
+                src="/selos/img-logo-cbkc.png"
                 title="Associado à CBKC"
                 alt="Associado à CBKC"
-                class="h-13.5 opacity-80"
+                class="h-14 opacity-80"
               >
             </a>
 
@@ -187,10 +187,10 @@
               class="transition-opacity duration-300 hover:opacity-100"
             >
               <img
-                src="/selos/logo-fci.png"
+                src="/selos/img-logo-fci.png"
                 title="Associado à FCI"
                 alt="Associado à FCI"
-                class="h-12 opacity-80"
+                class="h-14 opacity-80"
               >
             </a>
           </div>
