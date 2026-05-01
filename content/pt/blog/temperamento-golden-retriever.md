@@ -5,7 +5,7 @@ image: "/images/temperamento-golden-retriever.png"
 tip: "Golden Retrievers são cães sociáveis que precisam de companhia constante. Não são adequados para quem fica muito tempo fora de casa, pois podem desenvolver ansiedade de separação."
 date: "2026-01-28 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Temperamento e personalidade do Golden Retriever"

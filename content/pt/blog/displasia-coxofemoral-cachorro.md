@@ -5,7 +5,7 @@ image: "/images/displasia-coxofemoral-em-caes.png"
 tip: "Evitar pisos lisos, controlar o peso e não forçar exercícios em filhotes são atitudes simples que ajudam muito a reduzir o risco de displasia no seu cão."
 date: "2026-03-16 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-13
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Displasia coxofemoral em cães: guia completo para entender, prevenir e cuidar"

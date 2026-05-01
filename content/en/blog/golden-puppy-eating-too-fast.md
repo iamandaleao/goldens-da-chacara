@@ -5,7 +5,7 @@ image: "/images/como-ensinar-filhote-golden-comer-devagar.png"
 tip: "Golden Retrievers are highly food-motivated. Use part of their regular kibble as a reward in short self-control exercises to encourage calm behavior at mealtime."
 date: "2026-03-09 22:30"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-13
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Golden Puppy Eating Too Fast: how to teach calmer mealtimes"

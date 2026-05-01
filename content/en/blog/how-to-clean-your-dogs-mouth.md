@@ -5,7 +5,7 @@ image: "/images/limpar-a-boca-cachorro.png"
 tip: "Building an oral hygiene routine from puppyhood makes everything easier. Start with a finger or finger brush and gradually move to a toothbrush, always with positive reinforcement."
 date: "2026-02-13 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "How to Clean Your Dog's Mouth: essential care"

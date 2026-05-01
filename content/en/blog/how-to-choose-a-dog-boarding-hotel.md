@@ -5,7 +5,7 @@ image: "/images/hotel-para-cachorro.png"
 tip: "Schedule a visit before booking. Check cleanliness, observe how staff interact with animals, and ask to see where your pet will stay."
 date: "2026-01-16 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "How to Choose the Best Boarding Hotel for Your Dog"

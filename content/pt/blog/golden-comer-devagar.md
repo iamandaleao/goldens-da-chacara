@@ -5,7 +5,7 @@ image: "/images/como-ensinar-filhote-golden-comer-devagar.png"
 tip: "Golden Retrievers são muito motivados por comida. Use a própria ração como recompensa durante pequenos treinos de autocontrole para ensinar calma na hora da refeição."
 date: "2026-03-09 22:30"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-13
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Filhote de Golden com ansiedade na comida: como ensinar a comer com calma"

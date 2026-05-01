@@ -148,11 +148,11 @@ export default defineNuxtConfig({
     urls: [
       {
         loc: '/',
-        lastmod: '2026-03-06'
+        lastmod: '2026-05-01'
       },
       {
         loc: '/blog',
-        lastmod: '2026-03-06'
+        lastmod: '2026-05-01'
       },
       {
         loc: '/daycare',
@@ -160,7 +160,7 @@ export default defineNuxtConfig({
       },
       {
         loc: '/filhotes',
-        lastmod: '2026-03-06'
+        lastmod: '2026-04-08'
       },
       {
         loc: '/hotel',

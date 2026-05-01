@@ -5,7 +5,7 @@ image: "/images/pedigree-cbkc-golden.png"
 tip: "Before choosing a puppy, always check its origin, visit the kennel, and ask about the parents. Pedigree matters, but responsible breeding makes all the difference."
 date: "2026-04-12 10:00"
 sitemap:
-  lastmod: 2026-04-12
+  lastmod: 2026-04-13
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "CBKC Pedigree: what is it and is it worth it?"

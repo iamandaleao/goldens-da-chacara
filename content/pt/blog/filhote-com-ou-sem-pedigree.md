@@ -5,7 +5,7 @@ image: "/images/pedigree-cbkc-golden.png"
 tip: "Antes de escolher um filhote, sempre verifique a procedência, conheça o canil e peça informações sobre os pais. O pedigree é importante, mas a criação responsável faz toda a diferença."
 date: "2026-04-12 10:00"
 sitemap:
-  lastmod: 2026-04-12
+  lastmod: 2026-04-13
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Pedigree CBKC: o que é e vale a pena?"

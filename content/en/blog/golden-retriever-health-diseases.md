@@ -5,7 +5,7 @@ image: "/images/doencas-silenciosas-golden-retriever.png"
 tip: "Golden Retrievers are masters at hiding pain. By instinct, dogs tend to mask suffering — that’s why veterinary check-ups every 6 months are essential, even when your Golden seems completely healthy."
 date: "2026-04-07 08:00"
 sitemap:
-  lastmod: 2026-04-07
+  lastmod: 2026-04-08
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "7 Silent Diseases in Golden Retrievers Every Owner Should Know"

@@ -5,7 +5,7 @@ image: "/images/microchip-canino.png"
 tip: "A microchip only works if the contact details are current. Update your registration whenever your phone number or address changes."
 date: "2026-01-18 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Microchipping Dogs: why our Golden puppies go home microchipped"

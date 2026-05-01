@@ -5,7 +5,7 @@ image: "/images/limpar-a-boca-cachorro.png"
 tip: "Criar o hábito da limpeza bucal desde filhote facilita muito o processo. Comece com o dedo ou uma dedeira e evolua para a escova aos poucos, sempre associando a algo positivo."
 date: "2026-02-13 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Como limpar a boca do seu cachorro: cuidados essenciais"

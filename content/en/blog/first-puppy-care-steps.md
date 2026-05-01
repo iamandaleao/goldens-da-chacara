@@ -5,7 +5,7 @@ image: "/images/primeiros-cuidados-filhotes.png"
 tip: "Avoid walks in public areas before all vaccinations are complete. This protects your puppy from contagious diseases."
 date: "2026-01-20 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "First Care Steps for a Puppy"

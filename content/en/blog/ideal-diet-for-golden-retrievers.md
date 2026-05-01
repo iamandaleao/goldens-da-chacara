@@ -5,7 +5,7 @@ image: "/images/alimentacao-ideal-golden-retriever.png"
 tip: "Always keep fresh water available and avoid feeding your Golden before or right after intense exercise to help prevent gastric torsion, a serious issue in large dogs."
 date: "2026-03-02 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-13
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Ideal Nutrition for Golden Retrievers: complete life-stage guide"

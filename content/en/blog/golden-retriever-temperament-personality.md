@@ -5,7 +5,7 @@ image: "/images/temperamento-golden-retriever.png"
 tip: "Golden Retrievers are social dogs that need steady companionship. They are not ideal for people who stay away from home for long hours, as they may develop separation anxiety."
 date: "2026-01-28 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Golden Retriever Temperament and Personality"

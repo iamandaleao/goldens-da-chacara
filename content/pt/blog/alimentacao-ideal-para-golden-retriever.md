@@ -5,7 +5,7 @@ image: "/images/alimentacao-ideal-golden-retriever.png"
 tip: "Mantenha sempre água fresca disponível e evite alimentar seu Golden antes ou logo após exercícios intensos para prevenir a torção gástrica, um problema grave em cães de grande porte."
 date: "2026-03-02 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-13
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Alimentação ideal para Golden Retriever: guia completo por fase"

@@ -5,7 +5,7 @@ image: "/images/primeiros-cuidados-filhotes.png"
 tip: "Evite passeios em locais públicos antes de completar todas as vacinas. Isso protege seu filhote de doenças contagiosas."
 date: "2026-01-20 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Primeiros cuidados com um filhote"

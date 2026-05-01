@@ -5,7 +5,7 @@ image: "/images/cachorro-hotel-canino.png"
 tip: "Planeje a hospedagem com antecedência sempre que possível. Uma visita prévia ao local ajuda seu cão a se familiarizar com o ambiente e reduz a ansiedade na hora da estadia."
 date: "2026-01-24 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Sinais de que seu cão precisa de um hotel canino"

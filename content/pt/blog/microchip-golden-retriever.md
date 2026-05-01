@@ -5,7 +5,7 @@ image: "/images/microchip-canino.png"
 tip: "O microchip só cumpre sua função se os dados estiverem atualizados. Sempre que mudar telefone ou endereço, atualize o cadastro na base de dados."
 date: "2026-01-18 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Microchip em cães: por que nossos filhotes Golden saem microchipados"

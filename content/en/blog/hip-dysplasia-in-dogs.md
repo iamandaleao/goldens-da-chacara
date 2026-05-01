@@ -5,7 +5,7 @@ image: "/images/displasia-coxofemoral-em-caes.png"
 tip: "Avoid slippery floors, keep weight under control, and do not force exercise in puppies. These simple measures greatly reduce dysplasia risk."
 date: "2026-03-16 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-13
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Hip Dysplasia in Dogs: a complete guide to understanding, prevention, and care"

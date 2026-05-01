@@ -5,7 +5,7 @@ image: "/images/cachorro-hotel-canino.png"
 tip: "Whenever possible, plan boarding in advance. A prior visit helps your dog get familiar with the place and reduces anxiety during the stay."
 date: "2026-01-24 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Signs Your Dog Needs a Boarding Hotel"

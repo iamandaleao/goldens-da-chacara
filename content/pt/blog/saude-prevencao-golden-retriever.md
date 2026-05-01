@@ -5,7 +5,7 @@ image: "/images/saude-golden-retriever-prevencao.png"
 tip: "Consultas veterinárias semestrais são essenciais para detecção precoce de problemas. Golden Retrievers têm predisposição a certas condições, mas com acompanhamento adequado, podem viver mais de 12 anos com qualidade."
 date: "2026-01-26 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Saúde e prevenção em Golden Retrievers"

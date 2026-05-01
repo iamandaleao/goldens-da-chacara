@@ -5,7 +5,7 @@ image: "/images/saude-golden-retriever-prevencao.png"
 tip: "Twice-yearly vet checkups are essential for early detection. Goldens are predisposed to some conditions, but with proper follow-up they can live over 12 years with quality."
 date: "2026-01-26 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Health and Prevention in Golden Retrievers"

@@ -5,7 +5,7 @@ image: "/images/hotel-para-cachorro.png"
 tip: "Agende uma visita ao hotel antes de fazer a reserva. Observe a limpeza do local, como os funcionários interagem com os animais e peça para ver as instalações onde seu pet ficará hospedado. Um bom hotel sempre permite visitas."
 date: "2026-01-16 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-04-28
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Como escolher o melhor hotel para seu cachorro"
