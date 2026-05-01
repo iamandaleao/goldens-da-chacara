@@ -1,7 +1,7 @@
 ---
 title: "Creche para cachorros: por que seu pet precisa"
 description: "Entenda os benefícios da creche canina para o bem-estar físico e mental do seu cachorro e como escolher a melhor opção."
-image: "/images/creche-para-cachorros-beneficios.jpg"
+image: "/images/creche-para-cachorros-beneficios.png"
 tip: "Comece levando seu cachorro para períodos curtos na creche antes de deixá-lo o dia todo. Essa adaptação gradual ajuda o pet a se sentir mais confortável e seguro no novo ambiente."
 date: "2026-01-10 23:59"
 sitemap:

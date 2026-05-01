@@ -1,7 +1,7 @@
 ---
 title: "Bathing and Grooming a Golden Retriever: essential care"
 description: "Keep your Golden's coat beautiful and healthy with proper hygiene and brushing techniques."
-image: "/images/banho-e-tosa-golden-retriever.jpg"
+image: "/images/banho-e-tosa-golden-retriever.png"
 tip: "Brush your Golden daily during shedding seasons (spring and fall) to reduce loose hair at home and prevent matting. Good brushing also distributes natural oils and keeps the coat shinier."
 date: "2026-01-06 23:59"
 sitemap:

@@ -1,7 +1,7 @@
 ---
 title: "Dog Daycare: why your pet needs it"
 description: "Understand the benefits of dog daycare for your dog's physical and mental well-being and how to choose the best option."
-image: "/images/creche-para-cachorros-beneficios.jpg"
+image: "/images/creche-para-cachorros-beneficios.png"
 tip: "Start by taking your dog for short daycare stays before leaving them all day. This gradual adjustment helps your pet feel safer and more comfortable in the new environment."
 date: "2026-01-10 23:59"
 sitemap:
