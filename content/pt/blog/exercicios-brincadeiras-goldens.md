@@ -5,7 +5,7 @@ image: "/images/exercicios-para-golden-retriever.png"
 tip: "Evite exercícios muito intensos em filhotes até 1 ano de idade, pois suas articulações ainda estão em formação. Prefira caminhadas moderadas e brincadeiras leves para não prejudicar o desenvolvimento ósseo."
 date: "2026-01-14 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-05-01
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Exercícios e brincadeiras para Goldens"

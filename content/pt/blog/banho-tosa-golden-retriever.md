@@ -5,7 +5,7 @@ image: "/images/banho-e-tosa-golden-retriever.png"
 tip: "Escove seu Golden diariamente durante as épocas de troca de pelo (primavera e outono) para evitar que a casa fique cheia de pelos e prevenir nós na pelagem. Uma boa escovação também distribui os óleos naturais, deixando o pelo mais brilhante."
 date: "2026-01-06 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-05-01
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Banho e tosa em Golden Retriever: cuidados essenciais"

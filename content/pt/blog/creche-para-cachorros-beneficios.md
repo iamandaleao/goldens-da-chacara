@@ -5,7 +5,7 @@ image: "/images/creche-para-cachorros-beneficios.png"
 tip: "Comece levando seu cachorro para períodos curtos na creche antes de deixá-lo o dia todo. Essa adaptação gradual ajuda o pet a se sentir mais confortável e seguro no novo ambiente."
 date: "2026-01-10 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-05-01
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Creche para cachorros: por que seu pet precisa"

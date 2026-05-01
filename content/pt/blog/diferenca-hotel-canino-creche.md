@@ -5,7 +5,7 @@ image: "/images/diferenca-creche-e-hotel-para-caes.png"
 tip: "Muitos estabelecimentos oferecem ambos os serviços. Experimente a creche algumas vezes antes de fazer a primeira hospedagem - isso ajuda seu cão a se adaptar ao ambiente e facilita futuras estadias no hotel."
 date: "2026-01-12 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-05-01
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Diferença entre hotel canino e creche para cães"

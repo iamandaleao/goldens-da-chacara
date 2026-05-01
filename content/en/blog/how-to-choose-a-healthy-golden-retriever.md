@@ -5,7 +5,7 @@ image: "/images/golden-retriever-saudavel-filhote.png"
 tip: "Never buy a puppy without seeing where it was raised and at least meeting the mother. This helps ensure you are dealing with a responsible breeder."
 date: "2026-01-08 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-05-01
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "How to Choose a Healthy Golden"

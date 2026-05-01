@@ -5,7 +5,7 @@ image: "/images/adestramento-de-golden-retriever.png"
 tip: "Golden Retrievers são extremamente motivados por comida e elogios. Use petiscos saudáveis durante o treino e sempre recompense comportamentos positivos imediatamente para fixar o aprendizado."
 date: "2026-01-02 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-05-01
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Adestramento de Golden Retriever: guia completo"

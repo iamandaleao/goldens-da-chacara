@@ -5,7 +5,7 @@ image: "/images/diferenca-creche-e-hotel-para-caes.png"
 tip: "Many facilities offer both services. Try daycare a few times before the first boarding stay to help your dog adapt to the environment and make future stays easier."
 date: "2026-01-12 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-05-01
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Difference Between Dog Boarding and Dog Daycare"

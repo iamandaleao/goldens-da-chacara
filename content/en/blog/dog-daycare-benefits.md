@@ -5,7 +5,7 @@ image: "/images/creche-para-cachorros-beneficios.png"
 tip: "Start by taking your dog for short daycare stays before leaving them all day. This gradual adjustment helps your pet feel safer and more comfortable in the new environment."
 date: "2026-01-10 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-05-01
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Dog Daycare: why your pet needs it"

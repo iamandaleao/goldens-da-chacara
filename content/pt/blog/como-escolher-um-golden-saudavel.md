@@ -5,7 +5,7 @@ image: "/images/golden-retriever-saudavel-filhote.png"
 tip: "Nunca compre um filhote sem conhecer o ambiente onde ele nasceu e sem ver pelo menos a mãe. Isso garante que você está lidando com um criador responsável."
 date: "2026-01-08 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-05-01
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Como escolher um Golden saudável"

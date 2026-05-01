@@ -5,7 +5,7 @@ image: "/images/exercicios-para-golden-retriever.png"
 tip: "Avoid very intense exercise in puppies up to 1 year old, as joints are still developing. Prefer moderate walks and light play."
 date: "2026-01-14 23:59"
 sitemap:
-  lastmod: 2026-03-25
+  lastmod: 2026-05-01
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Exercises and Activities for Golden Retrievers"
