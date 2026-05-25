@@ -3,7 +3,13 @@ import { defineNuxtConfig } from 'nuxt/config'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxtjs/seo', '@nuxtjs/i18n', '@nuxt/content', '@nuxt/scripts'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxtjs/seo',
+    '@nuxtjs/i18n',
+    '@nuxt/content',
+    '@nuxt/scripts'
+  ],
 
   $production: {
     scripts: {
@@ -50,7 +56,12 @@ export default defineNuxtConfig({
     '/en/blog': { prerender: true },
     '/en/blog/**': { prerender: true },
     '/hotel-pet': { redirect: { to: '/hotel', statusCode: 301 } },
-    '/blog/alimentacao-golden-retriever': { redirect: { to: '/blog/alimentacao-ideal-para-golden-retriever', statusCode: 301 } }
+    '/blog/alimentacao-golden-retriever': {
+      redirect: {
+        to: '/blog/alimentacao-ideal-para-golden-retriever',
+        statusCode: 301
+      }
+    }
   },
 
   sourcemap: {
@@ -72,9 +83,10 @@ export default defineNuxtConfig({
     build: {
       sourcemap: false
     },
-    plugins: [
-      tailwindcss()
-    ]
+    optimizeDeps: {
+      include: ['@lucide/vue']
+    },
+    plugins: [tailwindcss()]
   },
 
   eslint: {
@@ -94,7 +106,8 @@ export default defineNuxtConfig({
     baseUrl: 'https://goldensdachacara.com.br',
     customRoutes: 'meta',
     strategy: 'prefix_except_default',
-    defaultLocale: 'pt'
+    defaultLocale: 'pt',
+    detectBrowserLanguage: false
   },
 
   ogImage: {
@@ -105,7 +118,8 @@ export default defineNuxtConfig({
     identity: defineOrganization({
       name: 'Goldens da Chácara',
       alternateName: 'Goldens da Chácara',
-      description: 'Canil especializado na criação responsável de Golden Retriever, com foco em genética, saúde e bem-estar.',
+      description:
+        'Canil especializado na criação responsável de Golden Retriever, com foco em genética, saúde e bem-estar.',
       url: 'https://goldensdachacara.com.br',
       logo: 'https://goldensdachacara.com.br/golden-retriever-canil.png',
 
