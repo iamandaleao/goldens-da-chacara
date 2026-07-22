@@ -1,0 +1,45 @@
+# Goldens da Chácara
+
+> Canil de Golden Retriever em Formiga, Minas Gerais, Brasil. Criação responsável com foco em saúde, genética, temperamento e socialização, além de hotel e daycare caninos em ambiente rural.
+
+O conteúdo principal está em português do Brasil; há uma versão em inglês das páginas e dos artigos. Para informações sobre disponibilidade de filhotes, valores, reservas ou serviços, use o WhatsApp: [+55 37 99969-1236](https://wa.me/5537999691236).
+
+## Páginas principais (português)
+
+- [Início](https://goldensdachacara.com.br/): apresentação do canil, sua história e criação responsável de Golden Retrievers.
+- [Filhotes](https://goldensdachacara.com.br/filhotes): informações sobre os filhotes e itens da entrega, como pedigree, vacinação, vermifugação, garantia de saúde, manual e suporte.
+- [Hotel & Resort Canino](https://goldensdachacara.com.br/hotel): hospedagem canina em ambiente rural, com socialização monitorada, atividades, piscina, segurança e cuidado individual.
+- [Daycare Canino](https://goldensdachacara.com.br/daycare): creche diurna com rotina estruturada, grupos organizados, atividades, descanso, fotos e supervisão.
+- [Blog](https://goldensdachacara.com.br/blog): artigos sobre Golden Retriever, saúde, cuidados, alimentação, treinamento e serviços caninos.
+
+## Artigos do blog (português)
+
+- [Adestramento de Golden Retriever: guia completo](https://goldensdachacara.com.br/blog/adestramento-golden-retriever)
+- [Alimentação ideal para Golden Retriever: guia completo por fase](https://goldensdachacara.com.br/blog/alimentacao-ideal-para-golden-retriever)
+- [Banho e tosa em Golden Retriever: cuidados essenciais](https://goldensdachacara.com.br/blog/banho-tosa-golden-retriever)
+- [Como escolher um Golden saudável](https://goldensdachacara.com.br/blog/como-escolher-um-golden-saudavel)
+- [Creche para cachorros: por que seu pet precisa](https://goldensdachacara.com.br/blog/creche-para-cachorros-beneficios)
+- [Diferença entre hotel canino e creche para cães](https://goldensdachacara.com.br/blog/diferenca-hotel-canino-creche)
+- [Displasia coxofemoral em cães: guia completo](https://goldensdachacara.com.br/blog/displasia-coxofemoral-cachorro)
+- [Exercícios e brincadeiras para Goldens](https://goldensdachacara.com.br/blog/exercicios-brincadeiras-goldens)
+- [Pedigree CBKC: o que é e vale a pena?](https://goldensdachacara.com.br/blog/filhote-com-ou-sem-pedigree)
+- [Filhote de Golden com ansiedade na comida](https://goldensdachacara.com.br/blog/golden-comer-devagar)
+- [Canil de Golden Retriever em Minas Gerais](https://goldensdachacara.com.br/blog/golden-retriever-em-minas-gerais)
+- [Como escolher o melhor hotel para seu cachorro](https://goldensdachacara.com.br/blog/hotel-para-cachorros-como-escolher)
+- [Como limpar a boca do seu cachorro](https://goldensdachacara.com.br/blog/limpar-boca-cachorro)
+- [Microchip em cães: por que nossos filhotes Golden saem microchipados](https://goldensdachacara.com.br/blog/microchip-golden-retriever)
+- [Primeiros cuidados com um filhote](https://goldensdachacara.com.br/blog/primeiros-cuidados-filhote)
+- [Sinais de que seu cão precisa de um hotel canino](https://goldensdachacara.com.br/blog/quando-seu-cao-precisa-hotel-canino)
+- [7 doenças silenciosas em Golden Retriever](https://goldensdachacara.com.br/blog/saude-golden-retriever-doencas)
+- [Saúde e prevenção em Golden Retrievers](https://goldensdachacara.com.br/blog/saude-prevencao-golden-retriever)
+- [Temperamento e personalidade do Golden Retriever](https://goldensdachacara.com.br/blog/temperamento-golden-retriever)
+
+## English content
+
+- [Home](https://goldensdachacara.com.br/en)
+- [Golden Retriever Puppies](https://goldensdachacara.com.br/en/puppies)
+- [Dog Hotel & Resort](https://goldensdachacara.com.br/en/boarding)
+- [Dog Daycare](https://goldensdachacara.com.br/en/daycare)
+- [Blog](https://goldensdachacara.com.br/en/blog)
+
+For a detailed, self-contained site guide and annotated links to every English article, see [llms-full.txt](https://goldensdachacara.com.br/llms-full.txt).
