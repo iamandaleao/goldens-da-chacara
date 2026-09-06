@@ -233,7 +233,7 @@
             {{ t('menu.puppies') }}
           </NuxtLink>
         </li>
-        
+
         <li class="border-b border-white/10">
           <NuxtLink
             :to="localePath('/blog')"
