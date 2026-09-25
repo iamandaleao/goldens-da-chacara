@@ -96,25 +96,49 @@ useHead({
       </div>
     </section>
 
-    <!-- Nossa História -->
-    <section class="py-20 bg-white">
-      <div class="max-w-[900px] mx-auto px-5">
-        <h2 class="text-4xl md:text-5xl text-ink mb-10 font-extrabold text-center">
-          {{ t('story.title') }}
-        </h2>
+    <!-- Apresentação e Nossa História -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="max-w-[1200px] mx-auto px-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <img
+            src="/images/amanda-leao-canil-goldens-da-chacara.jpg"
+            :alt="t('introduction.imageAlt')"
+            class="w-full aspect-[3/4] object-cover rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.18)]"
+          >
 
-        <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
-          <p>{{ t('story.p1') }}</p>
-          <p>{{ t('story.p2') }}</p>
-          <p>{{ t('story.p3') }}</p>
-          <p>{{ t('story.p4') }}</p>
-          <p>{{ t('story.p5') }}</p>
-          <p>{{ t('story.p6') }}</p>
-          <p>{{ t('story.p7') }}</p>
-          <p>{{ t('story.p8') }}</p>
-          <p>{{ t('story.p9') }}</p>
-          <p>{{ t('story.p10') }}</p>
-          <p>{{ t('story.p11') }}</p>
+          <div class="space-y-5 text-lg text-gray-700 leading-relaxed">
+            <h2 class="text-3xl md:text-4xl text-ink font-extrabold leading-tight">
+              {{ t('introduction.title') }}
+            </h2>
+            <p>{{ t('introduction.p1') }}</p>
+            <p>{{ t('introduction.p2') }}</p>
+            <p>{{ t('introduction.p3') }}</p>
+            <p>{{ t('introduction.p4') }}</p>
+            <p>{{ t('introduction.p5') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-surface-cream">
+      <div class="max-w-[1200px] mx-auto px-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <img
+            src="/images/goldens-da-chacara.jpg"
+            :alt="t('story.imageAlt')"
+            class="w-full aspect-[3/4] object-cover rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.18)]"
+          >
+
+          <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <h2 class="text-4xl md:text-5xl text-ink font-extrabold">
+              {{ t('story.title') }}
+            </h2>
+            <p>{{ t('story.p1') }}</p>
+            <p>{{ t('story.p2') }}</p>
+            <p>{{ t('story.p3') }}</p>
+            <p>{{ t('story.p4') }}</p>
+            <p>{{ t('story.p5') }}</p>
+          </div>
         </div>
       </div>
     </section>
@@ -154,19 +178,23 @@ useHead({
 <i18n lang="json">
 {
   "pt": {
+    "introduction": {
+      "title": "Olá! Muito prazer, meu nome é Amanda Leão.",
+      "imageAlt": "Amanda Leão, do canil Goldens da Chácara",
+      "p1": "Sou a pessoa por trás do Goldens da Chácara, um canil familiar localizado em Formiga, Minas Gerais.",
+      "p2": "Dedico meu tempo ao cuidado e à convivência com os nossos Goldens, acompanhando de perto cada fase da vida deles. Para mim, ter cães não é apenas uma atividade, mas uma experiência que faz parte da minha rotina, da minha casa e da minha família.",
+      "p3": "Tenho a oportunidade de estar com eles diariamente, observar seus comportamentos, acompanhar seu desenvolvimento e proporcionar uma vida com carinho, atenção e espaço para serem cães felizes.",
+      "p4": "E é justamente por viver essa conexão todos os dias que nasceu o desejo de compartilhar esse amor com outras famílias, ajudando-as a encontrar não apenas um cachorro, mas um verdadeiro companheiro para a vida.",
+      "p5": "Seja bem-vindo ao Goldens da Chácara. Aqui, cada história começa com cuidado, dedicação e muito amor pelos Goldens."
+    },
     "story": {
       "title": "Nossa História",
-      "p1": "Meu nome é Amanda Leão, minha história com o Golden Retriever começou de forma simples, mas transformadora.",
-      "p2": "Quando conheci meu marido, ele já tinha um Golden chamado Lars, que hoje está com 5 anos. Foi convivendo com ele no dia a dia que comecei a entender de verdade essa raça. Antes disso, eu tive três Shih Tzus e também já convivi com outras raças. Na época, eu escolhia cães principalmente pelo tamanho — pensando na praticidade de carregar no colo e no dia a dia. Eu olhava mais para o que era conveniente para mim, e não para o que o cão poderia me proporcionar em termos de vínculo e convivência.",
-      "p3": "Com o tempo, essa visão mudou completamente. O Golden Retriever me mostrou algo diferente de tudo o que eu já havia vivido. É um cão extremamente inteligente, aprende rápido, tem uma sensibilidade impressionante e, ao contrário do que muitas pessoas esperam, não late por qualquer coisa. Acima de tudo, tem uma forma única de se conectar com a família: é amoroso, companheiro, fiel e está presente em todos os momentos.",
-      "p4": "Foi essa convivência que me fez entender que o mais importante não é o tamanho do cão, mas a qualidade da relação que ele constrói com a família.",
-      "p5": "Essa experiência despertou em mim algo maior do que admiração — nasceu o propósito de levar esse tipo de amor, equilíbrio e conexão para outras famílias também.",
-      "p6": "O Golden Retriever é muito mais do que um cachorro bonito. Ele é conhecido por ser um verdadeiro cão terapêutico, daqueles que acalmam só com a presença. Pela inteligência e facilidade de aprendizado, também se destaca como cão de assistência e cão guia, ajudando pessoas no dia a dia. Seu jeito carinhoso faz dele um excelente cão de apoio emocional, sempre pronto para oferecer conforto e companhia.",
-      "p7": "Dentro de casa, é o típico cão de família: dócil, paciente e extremamente confiável, sendo até chamado de “babá natural” por se dar tão bem com crianças. Ao mesmo tempo, tem capacidade para atuar como cão de serviço e até em operações como cão de resgate, mostrando o quanto é versátil. No fim das contas, acima de tudo, é um verdadeiro cão companheiro — daqueles que estão ao seu lado em todos os momentos.",
-      "p8": "Hoje, com o Goldens da Chácara em construção, tenho ainda mais certeza de que escolhi o caminho certo. Meu objetivo é simples e verdadeiro: levar esse companheirismo único para famílias que procuram não apenas um cachorro, mas um amigo leal para a vida toda.",
-      "p9": "Muitas pessoas também se perguntam sobre espaço. A verdade é que o Golden Retriever não se importa com o tamanho da casa — ele se importa com a presença da família. Já moramos em apartamento com o Lars, e foi uma experiência totalmente tranquila, com rotina de passeios e cuidados normais. Hoje, vivemos em uma chácara de 4 mil metros, onde ele tem liberdade para correr, mas, mesmo assim, prefere estar sempre perto de nós. Ele não gosta de ficar sozinho — é obediente, tranquilo e extremamente apegado à família.",
-      "p10": "Aqui no Goldens da Chácara, criamos nossos cães com esse propósito: preparar cada filhote para ser parte de uma família de verdade, com equilíbrio, socialização e muito carinho desde os primeiros dias de vida.",
-      "p11": "Se você busca um companheiro leal, inteligente e cheio de amor para dar, seja bem-vindo. Aqui começa uma nova história — a sua com um Golden Retriever."
+      "imageAlt": "Goldens da Chácara",
+      "p1": "Minha história com o Golden Retriever começou quando conheci meu marido e passei a conviver com o Lars, seu Golden, que hoje tem 5 anos.",
+      "p2": "Antes dele, tive três Shih Tzus e já havia convivido com outras raças, mas foi com o Lars que descobri uma conexão diferente com os cães. Seu jeito amoroso, inteligente e companheiro me fez enxergar o Golden Retriever de uma nova maneira.",
+      "p3": "Com o tempo, essa convivência despertou em mim o desejo de dedicar minha vida a esses cães e proporcionar a outras famílias a mesma conexão que encontrei.",
+      "p4": "Assim nasceu o Goldens da Chácara, um canil familiar em Formiga-MG, onde dedico meu tempo integralmente aos nossos Goldens. Em nossa chácara de 4 mil metros, eles crescem com espaço, cuidado e convivência diária.",
+      "p5": "Mais do que criar filhotes, meu propósito é preparar companheiros para fazer parte de famílias e construir histórias que durem a vida toda."
     },
     "seo": {
       "title": "Criação Especializada de Golden Retriever",
@@ -202,19 +230,23 @@ useHead({
   },
   "en":
   {
+  "introduction": {
+    "title": "Hello! It's a pleasure to meet you, my name is Amanda Leão.",
+    "imageAlt": "Amanda Leão of Goldens da Chácara kennel",
+    "p1": "I'm the person behind Goldens da Chácara, a family kennel located in Formiga, Minas Gerais, Brazil.",
+    "p2": "I dedicate my time to caring for and spending time with our Goldens, closely following every stage of their lives. To me, having dogs is more than an activity; it's an experience that is part of my routine, my home, and my family.",
+    "p3": "I get to be with them every day, observe their behavior, follow their development, and give them a life with affection, attention, and room to be happy dogs.",
+    "p4": "Living this connection every day inspired me to share this love with other families, helping them find not just a dog, but a true companion for life.",
+    "p5": "Welcome to Goldens da Chácara. Here, every story begins with care, dedication, and lots of love for Goldens."
+  },
   "story": {
     "title": "Our Story",
-    "p1": "My name is Amanda Leão, my journey with the Golden Retriever began in a simple yet transformative way.",
-    "p2": "When I met my husband, he already had a Golden named Lars, who is now 5 years old. Living with him daily is what truly helped me understand this breed. Before that, I had three Shih Tzus and had also been around other breeds. At the time, I chose dogs mainly based on size — thinking about convenience, like carrying them and daily practicality. I focused more on what was easier for me rather than what the dog could offer in terms of connection and companionship.",
-    "p3": "Over time, this perspective completely changed. The Golden Retriever showed me something different from anything I had experienced before. It is an extremely intelligent dog, learns quickly, has an impressive sensitivity, and unlike what many people expect, it does not bark at everything. Above all, it has a unique way of connecting with its family: loving, loyal, and always present.",
-    "p4": "This experience made me realize that what truly matters is not the size of the dog, but the quality of the relationship it builds with its family.",
-    "p5": "This journey awakened something greater than admiration in me — it became a purpose: to bring this kind of love, balance, and connection to other families as well.",
-    "p6": "The Golden Retriever is much more than just a beautiful dog. It is widely known as a therapy dog, often bringing calm just by its presence. Thanks to its intelligence and trainability, it also stands out as an assistance dog and guide dog, helping people in their daily lives. Its affectionate nature makes it an excellent emotional support dog, always ready to provide comfort and companionship.",
-    "p7": "At home, it is the perfect family dog: gentle, patient, and extremely trustworthy, often called a “natural babysitter” because of how well it interacts with children. At the same time, it has the ability to work as a service dog and even in rescue operations, showing how versatile it truly is. In the end, above all, it is a true companion dog — always by your side in every moment.",
-    "p8": "Today, with Goldens da Chácara still growing, I am even more certain that I chose the right path. My goal is simple and genuine: to bring this unique companionship to families who are looking not just for a dog, but for a loyal friend for life.",
-    "p9": "Many people also wonder about space. The truth is, the Golden Retriever does not care about the size of the home — it cares about being close to its family. We have lived in an apartment with Lars, and it was completely normal, with regular walks and routine care. Today, we live on a 4,000-square-meter farm where he has plenty of space to run, but even so, he prefers to stay close to us. He does not like being alone — he is obedient, calm, and deeply attached to the family.",
-    "p10": "Here at Goldens da Chácara, we raise our dogs with this purpose: to prepare each puppy to become part of a real family, with balance, socialization, and lots of care from the very first days of life.",
-    "p11": "If you are looking for a loyal, intelligent companion full of love to give, welcome. This is where a new story begins — yours with a Golden Retriever."
+    "imageAlt": "Goldens da Chácara",
+    "p1": "My story with Golden Retrievers began when I met my husband and started spending time with Lars, his Golden, who is now 5 years old.",
+    "p2": "Before him, I had three Shih Tzus and had lived with other breeds, but Lars helped me discover a different connection with dogs. His loving, intelligent, companionable nature changed the way I saw Golden Retrievers.",
+    "p3": "Over time, living with him inspired me to dedicate my life to these dogs and give other families the same connection I found.",
+    "p4": "That is how Goldens da Chácara began, a family kennel in Formiga, Minas Gerais, where I dedicate my time to our Goldens. On our 4,000-square-meter farm, they grow up with space, care, and daily companionship.",
+    "p5": "More than raising puppies, my purpose is to prepare companions to become part of families and build stories that last a lifetime."
   },
     "seo": {
       "title": "Specialized Golden Retriever Breeding",
