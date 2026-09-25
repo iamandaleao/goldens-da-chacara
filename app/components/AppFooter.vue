@@ -71,6 +71,27 @@
                 />
               </svg>
             </a>
+
+            <a
+              href="https://www.tiktok.com/@goldensdachacara"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              title="TikTok"
+              class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-white no-underline transition-all duration-300 hover:bg-primary hover:-translate-y-1 hover:scale-110"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12.525.02c1.31-.02 2.61-.01 3.92-.02.08 1.53.63 2.98 1.73 4.11 1.1 1.13 2.64 1.76 4.22 1.88v4.04c-1.84-.06-3.6-.65-5.12-1.68v7.5c0 1.5-.35 2.99-1.22 4.22a8.3 8.3 0 0 1-4.93 3.4c-1.68.5-3.5.42-5.13-.2a8.2 8.2 0 0 1-4.38-3.79c-.98-1.7-1.25-3.8-.72-5.7.5-1.81 1.71-3.42 3.31-4.4 1.45-.91 3.2-1.3 4.9-1.1.02 1.5-.04 2.98-.04 4.47-1.1-.35-2.35-.25-3.28.43-.68.47-1.15 1.24-1.26 2.07-.13.86.14 1.77.7 2.43.58.7 1.5 1.13 2.4 1.12.92.02 1.83-.48 2.37-1.21.4-.52.59-1.18.59-1.83V.02z"
+                />
+              </svg>
+            </a>
           </div>
         </div>
 
