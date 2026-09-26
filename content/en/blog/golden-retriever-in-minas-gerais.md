@@ -1,7 +1,7 @@
 ---
 title: "Golden Retriever Kennel in Minas Gerais: Discover Goldens da Chácara"
 description: "Located in Formiga, Minas Gerais, Goldens da Chácara provides its Golden Retrievers with a life surrounded by nature, playtime, and loving care."
-image: "/images/cachorrinhos-brincando.png"
+image: "/images/IMG_7504.JPEG"
 tip: "When looking for a Golden Retriever, take time to learn about the dogs' daily routine and living environment. Plenty of space, family interaction, and daily activities contribute to their well-being and development."
 date: "2026-06-03 14:00"
 sitemap:

@@ -1,7 +1,7 @@
 ---
 title: "Pedigree CBKC: o que é e vale a pena?"
 description: "Entenda o que é o pedigree CBKC, qual a diferença entre filhotes com e sem pedigree e por que isso faz toda a diferença na escolha do seu cão."
-image: "/images/pedigree-cbkc-golden.png"
+image: "/images/F82413FD-4D61-4247-AFD8-B3B2D0DF4A91.JPG"
 tip: "Antes de escolher um filhote, sempre verifique a procedência, conheça o canil e peça informações sobre os pais. O pedigree é importante, mas a criação responsável faz toda a diferença."
 date: "2026-04-12 14:00"
 sitemap:

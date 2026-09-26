@@ -63,6 +63,13 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 
+useHead({
+  link: [{
+    rel: 'canonical',
+    href: () => `https://goldensdachacara.com.br${route.path}`
+  }]
+})
+
 const contentRef = ref<HTMLElement | null>(null)
 
 function wrapTablesInScrollContainer() {
@@ -116,17 +123,18 @@ useSeoMeta(post.value.seo || {})
 </script>
 
 <template>
-  <div class="min-h-screen bg-white">
+  <div class="min-h-screen bg-surface-cream">
+    <FloatingButton />
     <AppNav />
     <article
       v-if="post"
-      class="py-20"
+      class="pt-28 pb-16"
     >
-      <div class="max-w-[900px] mx-auto mt-12 px-5">
+      <div class="blog-article max-w-[900px] mx-auto px-5 py-6 md:p-10 bg-white rounded-3xl shadow-lg">
         <img
           :src="post.image"
           :alt="post.title"
-          class="w-full h-[400px] object-cover object-center rounded-3xl mb-8 shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
+          class="w-full aspect-[4/3] object-cover object-center rounded-2xl mb-8"
         >
 
         <h1 class="text-4xl md:text-5xl text-ink mb-4 font-extrabold">
@@ -141,7 +149,7 @@ useSeoMeta(post.value.seo || {})
         </time>
 
         <div class="text-lg leading-relaxed text-gray-700">
-          <p class="text-xl text-gray-600 leading-relaxed">
+          <p class="text-xl text-gray-600 leading-relaxed border-l-4 border-primary pl-5">
             {{ post.description }}
           </p>
 
@@ -150,7 +158,7 @@ useSeoMeta(post.value.seo || {})
             class="blog-content"
           >
             <ContentRenderer
-              class="prose prose-lg mt-6
+              class="prose prose-lg mt-8 max-w-none
          prose-headings:my-4
          prose-headings:font-bold
          prose-a:no-underline
@@ -159,17 +167,17 @@ useSeoMeta(post.value.seo || {})
             />
           </div>
 
-          <div class="bg-primary/10 border-l-4 border-primary py-6 px-8 my-8 rounded-r-lg">
+          <div class="bg-surface-cream border-l-4 border-secondary py-6 px-6 md:px-8 my-8 rounded-r-2xl">
             <p class="text-strong font-medium m-0">
               💡 <strong>{{ t('labels.importantTip') }}:</strong> {{ post.tip }}
             </p>
           </div>
         </div>
 
-        <div class="mt-12 pt-8 border-t border-gray-300">
+        <div class="mt-12 pt-8 border-t border-gray-200">
           <NuxtLink
             :to="localePath('/blog')"
-            class="inline-block px-8 py-3.5 bg-primary text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-primary-strong hover:-translate-y-0.5 hover:shadow-lg"
+            class="inline-flex items-center px-6 py-3 bg-primary text-white no-underline rounded-full font-semibold transition-all duration-300 hover:bg-primary-strong hover:-translate-y-0.5 hover:shadow-lg"
           >
             ← {{ t('actions.viewMorePosts') }}
           </NuxtLink>

@@ -24,10 +24,13 @@ definePageMeta({
 useSeoMeta({
   title: () => t('seo.title'),
   description: () => t('seo.description'),
+  keywords: () => t('seo.keywords'),
   ogTitle: () => t('seo.ogTitle'),
   ogDescription: () => t('seo.ogDescription'),
+  ogImage: () => `${siteUrl}/images/capa-home-reserva.JPG`,
   ogType: 'website',
-  ogUrl: () => `${siteUrl}${route.path}`
+  ogUrl: () => `${siteUrl}${route.path}`,
+  twitterCard: 'summary_large_image'
 })
 
 useHead({
@@ -45,21 +48,21 @@ useHead({
 
     <!-- HERO -->
     <section
-      class="relative h-[70vh] flex items-center justify-center text-white text-center bg-cover bg-[position:50%_40%] bg-no-repeat"
-      style="background-image: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)), url('https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=2070&q=80');"
+      class="site-hero relative flex items-end lg:items-center justify-center lg:justify-start text-white text-left"
+      style="background-image: linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.3)), url('/images/capa-home-reserva.JPG');"
     >
-      <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/35 to-transparent" />
 
-      <div class="relative z-10 px-5 max-w-[1100px] mx-auto">
+      <div class="relative z-10 w-full max-w-[1200px] mx-auto px-5 py-20 lg:py-24">
         <h1
-          class="text-4xl md:text-6xl lg:text-7xl mb-6 font-extrabold tracking-wide leading-tight"
+          class="max-w-[850px] text-4xl md:text-6xl lg:text-7xl mb-5 font-extrabold leading-[1.05]"
           style="text-shadow: 3px 3px 8px rgba(0,0,0,.7)"
         >
           {{ t('hero.title') }}
         </h1>
 
         <p
-          class="text-xl md:text-2xl lg:text-3xl font-light"
+          class="max-w-[700px] text-xl md:text-2xl lg:text-3xl font-light"
           style="text-shadow: 2px 2px 6px rgba(0,0,0,.7)"
         >
           {{ t('hero.subtitle') }}
@@ -234,13 +237,14 @@ useHead({
 {
   "pt": {
     "seo": {
-      "title": "Daycare Canino",
-      "description": "Daycare Canino com rotina estruturada. Socialização, atividades recreativas e supervisão constante.",
-      "ogTitle": "Daycare Canino",
-      "ogDescription": "Daycare com rotina equilibrada, socialização supervisionada e acompanhamento contínuo."
+      "title": "Daycare para cães em Formiga | Goldens da Chácara",
+      "description": "Daycare para cães em Formiga, MG, com rotina planejada, brincadeiras, descanso e socialização supervisionada. Consulte horários e condições.",
+      "keywords": "daycare para cães Formiga, creche para cachorro Formiga MG, daycare canino Minas Gerais",
+      "ogTitle": "Daycare para cães em Formiga | Goldens da Chácara",
+      "ogDescription": "Uma rotina de atividades, cuidado e socialização supervisionada para cães em Formiga, MG."
     },
     "hero": {
-      "title": "Daycare Canino",
+      "title": "Daycare para cães em Formiga",
       "subtitle": "Seu cão se diverte enquanto você trabalha ou resolve suas atividades"
     },
     "intro": {
@@ -284,13 +288,14 @@ useHead({
   },
   "en": {
     "seo": {
-      "title": "Dog Daycare",
-      "description": "Dog daycare with a structured routine. Socialization, recreational activities, and constant supervision.",
-      "ogTitle": "Dog Daycare",
-      "ogDescription": "Daycare with balanced routine, supervised socialization, and continuous care."
+      "title": "Dog Daycare in Formiga, Brazil | Goldens da Chácara",
+      "description": "Dog daycare in Formiga, Minas Gerais, with a planned routine, play, rest, and supervised socialization. Ask about hours and rates.",
+      "keywords": "dog daycare Formiga Brazil, dog daycare Minas Gerais, dog day care Brazil",
+      "ogTitle": "Dog Daycare in Formiga | Goldens da Chácara",
+      "ogDescription": "A routine of activities, care, and supervised socialization for dogs in Formiga, Brazil."
     },
     "hero": {
-      "title": "Dog Daycare",
+      "title": "Dog Daycare in Formiga",
       "subtitle": "Your dog has fun while you work or take care of your day"
     },
     "intro": {

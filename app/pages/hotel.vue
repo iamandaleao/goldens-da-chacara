@@ -24,10 +24,13 @@ definePageMeta({
 useSeoMeta({
   title: () => t('seo.title'),
   description: () => t('seo.description'),
+  keywords: () => t('seo.keywords'),
   ogTitle: () => t('seo.ogTitle'),
   ogDescription: () => t('seo.ogDescription'),
+  ogImage: () => `${siteUrl}/images/goldens-da-chacara.jpg`,
   ogType: 'website',
-  ogUrl: () => `${siteUrl}${route.path}`
+  ogUrl: () => `${siteUrl}${route.path}`,
+  twitterCard: 'summary_large_image'
 })
 
 useHead({
@@ -45,21 +48,21 @@ useHead({
 
     <!-- HERO -->
     <section
-      class="relative h-[70vh] flex items-center justify-center text-white text-center bg-cover bg-[position:50%_10%] bg-no-repeat"
-      style="background-image: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)), url('https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=2070&q=80');"
+      class="site-hero relative flex items-end lg:items-center justify-center lg:justify-start text-white text-left"
+      style="background-image: linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.3)), url('/images/goldens-da-chacara.jpg'); background-position: center 68%;"
     >
-      <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/35 to-transparent" />
 
-      <div class="relative z-10 px-5 max-w-[1100px] mx-auto">
+      <div class="relative z-10 w-full max-w-[1200px] mx-auto px-5 py-20 lg:py-24">
         <h1
-          class="text-4xl md:text-6xl lg:text-7xl mb-6 font-extrabold tracking-wide leading-tight"
+          class="max-w-[850px] text-4xl md:text-6xl lg:text-7xl mb-5 font-extrabold leading-[1.05]"
           style="text-shadow: 3px 3px 8px rgba(0,0,0,.7)"
         >
           {{ t('hero.title') }}
         </h1>
 
         <p
-          class="text-xl md:text-2xl lg:text-3xl font-light"
+          class="max-w-[700px] text-xl md:text-2xl lg:text-3xl font-light"
           style="text-shadow: 2px 2px 6px rgba(0,0,0,.7)"
         >
           {{ t('hero.subtitle') }}
@@ -234,13 +237,14 @@ useHead({
 {
   "pt": {
     "seo": {
-      "title": "Hotel & Resort Canino",
-      "description": "Hotel e Resort Canino em ambiente rural. Piscina, socialização, segurança e cuidado diário.",
-      "ogTitle": "Hotel & Resort Canino",
-      "ogDescription": "Hospedagem canina com bem-estar, socialização supervisionada e segurança."
+      "title": "Hotel para cães em Formiga | Goldens da Chácara",
+      "description": "Hospedagem para cães em ambiente rural em Formiga, MG, com rotina de cuidados, socialização supervisionada e espaço para brincar. Consulte condições e disponibilidade.",
+      "keywords": "hotel para cães Formiga, hospedagem para cachorro Formiga MG, hotel canino Minas Gerais",
+      "ogTitle": "Hotel para cães em Formiga | Goldens da Chácara",
+      "ogDescription": "Conheça a hospedagem canina em ambiente rural do Goldens da Chácara, em Formiga, MG."
     },
     "hero": {
-      "title": "Hotel & Resort Canino",
+      "title": "Hotel para cães em Formiga",
       "subtitle": "Um espaço pensado para o bem-estar, lazer e segurança do seu cão"
     },
     "intro": {
@@ -284,13 +288,14 @@ useHead({
   },
   "en": {
     "seo": {
-      "title": "Dog Hotel & Resort",
-      "description": "Dog hotel and resort in a rural environment. Pool, socialization, safety, and daily care.",
-      "ogTitle": "Dog Hotel & Resort",
-      "ogDescription": "Dog boarding focused on well-being, supervised socialization, and safety."
+      "title": "Dog Boarding in Formiga, Brazil | Goldens da Chácara",
+      "description": "Rural dog boarding in Formiga, Minas Gerais, with a caring routine, supervised socialization, and room to play. Ask about rates and availability.",
+      "keywords": "dog boarding Formiga Brazil, dog hotel Minas Gerais, rural dog boarding Brazil",
+      "ogTitle": "Dog Boarding in Formiga | Goldens da Chácara",
+      "ogDescription": "Explore rural dog boarding at Goldens da Chácara in Formiga, Minas Gerais, Brazil."
     },
     "hero": {
-      "title": "Dog Hotel & Resort",
+      "title": "Dog Boarding in Formiga",
       "subtitle": "A space designed for your dog's well-being, fun, and safety"
     },
     "intro": {

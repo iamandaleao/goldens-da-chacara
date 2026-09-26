@@ -1,7 +1,7 @@
 ---
 title: "Primeiros cuidados com um filhote"
 description: "Dicas práticas e essenciais para garantir que seu filhote cresça feliz, saudável e bem adaptado à nova casa."
-image: "/images/primeiros-cuidados-filhotes.png"
+image: "/images/IMG_0852.JPG"
 tip: "Evite passeios em locais públicos antes de completar todas as vacinas. Isso protege seu filhote de doenças contagiosas."
 date: "2026-01-20 23:59"
 sitemap:

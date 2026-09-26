@@ -19,7 +19,8 @@ export const PT_TO_EN_BLOG_SLUG: Record<string, string> = {
   'saude-golden-retriever-doencas': 'golden-retriever-health-diseases',
   'filhote-com-ou-sem-pedigree': 'puppy-with-or-without-pedigree',
   'golden-retriever-em-minas-gerais': 'golden-retriever-in-minas-gerais',
-  'corte-de-unha-e-pelo-de-cachorro': 'dog-nail-and-paw-hair-trimming'
+  'corte-de-unha-e-pelo-de-cachorro': 'dog-nail-and-paw-hair-trimming',
+  'golden-retriever-e-criancas': 'golden-retrievers-and-children'
 }
 
 export const EN_TO_PT_BLOG_SLUG = Object.fromEntries(

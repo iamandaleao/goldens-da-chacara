@@ -22,8 +22,10 @@ useSeoMeta({
   keywords: () => t('seo.keywords'),
   ogTitle: () => t('seo.ogTitle'),
   ogDescription: () => t('seo.ogDescription'),
+  ogImage: () => `${siteUrl}/images/golden-retriever-home-canil.jpg`,
   ogType: 'website',
-  ogUrl: () => `${siteUrl}${route.path}`
+  ogUrl: () => `${siteUrl}${route.path}`,
+  twitterCard: 'summary_large_image'
 })
 
 useHead({
@@ -40,20 +42,20 @@ useHead({
     <AppNav />
 
     <section
-      class="relative h-[70vh] flex items-center justify-center text-white text-center bg-cover bg-[position:50%_40%] bg-no-repeat"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/capa-golden-retriever-filhotes.jpg');"
+      class="site-hero relative flex items-end lg:items-center justify-center lg:justify-start text-white text-left"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/golden-retriever-home-canil.jpg'); background-position: center 18%;"
     >
-      <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/10" />
 
-      <div class="relative z-10 px-5 max-w-[1100px] mx-auto">
+      <div class="relative z-10 w-full max-w-[1200px] mx-auto px-5 py-20 lg:py-24">
         <h1
-          class="text-4xl md:text-6xl lg:text-7xl mb-4 font-extrabold tracking-wide leading-tight"
+          class="max-w-[850px] text-4xl md:text-6xl lg:text-7xl mb-5 font-extrabold leading-[1.05]"
           style="text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);"
         >
           {{ t('hero.title') }}
         </h1>
         <p
-          class="text-xl md:text-2xl lg:text-3xl mb-10 font-light"
+          class="max-w-[700px] text-xl md:text-2xl lg:text-3xl mb-9 font-light"
           style="text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);"
         >
           {{ t('hero.subtitle') }}
@@ -240,15 +242,15 @@ useHead({
 {
   "pt": {
     "seo": {
-      "title": "Filhotes Golden Retriever",
-      "description": "Filhotes Golden Retriever disponíveis - Goldens da Chácara. Filhotes com pedigree, vacinados e vermifugados.",
-      "keywords": "filhotes golden retriever, golden retriever para venda, comprar golden retriever, filhotes disponíveis",
-      "ogTitle": "Filhotes Golden Retriever - Goldens da Chácara",
-      "ogDescription": "Filhotes Golden Retriever com pedigree, vacinados e vermifugados."
+      "title": "Filhotes de Golden Retriever em Formiga, MG | Goldens da Chácara",
+      "description": "Conheça os filhotes do Goldens da Chácara, canil familiar em Formiga, MG. Consulte disponibilidade, cuidados, documentação e como funciona a reserva.",
+      "keywords": "filhotes golden retriever Formiga, filhote golden retriever MG, canil golden retriever Minas Gerais",
+      "ogTitle": "Filhotes de Golden Retriever | Goldens da Chácara",
+      "ogDescription": "Saiba mais sobre nossos filhotes de Golden Retriever, cuidados e disponibilidade em Formiga, MG."
     },
     "hero": {
-      "title": "Nossos Filhotes",
-      "subtitle": "Conheça nossos adoráveis filhotes Golden Retriever"
+      "title": "Filhotes de Golden Retriever",
+      "subtitle": "Conheça o cuidado e a preparação de cada filhote em Formiga, MG"
     },
     "intro": {
       "title": "O Amor que nos Move",
@@ -292,15 +294,15 @@ useHead({
   },
   "en": {
     "seo": {
-      "title": "Golden Retriever Puppies",
-      "description": "Golden Retriever puppies available at Goldens da Chácara. Puppies with pedigree, vaccinated and dewormed.",
-      "keywords": "golden retriever puppies, golden retriever for sale, buy golden retriever, puppies available",
-      "ogTitle": "Golden Retriever Puppies - Goldens da Chácara",
-      "ogDescription": "Golden Retriever puppies with pedigree, vaccinated and dewormed."
+      "title": "Golden Retriever Puppies in Brazil | Goldens da Chácara",
+      "description": "Meet the puppies at Goldens da Chácara, a family kennel in Formiga, Minas Gerais. Ask about availability, care, registration, and reservations.",
+      "keywords": "Golden Retriever puppies Brazil, Golden Retriever breeder Minas Gerais, family Golden Retriever kennel",
+      "ogTitle": "Golden Retriever Puppies | Goldens da Chácara",
+      "ogDescription": "Learn about our Golden Retriever puppies, their care, and availability in Formiga, Brazil."
     },
     "hero": {
-      "title": "Our Puppies",
-      "subtitle": "Meet our adorable Golden Retriever puppies"
+      "title": "Golden Retriever Puppies",
+      "subtitle": "Learn how each puppy is cared for and prepared in Formiga, Brazil"
     },
     "intro": {
       "title": "The Love That Moves Us",

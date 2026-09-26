@@ -4,6 +4,7 @@ import type { Collections } from '@nuxt/content'
 const route = useRoute()
 const { locale, t } = useI18n()
 const localePath = useLocalePath()
+const siteUrl = 'https://goldensdachacara.com.br'
 
 const page = computed(() => Number.parseInt(String(route.query.page || '1'), 10) || 1)
 const postsPerPage = 24
@@ -44,31 +45,42 @@ function formatDate(date: string | Date) {
 
 useSeoMeta({
   title: () => t('seo.title'),
-  description: () => t('seo.description')
+  description: () => t('seo.description'),
+  ogTitle: () => t('seo.title'),
+  ogDescription: () => t('seo.description'),
+  ogType: 'website',
+  ogUrl: () => `${siteUrl}${route.path}`
+})
+
+useHead({
+  link: [{
+    rel: 'canonical',
+    href: () => `${siteUrl}${route.path}`
+  }]
 })
 </script>
 
 <template>
-  <div class="min-h-screen bg-white">
+  <div class="blog-page min-h-screen bg-white">
     <FloatingButton />
     <AppNav />
 
-    <section class="py-28 bg-white min-h-screen">
+    <section class="pt-32 pb-20 bg-surface-cream min-h-screen">
       <div class="max-w-[1200px] mx-auto px-5">
-        <div class="mb-16 mt-6">
-          <h1 class="text-5xl text-primary mb-4 font-extrabold text-center">
+        <div class="mb-12 max-w-[780px] mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl text-ink mb-4 font-extrabold">
             {{ t('hero.title') }}
           </h1>
-          <p class="text-xl text-gray-600 leading-relaxed text-center">
+          <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
             {{ t('hero.description') }}
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
           <article
-            v-for="post in posts"
+            v-for="(post, index) in posts"
             :key="post.path"
-            class="bg-white rounded-3xl shadow-lg transition-all duration-300 overflow-hidden border border-primary/20 hover:-translate-y-2 hover:shadow-2xl"
+            class="blog-card bg-white rounded-3xl transition-all duration-300 overflow-hidden border hover:-translate-y-1 hover:shadow-2xl"
           >
             <NuxtLink
               :to="getPostPath(post.path)"
@@ -78,12 +90,15 @@ useSeoMeta({
               <img
                 :src="post.image"
                 :alt="post.title"
-                class="w-full h-[300px] object-cover object-center bg-gray-100"
+                class="w-full aspect-[4/3] object-cover object-center bg-gray-100"
+                :loading="index === 0 ? 'eager' : 'lazy'"
+                :fetchpriority="index === 0 ? 'high' : 'auto'"
+                decoding="async"
               >
             </NuxtLink>
 
-            <div class="p-8 md:p-10">
-              <h2 class="text-3xl text-ink mb-3 font-bold transition-colors duration-300 line-clamp-2 hover:text-primary">
+            <div class="p-6 md:p-7">
+              <h2 class="text-2xl md:text-3xl text-ink mb-3 font-bold transition-colors duration-300 line-clamp-2 hover:text-primary">
                 <NuxtLink :to="getPostPath(post.path)">
                   {{ post.title }}
                 </NuxtLink>
@@ -102,7 +117,7 @@ useSeoMeta({
 
               <NuxtLink
                 :to="getPostPath(post.path)"
-                class="inline-block px-8 py-3.5 bg-primary text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-primary-strong hover:-translate-y-0.5 hover:shadow-lg"
+                class="inline-flex items-center px-6 py-3 bg-primary text-white no-underline rounded-full font-semibold transition-all duration-300 hover:bg-primary-strong hover:-translate-y-0.5 hover:shadow-lg"
               >
                 {{ t('actions.readFullPost') }} →
               </NuxtLink>
@@ -120,8 +135,8 @@ useSeoMeta({
 {
   "pt": {
     "seo": {
-      "title": "Blog",
-      "description": "Criação responsável de Golden Retriever, com foco em saúde, genética e temperamento."
+      "title": "Dicas sobre Golden Retriever | Blog Goldens da Chácara",
+      "description": "Leia dicas de saúde, alimentação, comportamento e cuidados para Golden Retriever, com conteúdo do Goldens da Chácara em Formiga, MG."
     },
     "hero": {
       "title": "Blog Goldens da Chácara",
@@ -133,8 +148,8 @@ useSeoMeta({
   },
   "en": {
     "seo": {
-      "title": "Blog",
-      "description": "Responsible Golden Retriever breeding with focus on health, genetics, and temperament."
+      "title": "Golden Retriever Care Tips | Goldens da Chácara Blog",
+      "description": "Read practical articles on Golden Retriever health, nutrition, behavior, and care from Goldens da Chácara in Formiga, Brazil."
     },
     "hero": {
       "title": "Goldens da Chácara Blog",

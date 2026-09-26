@@ -119,6 +119,22 @@
             </li>
             <li class="mb-3">
               <NuxtLink
+                :to="localePath('/hotel')"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
+              >
+                {{ t('links.hotel') }}
+              </NuxtLink>
+            </li>
+            <li class="mb-3">
+              <NuxtLink
+                :to="localePath('/daycare')"
+                class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
+              >
+                {{ t('links.daycare') }}
+              </NuxtLink>
+            </li>
+            <li class="mb-3">
+              <NuxtLink
                 :to="localePath('/blog')"
                 class="text-muted no-underline transition-all duration-300 hover:text-primary hover:pl-1"
               >
@@ -248,8 +264,10 @@ const { t } = useI18n()
       "hours": "Horário de Atendimento"
     },
     "links": {
-      "home": "Home",
+      "home": "Início",
       "puppies": "Filhotes",
+      "hotel": "Hotel",
+      "daycare": "Daycare",
       "blog": "Blog"
     },
     "hours": {
@@ -271,6 +289,8 @@ const { t } = useI18n()
     "links": {
       "home": "Home",
       "puppies": "Puppies",
+      "hotel": "Boarding",
+      "daycare": "Daycare",
       "blog": "Blog"
     },
     "hours": {

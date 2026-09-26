@@ -1,7 +1,7 @@
 ---
 title: "Alimentação ideal para Golden Retriever: guia completo por fase"
 description: "Guia completo sobre alimentação ideal para Golden Retriever filhote, adulto e gestante. Quantidade diária, tabela Farmina, petiscos seguros e alimentos proibidos."
-image: "/images/alimentacao-ideal-golden-retriever.png"
+image: "/images/5771B331-CAC8-4E0F-8EBC-EDFCA26FE87E.JPG"
 tip: "Mantenha sempre água fresca disponível e evite alimentar seu Golden antes ou logo após exercícios intensos para prevenir a torção gástrica, um problema grave em cães de grande porte."
 date: "2026-03-02 23:59"
 sitemap:

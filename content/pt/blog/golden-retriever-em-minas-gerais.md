@@ -1,7 +1,7 @@
 ---
 title: "Canil de Golden Retriever em Minas Gerais: Conheça o Goldens da Chácara"
 description: "Em Formiga, Minas Gerais, o Goldens da Chácara proporciona aos seus Golden Retrievers uma vida cercada por áreas verdes, brincadeiras e muito cuidado."
-image: "/images/cachorrinhos-brincando.png"
+image: "/images/IMG_7504.JPEG"
 tip: "Ao procurar um Golden Retriever, conheça a rotina e o ambiente onde os cães vivem. Um espaço amplo, contato com a família e atividades diárias contribuem para o bem-estar e desenvolvimento dos cães."
 date: "2026-06-03 14:00"
 sitemap:

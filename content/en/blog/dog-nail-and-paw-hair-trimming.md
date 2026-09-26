@@ -1,7 +1,7 @@
 ---
 title: "Dog Nail and Paw Hair Trimming: How to Get Your Pet Used to It"
 description: "Does your dog get scared when you trim their nails or paw hair? Learn how to get your pet used to it gradually with patience, treats, and positive reinforcement."
-image: "/images/corte-de-unhas-e-pelos-de-cachorro.png"
+image: "/images/IMG_4347.JPG"
 tip: "Start slowly: handle your dog's paws, give gentle massages, and offer treats when your dog stays calm. Then introduce the nail clippers and try small trims while always respecting your pet's pace."
 date: "2026-09-05 23:59"
 sitemap:

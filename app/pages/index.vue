@@ -20,8 +20,9 @@ useSeoMeta({
   ogTitle: () => t('seo.ogTitle'),
   ogDescription: () => t('seo.ogDescription'),
   ogType: 'website',
-  ogImage: 'https://goldensdachacara.com.br/golden-retriever-canil.png',
-  ogUrl: () => `${siteUrl}${route.path}`
+  ogImage: `${siteUrl}/images/capa-home.png`,
+  ogUrl: () => `${siteUrl}${route.path}`,
+  twitterCard: 'summary_large_image'
 })
 
 useHead({
@@ -40,20 +41,20 @@ useHead({
     <!-- Hero Section -->
     <section
       id="home"
-      class="relative h-[70vh] lg:h-screen flex items-center justify-center text-white text-center bg-cover bg-[position:60%_60%] bg-no-repeat"
+      class="site-hero relative flex items-end lg:items-center justify-center lg:justify-start text-white text-left"
       style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/capa-home.png');"
     >
-      <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/10" />
 
-      <div class="relative z-10 px-5 max-w-[1100px] mx-auto">
+      <div class="relative z-10 w-full max-w-[1200px] mx-auto px-5 py-20 lg:py-24">
         <h1
-          class="text-4xl md:text-6xl lg:text-7xl mb-4 font-extrabold tracking-wide leading-tight animate-fadeIn"
+          class="max-w-[850px] text-4xl md:text-6xl lg:text-7xl mb-5 font-extrabold leading-[1.05] animate-fadeIn"
           style="text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);"
         >
           {{ t('hero.title') }}
         </h1>
         <p
-          class="text-xl md:text-2xl lg:text-3xl mb-10 font-light animate-fadeInDelay"
+          class="max-w-[700px] text-xl md:text-2xl lg:text-3xl mb-9 font-light animate-fadeInDelay"
           style="text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);"
         >
           {{ t('hero.subtitle') }}
@@ -86,12 +87,11 @@ useHead({
             </p>
           </div>
 
-          <div class="h-[500px]">
-            <div
-              class="w-full h-full bg-gradient-to-br from-secondary to-primary rounded-3xl flex items-center justify-center text-white text-2xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] bg-cover bg-center"
-              style="background-image: url('/images/golden-retriever-home-canil.jpg');"
-            />
-          </div>
+          <img
+            src="/images/golden-retriever-home-canil.jpg"
+            :alt="t('about.imageAlt')"
+            class="w-full h-[360px] md:h-[500px] object-cover rounded-3xl shadow-lg"
+          >
         </div>
       </div>
     </section>
@@ -197,19 +197,20 @@ useHead({
       "p5": "Mais do que criar filhotes, meu propósito é preparar companheiros para fazer parte de famílias e construir histórias que durem a vida toda."
     },
     "seo": {
-      "title": "Criação Especializada de Golden Retriever",
-      "description": "Goldens da Chácara - Criação especializada de Golden Retriever com filhotes de alta linhagem. Conheça nossos reprodutores e reserve seu filhote.",
-      "keywords": "golden retriever, filhotes golden retriever, canil golden retriever, golden retriever para venda, criação golden retriever, filhotes golden",
-      "ogTitle": "Goldens da Chácara - Criação Especializada de Golden Retriever",
-      "ogDescription": "Criação especializada de Golden Retriever com filhotes de alta linhagem em Formiga (MG)."
+      "title": "Canil de Golden Retriever em Formiga, MG | Goldens da Chácara",
+      "description": "Conheça o Goldens da Chácara, canil familiar de Golden Retriever em Formiga, Minas Gerais. Saiba como criamos nossos cães e consulte informações sobre filhotes.",
+      "keywords": "canil golden retriever Formiga, filhotes golden retriever MG, criação familiar de Golden Retriever",
+      "ogTitle": "Goldens da Chácara | Golden Retriever em Formiga, MG",
+      "ogDescription": "Criação familiar de Golden Retriever em Formiga, com cuidado diário, convivência e responsabilidade."
     },
     "hero": {
-      "title": "Criando Goldens com excelência e carinho",
-      "subtitle": "Criação Especializada de Golden Retriever",
-      "cta": "Conheça Nossos Filhotes"
+      "title": "Golden Retrievers criados com cuidado e convivência familiar",
+      "subtitle": "Canil familiar em Formiga, Minas Gerais",
+      "cta": "Conheça os filhotes"
     },
     "about": {
       "title": "Bem-vindo ao Goldens da Chácara",
+      "imageAlt": "Golden Retriever em ambiente familiar no Goldens da Chácara",
       "p1": {
         "before": "Somos um canil especializado na criação responsável de",
         "highlight": "Golden Retriever",
@@ -249,19 +250,20 @@ useHead({
     "p5": "More than raising puppies, my purpose is to prepare companions to become part of families and build stories that last a lifetime."
   },
     "seo": {
-      "title": "Specialized Golden Retriever Breeding",
-      "description": "Goldens da Chácara - Specialized Golden Retriever breeding with top bloodline puppies. Meet our dogs and reserve your puppy.",
-      "keywords": "golden retriever, golden retriever puppies, golden retriever kennel, buy golden retriever, golden breeding, puppies",
-      "ogTitle": "Goldens da Chácara - Specialized Golden Retriever Breeding",
-      "ogDescription": "Specialized Golden Retriever breeding with top bloodline puppies in Formiga (MG), Brazil."
+      "title": "Golden Retriever Breeder in Formiga, Brazil | Goldens da Chácara",
+      "description": "Meet Goldens da Chácara, a family Golden Retriever kennel in Formiga, Minas Gerais, Brazil. Learn about our dogs and ask about puppy availability.",
+      "keywords": "Golden Retriever breeder Brazil, Golden Retriever puppies Minas Gerais, family Golden Retriever kennel",
+      "ogTitle": "Goldens da Chácara | Golden Retrievers in Formiga, Brazil",
+      "ogDescription": "Family-raised Golden Retrievers in Formiga, with daily care, companionship, and responsible breeding."
     },
     "hero": {
-      "title": "Breeding Goldens with excellence and care",
-      "subtitle": "Specialized Golden Retriever Breeding",
-      "cta": "Meet Our Puppies"
+      "title": "Golden Retrievers raised with care and family companionship",
+      "subtitle": "A family kennel in Formiga, Minas Gerais, Brazil",
+      "cta": "Meet the puppies"
     },
     "about": {
       "title": "Welcome to Goldens da Chácara",
+      "imageAlt": "Golden Retriever in a family environment at Goldens da Chácara",
       "p1": {
         "before": "We are a kennel specialized in responsible",
         "highlight": "Golden Retriever",

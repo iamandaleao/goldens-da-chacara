@@ -47,7 +47,7 @@ const { t } = useI18n()
     "description": "A página que você tentou acessar não existe ou foi movida. Mas nossos Goldens continuam aqui, cheios de carinho esperando por você.",
     "actions": {
       "home": "Voltar para o início",
-      "puppies": "Ver filhotes disponíveis",
+      "puppies": "Conhecer os filhotes",
       "whatsapp": "Falar no WhatsApp"
     }
   },
@@ -56,7 +56,7 @@ const { t } = useI18n()
     "description": "The page you tried to access doesn't exist or was moved. But our Goldens are still here, full of love, waiting for you.",
     "actions": {
       "home": "Back to home",
-      "puppies": "See available puppies",
+      "puppies": "Ask about puppies",
       "whatsapp": "Chat on WhatsApp"
     }
   }
@@ -65,24 +65,18 @@ const { t } = useI18n()
 
 <style scoped>
 .error-page {
-  --error-bg-top: #FFE9C5;
-  --error-title: #5A3E1B;
-  --error-body: #3F2A15;
-  --error-btn-primary-start: #D4AF379F;
-  --error-btn-primary-end: #C19A2EE7;
-  --error-btn-secondary-start: #B37B2CC4;
-  --error-btn-secondary-end: #8B5A2B;
-  --error-btn-text: #1F1A0F;
-  --error-btn-secondary-text: #FFF7E5;
-  --error-whatsapp-start: #25D365A4;
-  --error-whatsapp-end: #1EBE5EDC;
+  --error-bg-top: #F4F1E9;
+  --error-title: #23342B;
+  --error-body: #405047;
+  --error-btn-primary: #966527;
+  --error-btn-secondary: #617565;
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: linear-gradient(to bottom, var(--error-bg-top), var(--color-primary));
+  background: linear-gradient(145deg, var(--error-bg-top), #DCE5DD);
   overflow: hidden;
 }
 
@@ -112,14 +106,14 @@ const { t } = useI18n()
   width: 100%;
   max-width: 520px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-radius: 28px;
   padding: 3rem 2.5rem;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2),
-              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 24px 70px rgba(35, 52, 43, 0.14),
+              inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .error-content h1 {
@@ -158,17 +152,17 @@ const { t } = useI18n()
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, var(--error-btn-primary-start), var(--error-btn-primary-end));
-  color: var(--error-btn-text);
+  background: var(--error-btn-primary);
+  color: white;
 }
 
 .btn.secondary {
-  background: linear-gradient(135deg, var(--error-btn-secondary-start), var(--error-btn-secondary-end));
-  color: var(--error-btn-secondary-text);
+  background: var(--error-btn-secondary);
+  color: white;
 }
 
 .btn.whatsapp {
-  background: linear-gradient(135deg, var(--error-whatsapp-start), var(--error-whatsapp-end));
+  background: #1FAF5A;
   color: white;
 }
 

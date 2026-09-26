@@ -1,9 +1,9 @@
 <template>
   <nav
-    class="fixed top-0 left-0 right-0 z-[1000] bg-ink/70 backdrop-blur-[20px] border-b border-white/15 shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-all duration-300"
-    :class="{ 'bg-ink/95': isScrolled }"
+    class="fixed top-0 left-0 right-0 z-[1000] bg-ink/90 backdrop-blur-xl border-b border-white/10 shadow-[0_6px_24px_rgba(0,0,0,0.16)] transition-all duration-300"
+    :class="{ 'bg-ink/98': isScrolled }"
   >
-    <div class="max-w-[1400px] mx-auto px-5 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-8">
+    <div class="max-w-[1400px] mx-auto px-5 py-2.5 grid grid-cols-[auto_1fr_auto] items-center gap-5">
       <!-- Logo Section -->
       <div class="flex items-center gap-4">
         <NuxtLink
@@ -42,14 +42,14 @@
 
         <li class="relative group">
           <NuxtLink
-            to="#"
+            :to="localePath('/hotel')"
             class="text-white no-underline font-medium px-4 py-2.5 rounded-lg transition-all duration-300 relative text-[0.95rem] whitespace-nowrap hover:bg-primary/20 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-1 after:left-1/2 after:-translate-x-1/2 after:scale-x-0 after:w-4/5 after:h-0.5 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
-            :class="{ 'bg-primary/20 after:scale-x-100': isActive('/hotel') }"
+            :class="{ 'bg-primary/20 after:scale-x-100': isActive('/hotel') || isActive('/daycare') }"
             style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);"
           >
             {{ t('menu.services') }}
           </NuxtLink>
-          <ul class="absolute left-1/2 top-full mt-5 -translate-x-1/2 bg-ink/98 backdrop-blur-[20px] rounded-xl list-none p-2 min-w-[200px] opacity-0 invisible transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.35)] border border-primary/20 group-hover:opacity-100 group-hover:visible">
+          <ul class="absolute left-1/2 top-full mt-2 -translate-x-1/2 bg-ink/98 backdrop-blur-xl rounded-xl list-none p-2 min-w-[200px] opacity-0 invisible transition-all duration-200 shadow-[0_15px_40px_rgba(0,0,0,0.22)] border border-white/10 group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible">
             <li>
               <NuxtLink
                 :to="localePath('/hotel')"
@@ -91,6 +91,17 @@
           </NuxtLink>
         </li>
 
+        <li>
+          <a
+            href="https://wa.me/5537999691236"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center px-4 py-2.5 rounded-full bg-primary text-white no-underline font-semibold text-sm whitespace-nowrap transition-all duration-300 hover:bg-primary-strong hover:-translate-y-0.5"
+          >
+            {{ t('menu.contact') }}
+          </a>
+        </li>
+
         <li class="flex items-center gap-2 pl-3 ml-2 border-l border-white/20">
           <NuxtLink
             :to="getSwitchPath('pt')"
@@ -125,7 +136,7 @@
         class="lg:hidden flex-col gap-1.5 cursor-pointer z-[1001] ml-auto"
         :class="mobileMenuOpen ? 'flex' : 'lg:hidden flex'"
         type="button"
-        :aria-label="t('aria.openMenu')"
+        :aria-label="mobileMenuOpen ? t('aria.closeMenu') : t('aria.openMenu')"
         :aria-expanded="mobileMenuOpen"
         @click="toggleMobileMenu"
       >
@@ -179,7 +190,7 @@
           <button
             type="button"
             class="w-full text-left text-white no-underline px-8 py-4 transition-all duration-300 font-medium hover:bg-primary hover:pl-10 flex items-center justify-between"
-            :class="{ 'bg-primary pl-10': isActive('/hotel') }"
+            :class="{ 'bg-primary pl-10': isActive('/hotel') || isActive('/daycare') }"
             :aria-expanded="mobileServicesOpen"
             aria-controls="mobileServicesSubmenu"
             @click="toggleMobileServices"
@@ -243,6 +254,17 @@
           >
             {{ t('menu.blog') }}
           </NuxtLink>
+        </li>
+        <li class="border-b border-white/10">
+          <a
+            href="https://wa.me/5537999691236"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block text-white no-underline px-8 py-4 transition-all duration-300 font-semibold bg-primary hover:bg-primary-strong"
+            @click="closeMobileMenu"
+          >
+            {{ t('menu.contact') }}
+          </a>
         </li>
         <li class="border-b border-white/10 px-8 py-4">
           <div class="flex items-center gap-3">
@@ -369,15 +391,17 @@ onBeforeUnmount(() => {
   "pt": {
     "aria": {
       "goHome": "Ir para a página inicial",
-      "openMenu": "Abrir menu"
+      "openMenu": "Abrir menu",
+      "closeMenu": "Fechar menu"
     },
     "menu": {
-      "home": "Home",
+      "home": "Início",
       "services": "Serviços",
       "hotel": "Hotel",
       "daycare": "Daycare",
       "puppies": "Filhotes",
-      "blog": "Blog"
+      "blog": "Blog",
+      "contact": "Fale conosco"
     },
     "locale": {
       "ptAria": "Mudar para português",
@@ -389,7 +413,8 @@ onBeforeUnmount(() => {
   "en": {
     "aria": {
       "goHome": "Go to home page",
-      "openMenu": "Open menu"
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
     },
     "menu": {
       "home": "Home",
@@ -397,7 +422,7 @@ onBeforeUnmount(() => {
       "hotel": "Boarding",
       "daycare": "Daycare",
       "puppies": "Puppies",
-      "contact": "Contact",
+      "contact": "Contact us",
       "blog": "Blog"
     },
     "locale": {

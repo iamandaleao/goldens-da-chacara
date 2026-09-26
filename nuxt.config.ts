@@ -153,6 +153,7 @@ export default defineNuxtConfig({
         'https://www.instagram.com/goldensdachacara',
         'https://www.facebook.com/goldensdachacara',
         'https://www.youtube.com/@goldensdachacara',
+        'https://www.tiktok.com/@goldensdachacara',
         'https://api.whatsapp.com/send?phone=5537999691236'
       ]
     })
@@ -162,23 +163,23 @@ export default defineNuxtConfig({
     urls: [
       {
         loc: '/',
-        lastmod: '2026-05-01'
+        lastmod: '2026-09-25'
       },
       {
         loc: '/blog',
-        lastmod: '2026-05-01'
+        lastmod: '2026-09-25'
       },
       {
         loc: '/daycare',
-        lastmod: '2026-03-06'
+        lastmod: '2026-09-25'
       },
       {
         loc: '/filhotes',
-        lastmod: '2026-04-08'
+        lastmod: '2026-09-25'
       },
       {
         loc: '/hotel',
-        lastmod: '2026-03-06'
+        lastmod: '2026-09-25'
       }
     ]
   }
