@@ -42,7 +42,7 @@ useHead({
     <section
       id="home"
       class="site-hero relative flex items-end lg:items-center justify-center lg:justify-start text-white text-left"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/capa-home.png');"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/images/goldens-da-chacara.jpg');"
     >
       <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/10" />
 

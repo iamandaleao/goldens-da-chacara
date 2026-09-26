@@ -49,7 +49,7 @@ useHead({
     <!-- HERO -->
     <section
       class="site-hero relative flex items-end lg:items-center justify-center lg:justify-start text-white text-left"
-      style="background-image: linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.3)), url('/images/goldens-da-chacara.jpg'); background-position: center 68%;"
+      style="background-image: linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.3)), url('/images/capa-home.png'); background-position: center 68%;"
     >
       <div class="absolute inset-0 bg-gradient-to-r from-black/35 to-transparent" />
 
