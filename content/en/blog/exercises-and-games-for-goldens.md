@@ -1,7 +1,7 @@
 ---
 title: "Exercises and Activities for Golden Retrievers"
 description: "Fun activities and essential exercise to keep your Golden active, happy, and full of energy."
-image: "/images/IMG_8641.JPEG"
+image: "/images/blog/IMG_8641.webp"
 tip: "Avoid very intense exercise in puppies up to 1 year old, as joints are still developing. Prefer moderate walks and light play."
 date: "2026-01-14 23:59"
 sitemap:

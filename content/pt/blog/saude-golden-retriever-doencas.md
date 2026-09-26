@@ -1,7 +1,7 @@
 ---
 title: "7 Doenças Silenciosas em Golden Retriever que Todo Tutor Precisa Conhecer"
 description: "Descubra as doenças mais comuns e perigosas nos Golden Retrievers que se desenvolvem sem sintomas evidentes — e saiba como prevenir cada uma delas."
-image: "/images/IMG_4576.JPEG"
+image: "/images/blog/IMG_4576.webp"
 tip: "Golden Retrievers são mestres em esconder a dor. Por instinto, cães tendem a disfarçar o sofrimento — por isso check-ups veterinários a cada 6 meses são essenciais, mesmo quando seu Golden parece completamente saudável."
 date: "2026-04-07 08:00"
 sitemap:

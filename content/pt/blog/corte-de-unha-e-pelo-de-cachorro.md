@@ -1,7 +1,7 @@
 ---
 title: "Corte de unhas e pelos de cachorro: como acostumar seu pet"
 description: "Seu cachorro tem medo de cortar as unhas ou os pelos? Veja como acostumá-lo aos poucos, com paciência, petiscos e associação positiva."
-image: "/images/IMG_4347.JPG"
+image: "/images/blog/IMG_4347.webp"
 tip: "Comece aos poucos: mexa nas patinhas, faça massagens e ofereça petiscos quando seu cachorro estiver tranquilo. Depois, apresente o cortador e tente pequenos cortes, respeitando sempre o tempo do seu pet."
 date: "2026-09-05 23:59"
 sitemap:

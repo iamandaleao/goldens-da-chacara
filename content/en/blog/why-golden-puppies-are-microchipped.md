@@ -1,7 +1,7 @@
 ---
 title: "Microchipping Dogs: why our Golden puppies go home microchipped"
 description: "Learn what a canine microchip is, what it is for, its benefits, and how to keep your data up to date after bringing your Golden home."
-image: "/images/golden-retriever-home-canil.jpg"
+image: "/images/blog/golden-retriever-home-canil.webp"
 tip: "A microchip only works if the contact details are current. Update your registration whenever your phone number or address changes."
 date: "2026-01-18 23:59"
 sitemap:

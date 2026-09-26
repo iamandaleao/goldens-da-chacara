@@ -1,7 +1,7 @@
 ---
 title: "Golden Retrievers and Children: Building a Safe, Happy Bond"
 description: "Learn how to bring children and Golden Retrievers together through respect, supervision, and thoughtful habits for the whole family."
-image: "/images/amanda-leao-canil-goldens-da-chacara.jpg"
+image: "/images/blog/amanda-leao-canil-goldens-da-chacara.webp"
 tip: "Never leave a young child alone with a dog. Supervise closely, respect the dog's signals, and teach children not to disturb the dog while eating, sleeping, or moving away."
 date: "2026-09-25 23:59"
 sitemap:

@@ -1,7 +1,7 @@
 ---
 title: "7 Silent Diseases in Golden Retrievers Every Owner Should Know"
 description: "Discover the most common and dangerous diseases in Golden Retrievers that develop without obvious symptoms — and learn how to prevent each of them."
-image: "/images/IMG_4576.JPEG"
+image: "/images/blog/IMG_4576.webp"
 tip: "Golden Retrievers are masters at hiding pain. By instinct, dogs tend to mask suffering — that’s why veterinary check-ups every 6 months are essential, even when your Golden seems completely healthy."
 date: "2026-04-07 08:00"
 sitemap:

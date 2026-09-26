@@ -1,7 +1,7 @@
 ---
 title: "Signs Your Dog Needs a Boarding Hotel"
 description: "Discover situations where professional boarding is the best option for your pet's well-being and safety."
-image: "/images/IMG_9463.JPEG"
+image: "/images/blog/IMG_9463.webp"
 tip: "Whenever possible, plan boarding in advance. A prior visit helps your dog get familiar with the place and reduces anxiety during the stay."
 date: "2026-01-24 23:59"
 sitemap:

@@ -1,7 +1,7 @@
 ---
 title: "Sinais de que seu cão precisa de um hotel canino"
 description: "Descubra as situações em que a hospedagem profissional é a melhor opção para o bem-estar e segurança do seu pet."
-image: "/images/IMG_9463.JPEG"
+image: "/images/blog/IMG_9463.webp"
 tip: "Planeje a hospedagem com antecedência sempre que possível. Uma visita prévia ao local ajuda seu cão a se familiarizar com o ambiente e reduz a ansiedade na hora da estadia."
 date: "2026-01-24 23:59"
 sitemap:

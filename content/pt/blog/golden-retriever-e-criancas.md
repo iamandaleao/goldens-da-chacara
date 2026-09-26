@@ -1,7 +1,7 @@
 ---
 title: "Golden Retriever e crianças: como construir uma convivência segura e feliz"
 description: "Veja como aproximar crianças e Golden Retrievers com respeito, supervisão e bons hábitos para toda a família."
-image: "/images/amanda-leao-canil-goldens-da-chacara.jpg"
+image: "/images/blog/amanda-leao-canil-goldens-da-chacara.webp"
 tip: "Nunca deixe uma criança pequena sozinha com um cachorro. Supervisione de perto, respeite os sinais do cão e ensine a criança a não incomodá-lo enquanto come, dorme ou se afasta."
 date: "2026-09-25 23:59"
 sitemap:
